@@ -1,0 +1,437 @@
+\section{Đề ôn thi giữa kỳ 2 toán 10}
+\subsection{Phần trắc nghiệm}
+Câu trắc nghiệm nhiều phương án lựa chọn. Học sinh trả lời từ
+câu 1 đến câu 12. Mỗi câu hỏi học sinh \textit{chỉ chọn một} phương án.
+
+\Opensolutionfile{ans}[Ans/Dapan-Deso4]
+ 
+\hienthiloigiaiex
+%%%=============EX_1=============%%%
+\begin{ex}%[0D3N1-1]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Biểu thức nào sau đây là hàm số theo biến $x$?
+	\choice
+		{$x^2 + y^2 = 1$}
+		{$\left| y \right| = 2x + 3$}
+		{$y^4 = 2x - 1$}
+		{\True $y^3 = 2x - 1$}
+	\loigiai{ \\
+		Vì $y^3 = 2x - 1 \Leftrightarrow  y = \sqrt[3]{2x-1}$ với mọi giá trị của $x$. \\
+		Ứng với mỗi giá trị của $x$ ta có duy nhất một giá trị của $y$.\\
+		Vậy biểu thức $y^3 = 2x - 1$ là một hàm số theo biến $x$.
+		}
+\end{ex}
+%%%=============EX_2=============%%%
+\begin{ex}%[0D3N1-5]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	\immini{Quan sát đồ thị hàm số trong hình bên. Hàm số đồng biến trên khoảng nào?}
+		{\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+				\tikzset{every node/.style={scale=0.9}}
+				\draw[->] (-4.1,0)--(4.1,0) node[below left] {$x$};
+				\draw[->] (0,-1.1)--(0,5.1) node[below left] {$y$};
+				\draw (0,0) node [below left] {$O$};
+				\foreach \x/\nx in {-3/-3,-2/-2,-1/-1,1/1,2/2,3/3}
+				\draw[thin] (\x,1pt)--(\x,-1pt) node [below] {$\nx$};
+				\foreach \y/\ny in {1/1,2/2,3/3,4/4}
+				\draw[thin] (1pt,\y)--(-1pt,\y) node [left] {$\ny$};
+				\begin{scope}
+					\clip (-4,-1) rectangle (4,5);
+					\draw[samples=200,domain=-3:3,smooth,variable=\x] plot (\x,{1*(\x)^2+0*(\x)+0});
+				\end{scope}
+		\end{tikzpicture}}
+	\choice
+	{$\left( -\infty ; 0 \right)$}
+	{$\left( -\infty ; 3 \right)$}
+	{$\left( -3 ; 3 \right)$}
+	{\True $\left( 0 ; +\infty \right)$}
+	\loigiai{ \\
+		Đồ thị hàm số đi lên từ $0$ đến $+\infty$ nên hàm số đồng biến trên khoảng $\left( 0 ; +\infty \right)$.
+		}
+\end{ex}
+%%%=============EX_3=============%%%
+\begin{ex}%[0D3N1-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Hàm số nào sau đây có tập xác đinh là $\mathbb{R}$?
+	\choice
+	{$y = \sqrt{x-1}$}
+	{$y = \dfrac{1}{x}$}
+	{$y = \sqrt{x^2-1}$}
+	{\True $y = x - 1$}
+	\loigiai{ \\
+		Hàm số $y = x - 1$ xác định với mọi giá trị của $x$ nên có tập xác định là $\mathbb{R}.$
+	}
+\end{ex}  
+%%%=============EX_4=============%%%
+\begin{ex}%[0D3N1-3]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Cho hàm số $f(x) = x^2 +kx - 5$, với $k$ là hằng số. Nếu $f(-2)=3$ thì giá trị của $f(2)$ là bao nhiêu?
+	\choice
+	{\True $-5$}
+	{$-3$}
+	{$3$}
+	{$5$}
+	\loigiai{ \\
+		Ta có \\
+		$f(-2)=3 \Rightarrow (-2)^2+k \cdot (-2)-5 = 3 \Leftrightarrow k = -2$. \\
+		Khi đó $f(x)=x^2-2x-5$. \\
+		Vậy $f(2)=-5$.
+	}
+\end{ex} 
+%%%=============EX_5=============%%%
+\begin{ex}%[0D7H2-1]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Bất phương trình nào sau đây có tập nghiệm là $S= \mathbb{R} \backslash \left\{ 2 \right\}$?
+	\choice
+	{$x^2+4x+5 \le 0$}
+	{$-2 x^2 +5x-11 >0$}
+	{\True $-3 x^2 +12x-12<0$}
+	{$-3 x^2 +12x-12 \ge 0$}
+	\loigiai{ \\
+		Ta có \\
+		$-3 x^2 +12x-12 < 0 \Leftrightarrow x^2-4x+4 >0 \Leftrightarrow \left( x-2 \right)^2 >0 \Leftrightarrow x \ne 2$. \\
+		Vậy bất phương trình có tập nghiệm là $S= \mathbb{R} \backslash \left\{ 2 \right\}$.
+	}
+\end{ex} 
+%%%=============EX_6=============%%%
+\begin{ex}%[0D7H3-1]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Điều kiện xác định của phương trình $\sqrt{2x-3}=3\sqrt{7-x}$ là
+	\choice
+	{$x \ge \dfrac{3}{2}$}
+	{$x \le 7$}
+	{\True $\dfrac{3}{2} \le x \le 7$}
+	{$\dfrac{3}{2} < x < 7$}
+	\loigiai{ \\
+		Điều kiện của phương trình là \\
+		$\heva{&2x-3 \ge 0 \\&7-x \ge 0} \Leftrightarrow \heva{&x \ge \frac{3}{2} \\&x \le 7} \Leftrightarrow \dfrac{3}{2} \le x \le 7 $. 
+	}
+\end{ex}
+%%%=============EX_7=============%%%
+\begin{ex}%[0H9N3-1]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Đường thẳng $2x-y+1=0$ có véc-tơ pháp tuyến là
+	\choice
+	{\True $\vec n = \left( 2; -1 \right)$}
+	{$\vec n = \left( -1; 2 \right)$}
+	{$\vec n = \left( 2; 1 \right)$}
+	{$\vec n = \left( 1; 2 \right)$}
+	\loigiai{ \\
+		Véc-tơ pháp tuyến của đường thẳng là $\vec n = \left( 2; -1 \right)$.
+	}
+\end{ex} 
+%%%=============EX_8=============%%%
+\begin{ex}%[0H9V3-8]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	\immini{Để sử dụng mạng Internet của nhà mạng $X$, khách hàng phải trả chi phí lắp đặt ban đầu là $500\,000$ đồng và tiền cước sử dụng dịch vụ hàng tháng. Đường thẳng $\Delta$ như hình bên biểu thị tổng chi phí (đơn vị: trăm nghìn đồng) khi sử dụng dịch vụ Internet theo hàng tháng. Phương trình của đường thẳng $\Delta$ là
+		\choice
+		{\True $3x-y+5=0$}
+		{$x+3y+5=0$}
+		{$x+3y-5=0$}
+		{$3x-y-5=0$}}
+	{\begin{tikzpicture}[scale=0.35,yscale=0.25,>=stealth, font=\footnotesize, line join=round, line cap=round]
+			\def\xmin{-2} \def\xmax{14}
+			\def\ymin{-5} \def\ymax{42}
+			%		\draw[color=gray!50,dashed] (\xmin,\ymin) grid (\xmax,\ymax);
+			\draw[->] (\xmin,0)--(\xmax,0) node [above]{$x$};
+			\draw[->] (0,\ymin)--(0,\ymax) node [right]{$y$};
+			\node at (0,0) [below left]{$O$};
+			\clip (\xmin+0.1,\ymin+0.1) rectangle (\xmax-0.1,\ymax-0.1);
+			\draw[smooth,samples=300,domain=0:\xmax] plot(\x,{3*(\x)+5});
+			\draw[dotted] (5,0)|-(0,20);
+			\fill (1,0) circle (2pt) node [below] {$1$}
+			(5,0) circle (2pt) node [below] {$5$}
+			(12,0) circle (2pt) node [below] {$12$}
+			(0,5) circle (2pt) node [left] {$5$}
+			(0,20) circle (2pt) node [left] {$20$};
+			\foreach \i in {1,2,...,12} \draw (\i,-0.5)--(\i,0.5);
+			\foreach \i in {5,10,...,40} \draw (-0.1,\i)--(0.1,\i);
+	\end{tikzpicture}}
+	
+	\loigiai{ \\
+		Từ hình vẽ ta thấy $\Delta$ đi qua hai điểm có tọa độ là $(0;5)$ và $(5;20)$. \\
+		Suy ra véc-tơ chỉ phương của đường thẳng là $\vec u = (5;15)$. \\
+		Véc-tơ pháp tuyến của đường thẳng là $\vec n = (3;-1)$. \\
+		Phương trình đường thẳng là \\
+		$3(x-0)-1(y-5)=0 \Leftrightarrow 3x-y+5=0$.
+	}
+\end{ex} 
+%%%=============EX_9=============%%%
+\begin{ex}%[[0H9V3-5]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Trong mặt phẳng tọa độ $Oxy$, cho đường thẳng $\Delta$ song song với đường thẳng có phương trình $4x-3y+5=0$ và điểm $M(2;1)$ cách $\Delta$ một khoảng bằng $2$. Phương trình của $\Delta$ là
+	\choice
+	{\True $4x-3y-15=0$}
+	{$4x-3y+5=0$}
+	{$3x-4y+5=0$}
+	{$3x-4y-15=0$}
+	\loigiai{ \\
+		Vì $\Delta$ song song với đường thẳng có phương trình $4x-3y+5=0$ nên phương trình của $\Delta$ có dạng $4x-3y+c=0$ với $c \ne 5$. \\
+		Khoảng cách từ điểm $M$ đến $\Delta$ bằng $2$ nên ta có \\
+		\begin{eqnarray*}
+			\dfrac{\left| 4.2-3+c \right|}{\sqrt{4^2+(-3)^2}}=2 & \Leftrightarrow  & \left| 5+c \right| =10 \\
+			&\Leftrightarrow& \hoac{& 5+c=10 \\& 5+c =-10}\\
+			&\Leftrightarrow& \hoac{& c=5 \left( \text{loại} \right) \\& c =-15 \left( \text{thỏa mãn} \right).}\\
+		\end{eqnarray*}
+		Vậy phương trình đường thẳng $\Delta$ là $4x-3y-15=0$.
+	}
+\end{ex} 
+%%%=============EX_10=============%%%
+\begin{ex}%[0H9H3-4]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Trong mặt phẳng tọa độ $Oxy$, hai đường thẳng $\Delta _1: x+2y+4=0$ và $\Delta _2: 2x-y+6=0$. Số đo góc giữa hai đường thẳng là
+	\choice
+	{$30^{\circ}$}
+	{$45^{\circ}$}
+	{$60^{\circ}$}
+	{\True $90^{\circ}$}
+	\loigiai{ \\
+		Véc-tơ pháp tuyến của đường thẳng $\Delta_1$ là $\vec n_1 = (1;2)$. \\
+		Véc-tơ pháp tuyến của đường thẳng $\Delta_2$ là $\vec n_2 = (2;-1)$. \\
+		Ta thấy $\vec n_1 \cdot \vec n_2 = 1 \cdot 2 + 2 \cdot (-1) = 0$. \\
+		Vậy góc giữa hai đường thẳng bằng $90^{\circ}$.
+	}
+\end{ex} 
+%%%=============EX_11=============%%%
+\begin{ex}%[[0H9H4-1]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Trong mặt phẳng tọa độ $Oxy$, cho đường tròn $(C)$ có phương trình $x^2+y^2-2x+4y+1=0$. Tọa độ tâm $I$ và bán kính $R$ của đường tròn là
+	\choice
+	{\True $I(1;-2), R=2$}
+	{$I(2;-4), R=2$}
+	{$I(-1;2), R=1$}
+	{$I(1;-2), R=1$}
+	\loigiai{ \\
+		Tâm của đường tròn là $I(1;-2)$. \\
+		Bán kính của đường tròn là $R= \sqrt{1^2+(-2)^2-1}=2$.
+	}
+\end{ex} 
+%%%=============EX_12=============%%%
+\begin{ex}%[0H9H4-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phạm Ngọc Chiến]%[Đề số 4-KNTT]
+	Trong mặt phẳng tọa độ $Oxy$, phương trình nào sau đây là phương trình của đường tròn?
+	\choice
+	{$x^2+2y^2-4x-8y+1=0$}
+	{\True $x^2+y^2-4x+6y-12=0$}
+	{$x^2+y^2-2x-8y+20=0$}
+	{$4x^2+y^2-10x-6y-2=0$}
+	\loigiai{ \\
+		Phương trình $x^2+2y^2-4x-8y+1=0$ không phải là phương trình đường tròn vì hệ số của $x^2$ và $y^2$ khác nhau. \\
+		Phương trình $x^2+y^2-4x+6y-12=0$ là phương trình đường tròn vì $2^2+(-3)^2-(-12)>0$. \\
+		Phương trình $x^2+y^2-2x-8y+20=0$ không phải là phương trình đường tròn vì $1^2+4^2-20<0$. \\
+		Phương trình $4x^2+y^2-10x-6y-2=0$ không phải là phương trình đường tròn vì hệ số của $x^2$ và $y^2$ khác nhau. \\
+	}
+\end{ex} 
+\Closesolutionfile{ans}
+\bangdapan{Dapan-Deso4}
+\subsection{Câu trắc nghiệm đúng sai}
+Học sinh trả lời từ câu 1 đến câu 4.
+Trong mỗi ý \circlenum{A}, \circlenum{B}, \circlenum{C} và \circlenum{D} ở mỗi câu, học sinh chọn đúng hoặc sai.
+\setcounter{ex}{0}
+\LGexTF
+\Opensolutionfile{ansbook}[ansbook/DapanDS-Deso4]
+\Opensolutionfile{ans}[Ans/Dapan-Deso4]
+
+
+%%=======%%%
+\begin{ex}%[0D3H2-3]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Mui Doan]%[Đề số 4-KNTT]
+	Cho đồ thị hàm số bậc hai $y=f(x)$ có dạng như hình sau
+	\begin{center}
+		\begin{tikzpicture}[line cap=butt,line join=miter,>=stealth]
+			\tikzset{declare function={xmin=-1.3;xmax=4.5;ymin=-3;ymax=7;
+					f(\x)=2*(\x)^2-8*(\x)+6;
+				},
+				smooth,samples=450
+			}
+			\draw[->] (xmin,0)--(xmax,0) node[shift={(-100:7pt)},font=\normalsize]{$ x $};
+			\draw[->] (0,ymin)--(0,ymax) node[shift={(190:7pt)},font=\normalsize]{$ y $};
+			\fill (0,0) node[shift={(225:7pt)},font=\normalsize]{$ O $};
+			\draw[thin] (1,1pt)--(1,-1pt) node [below left] {$1$};
+			\foreach \y/\ny in {-2/-2,1/1,2/2,3/3,6/6}
+			\draw[thin] (1pt,\y)--(-1pt,\y) node [left] {$\ny$};
+			\draw[thin] (3,1pt)--(3,-1pt) node [below right] {$3$};
+			\draw[dashed] (2,0)node[above]{$2$}--(2,-2)--(0,-2) (0,6)node[right]{$A$};
+			\clip (xmin,ymin) rectangle (xmax,ymax);
+			\draw  plot[domain=xmin:xmax] (\x, {f(\x)});
+		\end{tikzpicture}
+	\end{center}
+	Khi đó
+	\choiceTF
+	{Trục đối xứng của đồ thị hàm số là $x=-2$}
+	{\True Đỉnh $I$ của đồ thị hàm số có tọa độ là $(2;-2)$}
+	{\True Đồ thị hàm số đi qua điểm $A(0;6)$}
+	{Hàm số đã cho là $y=2x^2-2x+6 $} 
+	\loigiai{
+		\begin{itemize}
+			\item Trục đối xứng của đồ thị hàm số là $x=2$. 			
+			\item Đỉnh $I$ của đồ thị hàm số có tọa độ là $(2;-2)$
+			\item Đồ thị hàm số đi qua điểm $A(0;6)$
+			\item Hàm số có dạng $y=ax^2+bx+c$.\\
+			Đồ thị hàm số qua điểm $A(0;6)$ nên $c=6$.\\
+			Đồ thị qua điểm $(1;0)$ và $(3;0)$ nên ta có $\heva{&a+b+c=0\\&9a+3b+c=0}\Leftrightarrow \heva{&a+b=-6\\&9a+3b=-6}\Leftrightarrow \heva{&a=2\\&b=-8.}$\\
+			Hàm số đã cho là $y=2x^2-8x+6 $. Do đó \lq\lq Hàm số đã cho là $y=2x^2-2x+6 $\rq\rq\, không thỏa yêu cầu bài toán.
+		\end{itemize}
+	}
+\end{ex}
+
+%%%============EX_2==============%%%
+\begin{ex}%[0D7H3-2]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Mui Doan]%[Đề số 4-KNTT
+	Cho phương trình $\sqrt{2x^2+x-6}=x+2$. $\qquad(*)$\\
+	Khi đó
+	\choiceTF
+	{\True Bình phương hai vế phương trình ta được $x^2-3x-10=0$}
+	{Điều kiện xác định của phương trình $(*)$ là $x\geq 2$}
+	{\True Phương trình $(*)$ có $2$ nghiệm}
+	{Tổng bình phương các nghiệm của phương trình $(*)$ bằng $20$}
+	\loigiai{
+		\begin{itemize}
+			\item Bình phương $2$ vế phương trình ta được $2x^2+x-6=x^2+4x+4\Leftrightarrow x^2-3x-10=0$. Do đó \lq\lq Bình phương hai vế phương trình ta được $x^2-3x-10=0$\rq\rq\,thỏa mãn yêu cầu bài toán.
+			\item Điều kiện của phương trình là $2x^2+x-6\geq 0\Leftrightarrow \hoac{&x\leq 1\\&x\geq 2} $. Do đó \lq\lq Điều kiện của phương trình $(*)$ là $x\geq 2$\rq\rq\, không thỏa yêu cầu bài toán.
+			\item Do $x^2-3x-10=0\Leftrightarrow \hoac{&x=5\\&x=-2}$. Thử lại $x=5$ và $x=-2$ thỏa phương trình đã cho. Do đó \lq\lq Phương trình $(*)$ có $2$ nghiệm\rq\rq\, thỏa yêu cầu bài toán.
+			\item Tổng $5^2+(-2)^2=29$. Do đó \lq\lq Tổng bình phương các nghiệm của phương trình $(*)$ bằng $20$\rq\rq\,không thỏa yêu cầu bài toán.
+		\end{itemize}
+	}
+\end{ex}
+
+%%%============EX_3==============%%%
+\begin{ex}%[0H9H3-2]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Mui Doan]%[Đề số 4-KNTT
+	Trong mặt phẳng tọa độ $Oxy$, cho tam giác $DEF$ có $D(1;-1)$, $E(2;1)$, $F(3;5)$. Khi đó
+	\choiceTF
+	{Đường thẳng vuông góc với đường thẳng $EF$ nhận $\overrightarrow{EF}$ là một véc-tơ chỉ phương}
+	{Phương trình đường cao kẽ từ $D$ là $x + y = 0$}
+	{\True Gọi $I$ là trung điểm của $DF$. Tọa độ của điểm $I$ là $(2;2)$}
+	{\True Đường trung tuyến kẻ từ $E$ có phương trình là  $x- 2=0$}
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}
+				\path (0,0) coordinate (E)--+(3,0) coordinate (F)
+				(60:2) coordinate (D)				
+				($(E)!(D)!(F)$) coordinate (H)
+				($(D)!.5!(F)$) coordinate (I)
+				;
+				\path pic[draw,angle radius=5pt]{right angle= D--H--F};
+				\draw (D)--(E)--(F)--cycle (D)--(H) (E)--(I);
+				\foreach \t/\g in {E/180,F/0,D/90,H/-90,I/30}{
+					\draw[fill=black] (\t) circle (1pt) node[shift={(\g:7pt)},font=\scriptsize]{$ \t $};
+				}
+			\end{tikzpicture}
+		\end{center}
+		\begin{itemize}
+			\item Đường thẳng vuông góc với đường thẳng $EF$ nhận $\overrightarrow{EF}$ là một véc-tơ pháp tuyến.
+			\item Đường cao vẽ từ $D$ đi qua $D(1;-1)$ và có véc-tơ pháp tuyến là $\overrightarrow{EF}=(1;4)$ nên có phương trình $1\cdot (x-1)+4\cdot (y+1)=0\Leftrightarrow x+4y+3=0$. Do đó \lq\lq Phương trình đường cao kẽ từ $D$ là $x + y = 0$\rq\rq\, không thỏa yêu cầu bài toán.
+			\item Ta có $\heva{&x_I=\dfrac{1+3}{2}=2\\&y_I=\dfrac{-1+5}{2}=2}$. Suy ra $I(2;2)$.
+			\item Ta có $EI$ là trung tuyến của $\triangle DEF$. Đường thẳng $EI$ có véc-tơ chỉ phương là $\overrightarrow{EI}=(0;1)$ suy ra véc-tơ pháp tuyến của $EI$ là $\overrightarrow{n}=(1;0)$. Do đó phương trình của $EI$ là $x-2=0$.
+		\end{itemize}
+	}
+\end{ex}
+
+%%%============EX_4==============%%%
+\begin{ex}%[0H9H4-1]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Mui Doan]%[Đề số 4-KNTT
+	Xác định tính đúng, sai của các khẳng định sau
+	\choiceTF
+	{\True Cho $(C)\colon (x + 3)^2 + (y - 2)^2 = 4$, khi đó $(C)$ có tâm  $I(-3; 2)$ và bán kính $R = 2$}
+	{\True Cho $(C)\colon x^2 + y^2 = 1$, khi đó $(C)$ có tâm $O(0;0)$ và bán kính $R = 1$}
+	{Cho $(C)\colon x^2+y^2-6x +2y-6 = 0$, khi đó $(C)$ có tâm $I(3;-l)$ và bán kính $R =3$}
+	{Cho $(C)\colon x^2 + y^2 - 4x-5 = 0$, khi đó $(C)$ có tâm $I(2;0)$ và bán kính $R = 2$}
+	\loigiai{
+		\begin{itemize}
+			\item $(C)\colon (x + 3)^2 + (y - 2)^2 = 4$, khi đó $(C)$ có tâm  $I(-3; 2)$ và bán kính $R = 2$ là khẳng định đúng.
+			\item $(C)\colon x^2 + y^2 = 1$, khi đó $(C)$ có tâm $O(0;0)$ và bán kính $R = 1$  là khẳng định đúng.
+			\item $(C)\colon x^2+y^2-6x +2y-6 = 0$, khi đó $(C)$ có tâm $I(3;-l)$ và bán kính $R =\sqrt{3^2+(-1)^2+6}=4$. \\
+			Dó đó \lq\lq Cho $(C)\colon x^2+y^2-6x +2y-6 = 0$, khi đó $(C)$ có tâm $I(3;-l)$ và bán kính $R =3$\rq\rq\, là khẳng định sai.
+			\item $(C)\colon x^2 + y^2 - 4x-5 = 0$, khi đó $(C)$ có tâm $I(2;0)$ và bán kính $R = \sqrt{2^2+0^2+5}=3$.\\
+			Do đó \lq\lq Cho $(C)\colon x^2 + y^2 - 4x-5 = 0$, khi đó $(C)$ có tâm $I(2;0)$ và bán kính $R = 2$\rq\rq\, là khẳng định sai.
+		\end{itemize}
+	}
+\end{ex}
+
+%%%============EX_1==============%%%
+\Closesolutionfile{ans}
+\Closesolutionfile{ansbook}
+
+\begin{center}
+	\textbf{\textsf{BẢNG ĐÁP ÁN ĐÚNG SAI}}
+\end{center}
+\input{Ansbook/DapanDS}
+
+\subsection{Phần tự luận}
+
+\hienthiloigiaibt
+\begin{bt}%[0D3H2-1]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Nguyễn Tài Tuệ]%[Đề số 4-KNTT
+	Xác định hàm số bậc hai  $(P)\colon y=ax^2+bx+c$ có đồ thị là parabol và có giá trị lớn nhất bằng $1$ khi $x=2$, đồng thời $(P)$ đi qua điểm $M(4;-3)$.
+	\loigiai{
+		Theo giả thiết thì $-\dfrac{b}{2 a}=2 \Rightarrow 4 a+b=0$. \hfill (1)\\
+		Mà $(P)$ qua hai điểm $I(2 ; 1)$, $M(4 ;-3)$ nên $\heva{&4 a+2 b+c=1  &(2) \\& 16 a+4 b+c=-3. &  (3) } $ \\ Giải hệ (1), (2), (3)  $\heva{&a=-1 \\& b=4 \\& c=-3.}$ \\
+		Vậy hàm số được xác định  $y=-x^2+4 x-3$.
+	}
+\end{bt}
+\begin{bt}%[0D7V3-6]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Nguyễn Tài Tuệ]%[Đề số 4-KNTT
+	Cho mảnh vườn hình chữ nhật $ABCD$ có $AB=100$ m, $AD=200$ m. Gọi $M$, $N$ lần lượt là trung điểm của $AD$ và $BC$. Một người đi thẳng từ $A$ đến $E$ thuộc $MN$ với vận tốc $3$ m/s rồi đi thẳng từ $E$ đến $C$ với vận tốc $4$ m/s. Biết thời gian người đó đi từ $A$ đến $E$ bằng thời gian người đó đi từ $E$ đến $C$. Thời gian người đó đi từ $A$ đến $C$ là (kết quả được làm tròn tới chữ số hàng phần trăm).
+	\loigiai{
+		Ta mô hình hóa bài toán bằng hình bên\\
+		\begin{center}
+			\begin{tikzpicture}[scale=1,line cap=round,line join=round,font=\footnotesize,>=stealth]
+				\path
+				(0,0) coordinate (A)
+				($(A)+(-90:2)$)  coordinate (B)
+				($(A)+(0:4)$) coordinate (D)
+				($(B)+(0:4)$) coordinate (C)
+				($(A)!0.5!(D)$) coordinate (M)
+				($(B)!0.5!(C)$) coordinate (N)
+				($(M)!0.2!(N)$) coordinate (E)
+				;
+				\draw
+				(A)--(B)--(C)--(D)--(A) (M)--(N) (A)--(E)--(C);
+				%				\draw[dashed] (A)--(C);
+				\foreach \p/\r in {A/90, B/-90, C/-90, D/90,M/90,N/-90,E/-150}
+				\fill (\p) circle (1.25pt) node[shift={(\r:3mm)}]{$\p$};
+			\end{tikzpicture}
+		\end{center}
+		Ta có $A M=M N=N C=100$.\\
+		Gọi $M E=x \in[0 ; 100]$ thì $A E=\sqrt{100^2+x^2}$, $E N=100-x$, $E C=\sqrt{(100-x)^2+100^2}$.\\
+		Theo đề bài ta có $\dfrac{\sqrt{100^2+x^2}}{3}=\dfrac{\sqrt{(100-x)^2+100^2}}{4}$.\\
+		Suy ra $7 x^2+1800 x-20000=0$.\\
+		Giải phương trình ta được $x \approx 10,6685$ và $x \approx-267,8113$.\\
+		Thử lại ta tìm được nghiệm $x \approx 10,6685$.\\
+		Thời gian người đó đi từ $A$ tới $C$ là $67,04 s$.		
+		
+	}
+\end{bt}
+
+\begin{bt}%[0D7V3-4]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Nguyễn Tài Tuệ]%[Đề số 4-KNTT
+	Phương trình $(4x-1)\sqrt{x^2+1} =2x^2+2x+1$ có nghiệm $x=\dfrac{a}{b}$ trong đó $\dfrac{a}{b}$ là phân số tối giản. Tính $2a-3b$.
+	\loigiai{
+		Đặt $t=\sqrt{x^2+1} ~(t \geq 1) \Rightarrow t^2=x^2+1 \Rightarrow t^2-1=x^2$.\\
+		Phương trình đã cho trở thành
+		$(4x-1)t=2t^2+2x-1\Leftrightarrow 2t^2-(4x-1)t+2x-1=0\Leftrightarrow \hoac{&t=2x-1\\&t=\dfrac{1}{2}\text{(loại)}.}$ \\
+		Với $t=\sqrt{x^2+1}$ thì $\sqrt{x^2+1}=2 x-1 \Leftrightarrow\heva{&2 x-1 \geq 0 \\& x^2+1=(2 x-1)^2} \Leftrightarrow\heva{& x \geq \frac{1}{2} \\ &3 x^2-4 x=0}\Leftrightarrow x=\dfrac{4}{3}=\dfrac{a}{b}.$\\
+		Suy ra $a=4, b=3 \Rightarrow 2 a-3 b=-1$.
+	}
+\end{bt}
+\begin{bt}%[0H9H1-1]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Nguyễn Tài Tuệ]%[Đề số 4-KNTT
+	Trong mặt phẳng tọa độ $Oxy$, cho hai điểm $A(3;5)$, $B(1;0)$. Tìm tọa độ điểm $C$ sao cho $\overrightarrow{OC}=-3\overrightarrow{AB}$.
+	\loigiai{
+		Gọi $C\left(x_C ; y_C\right)$. Ta có  $\overrightarrow{O C}=\left(x_C ; y_C\right), \overrightarrow{A B}=(-2 ; 5) \Rightarrow-3 \overrightarrow{A B}=(6 ;-15)$;\\
+		Ta có $$
+		\overrightarrow{O C}=-3 \overrightarrow{A B} \Leftrightarrow\heva{&
+			x_C=6 \\
+			&y_C=-15} \Rightarrow C(6 ;-15).
+		$$
+	}
+\end{bt}
+\begin{bt}%[0H9H3-2]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Nguyễn Tài Tuệ]%[Đề số 4-KNTT
+	Viết phương trình đường thẳng $d$ song song với $\Delta \colon x+4y-2=0$ và cách điểm $A(-2;3)$ một khoảng bằng $3$.
+	\loigiai{
+		Ta có $d \parallel \Delta\colon x+4 y-2=0 \Rightarrow$ Phương trình $d$ có dạng  $x+4 y+c=0$.\\
+		Mặt khác 
+		\begin{eqnarray*}
+			&&\mathrm{d}(A, d)=3 \Rightarrow \dfrac{|-2+4\cdot 3+c|}{\sqrt{1+16}}=3\\ &\Rightarrow&|10+c|=3 \sqrt{17}	 
+			\Rightarrow\hoac{&c = 3\sqrt{17} - 10 \\& c = - 3 \sqrt {17}-10}\\
+			&\Rightarrow& \hoac{&
+				d_1: x+4 y+3 \sqrt{17}-10=0 \\
+				&d_2: x+4 y-3 \sqrt{17}-10=0.}
+		\end{eqnarray*}  
+		Vậy có hai đường thẳng thỏa mãn  $x+4 y+3 \sqrt{17}-10=0$; $x+4 y-3 \sqrt{17}-10=0$.
+	}
+\end{bt}
+\begin{bt}%[0H9H4-3]%[Dự án đề kiểm tra Toán khối 10-GKII-Năm học 23-24-đợt 2-Nguyễn Tài Tuệ]%[Đề số 4-KNTT
+	Trong hệ trục tọa độ $Oxy$, cho điểm $I(1;1)$ và đường thẳng $(d)\colon 3x+4y-2=0$. Tìm phương trình đường tròn tâm $I$ và tiếp xúc với đường thẳng $(d)$.
+	%	\shortans{$(x-1)^2+(y-1)^2=1$}
+	\loigiai{
+		Đường tròn tâm $I$ có bán kính $R$ và tiếp xúc với đường thẳng $(d)$  khi và chỉ khi 
+		$$
+		R=d(I, d)=\frac{|3\cdot 1+4\cdot 1-2|}{\sqrt{3^2+4^2}}=1
+		$$ 	 
+		\noindent  Vậy đường tròn có phương trình là  $(x-1)^2+(y-1)^2=1$.
+	}
+\end{bt}
+ 
+ 
+ 

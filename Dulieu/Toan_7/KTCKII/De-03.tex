@@ -1,0 +1,266 @@
+%%%Tùy chọn 1: Kì thi
+%%%Tùy chọn 2: Môn
+%%%Tùy chọn 3: lớp
+%%%Tùy chọn 4: Sở/Phòng
+%%%Tùy chọn 5: Ngày thi
+%\pgfmathtruncatemacro{\x}{random(101,401)}
+\begin{name}[Kiểm tra giữa kì II][Toán][7][Sở Giáo dục và Đào tạo]{Trường THCS Số 2 Mỹ Lợi }{2023 - 2024}
+\end{name}
+\tieumuc{Trắc nghiệm (3 điểm)}
+\Opensolutionfile{ans}[Ans/DATN-7CKII-De-03]
+%\luuloigiaiex
+%\hienthiloigiaiex
+\taoNdongke[4]{ex}
+\Opensolutionfile{ansex}[LOIGIAITN/LGTN-7CKII-De-03]
+%%%============EX_1==============%%%
+\begin{ex}[NB]\immini{Loại nước uống được các bạn học sinh lớp 7A yêu thích nhất là:
+		\choice[2]
+		{Nước chanh}
+		{Nước suối}
+		{Trà sữa}
+		{\True Nước cam}}{%
+		\begin{tikzpicture}[line join=round,line cap=round,font=\scriptsize,declare function={R=2.5cm;r=0.67*R;h=0.6*R;}]
+			\tikzset{pics/.cd,
+				chuthich/.style args={#1}{code={
+						\draw [fill=#1] (0:0.5) arc (0:45:0.5)--(0,0)--cycle;
+				}}
+			}
+			\pgfmathsetmacro{\mysum}{90}
+			\foreach \i/\mau [evaluate=\i as \goc using (3.6*\i)] in {25/\mauphu,30/cyan,25/orange,10/gray!50!black,10/red!70!blue}
+			{\path[fill=\mau,draw=white,thick] (\mysum:R) arc (\mysum:\mysum+\goc:R)--(0,0)--cycle;
+				\pgfmathsetmacro{\tb}{\mysum+0.5*\goc}
+				\path (\tb:r) node[fill=white,inner sep=1pt]{\i\%};
+				\pgfmathsetmacro{\mysum}{\mysum+\goc}
+				\xdef\mysum{\mysum}
+			}
+			\foreach \n/\p/\c/\x in {1/1*h/\mauphu/nước chanh,2/0.5*h/cyan/nước cam,3/0*h/orange/chuối,4/-0.5*h/gray!50!black/trà sữa,2/-1*h/red!70!blue/sinh tố}{%
+				\pic[local bounding box=gc\n] at (3,\p) {chuthich={\c}};
+				\node [right=3pt of gc\n,anchor= mid west ] {\x};
+			}
+	\end{tikzpicture}}
+	\loigiai{}
+\end{ex}
+%%%============EX_2==============%%%
+\begin{ex}[NB]
+	Gieo ngẫu nhiên xúc xắc một lần, kết quả có thể xảy ra đối với mặt xuất hiện là mặt 1 chấm, mặt 2 chấm, mặt 3 chấm, mặt 4 chấm, mặt 5 chấm, mặt 6 chấm. Xét biến cố \lq\lq Mặt xuất hiện của xúc xắc có số chấm là số lẻ\rq\rq thì xác suất của biến cố này là
+	\choice 
+	{$\dfrac{4}{6}$}
+	{$\dfrac{1}{6}$}
+	{$\dfrac{5}{6}$}
+	{\True $\dfrac{3}{6}$}
+	\loigiai{}
+\end{ex}
+%%%============EX_3==============%%%
+\begin{ex}[NB]
+Dựa vào bảng số liệu sau, hãy cho biết trong năm 2019, ngành dệt may Việt Nam đạt kim ngạch xuất khẩu là bao nhiêu?\\
+\begin{center}
+	\begin{tabular}{|c|*{4}{C{0.17\textwidth}|}}
+	\hline \rowcolor{\mauphu!20}\textbf { Năm } & \textbf{2 0 1 7} & \textbf{2 0 1 8} & \textbf{2 0 1 9} & \textbf{2 0 2 0} \\
+	\hline \text { Ngành dệt may } & 31,8 & 36,2 & 38,8 & 35,0 \\
+	\hline
+	\end{tabular}
+\end{center}
+\choice
+{31,8}
+{36,2}
+{\True 38,8}
+{35,0}
+\loigiai{}
+\end{ex}
+%%%============EX_4==============%%%
+\begin{ex}[NB]
+	Một hình chữ nhật có chiều dài là $5\mathrm{~cm}$, chiều rộng $3\mathrm{~cm}$. Biểu thức nào sau đây biểu thị chu vi của hình chữ nhật đó:
+	\choice
+	{$5+3$}
+	{$5\cdot3$}
+	{$2\cdot5+3$}
+	{\True$2\cdot(5+3)$}
+	\loigiai{}
+\end{ex}
+%%%============EX_5==============%%%
+\begin{ex}[NB]
+Trong các biểu thức sau, biểu thức nào là đơn thức một biến:
+\choice
+{$\dfrac{2}{5}$+x $^2$ y $^2$}
+{\True$2x$}
+{$1-\dfrac{5}{9} x^2$}
+{$3x^2y^3z$}
+\loigiai{}
+\end{ex}
+%%%============EX_6==============%%%
+\begin{ex}[NB]
+Đa thức nào sau đây là đa thức một biến?
+\choice
+{$x^2 y+3x-5$}
+{$2xy-3x+1$}
+{\True$2x^3-3x+1$}
+{$2x^3-4z+1$}
+\loigiai{}
+\end{ex}
+%%%============EX_7==============%%%
+\begin{ex}[NB]$x=1$ là nghiệm của đa thức:
+	\choice 
+	{$x+1$}
+	{\True$x-1$}
+	{$x^3+1$}
+	{$x^2+1$}
+	\loigiai{}
+\end{ex}
+%%%============EX_8==============%%%
+\begin{ex}[NB]
+Bậc của đa thức $P(x)=-x^5-3x^4-x^2+3$ là
+	\choice 
+	{\True$5$}
+	{$4$}
+	{$2$}
+	{$3$}
+\loigiai{}
+\end{ex}
+%%%============EX_9==============%%%
+\begin{ex}[NB]\immini{%
+		Các tam giác cân trong hình vẽ dưới đây là
+		\choice
+		{$\triangle MNP;\; \triangle MNQ$}
+		{\True$\triangle MNP;\; \triangle PMQ$}
+		{$\triangle MPQ;\; \triangle MNQ$}
+		{$\triangle MPQ$}
+		}{%
+		\begin{tikzpicture}[declare function={r=3cm;gm=120;gh=180-2*(180-gm);}, font=\scriptsize\bfseries\sffamily]
+			\path (0,0) coordinate (P)
+			 (0:r) coordinate (Q)
+			 (gm:r) coordinate (M)
+			 ($(M)!1!-gh:(P)$) coordinate (N)
+			;
+			\foreach \x/\y in {M/N,M/P,P/Q}{
+				\path[draw=cyan] (\x)--(\y) node[pos=0.5,midway,sloped]{\tikz{
+				\draw (0pt,0pt)--(0pt,4pt) (1.5pt,0pt)--(1.5pt,4pt);
+			}};
+			}
+			
+			\draw (N)--(M)--(Q)--cycle (M)--(P);
+			\foreach \d/\g in {P/-90,Q/-45,M/90,N/-165}{
+			 \path[draw=black,fill=red] (\d) circle (1.3pt) node [shift={(\g:7pt)}]{\d};
+			}
+		\end{tikzpicture}
+		}
+	\loigiai{}
+\end{ex}
+%%%============EX_10==============%%%
+\begin{ex}[NB]
+\immini{%
+	Cho ba điểm $A, B, C$ thẳng hàng và $B$ nằm giữa $A$ và $C$.Trên đường thẳng vuông góc với $AC$ tại $B$ ta lấy điểm $H$. Khi đó:
+	\choice
+	{$AH<BH$}
+	{$AH<AB$}
+	{\True$AH>BH$}
+	{$AH=BH$}
+	}{%
+	 \begin{tikzpicture}[declare function={r=2;}]
+	  \path(0,0) coordinate (A)
+	  (r,0) coordinate (B)
+	  ({2.5*r},0) coordinate (C)
+	  ($(B)!1!90:(C)$)  coordinate (H)
+	  ;
+	  \path pic[draw,angle radius=5pt,fill=cyan!15]{right angle= H--B--A};
+	  \draw (A)--(B)--(C)--(H)--cycle (H)--(B);
+	  \foreach \d/\g in {A/-175,B/-90,C/-15,H/90}{
+	  	\path[draw=black,fill=red] (\d) circle (1.3pt) node [shift={(\g:7pt)}]{\d};}
+	 \end{tikzpicture}
+	}
+	\loigiai{}
+\end{ex}
+%%%============EX_11==============%%%
+\begin{ex}[NB]
+Cho tam giác $EHK$ có: $EH< EK, EF\bot HK$ tại $F$. Chọn câu đúng:
+	\choice
+	{$FH=FK$}
+	{$FH> FK$}
+	{\True$FH< FK$}
+	{$FH\ge FK$}
+\loigiai{}
+\end{ex}
+%%%============EX_12==============%%%
+\begin{ex}[NB]
+Các đường cao của tam giác ABC cắt nhau tại H thì:
+	\choice
+	{Điểm H là trọng tâm của tam giác ABC}
+	{Điểm H cách đều ba cạnh của tam giác ABC}
+	{Điểm H cách đều ba đỉnh của tam giác ABC}
+	{\True Điểm H là trực tâm của tam giác ABC}
+	\loigiai{}
+\end{ex}
+\Closesolutionfile{ansex}
+\Closesolutionfile{ans}
+
+%%%==========Phần trắc nghiệm đúng sai============%%%
+
+%\tieumuc{Bài Tập Trắc Nghiệm Đúng Sai}-- \textit{Trong mỗi câu có 4 ý tương ứng A, B, C, D; Học sinh chọn đúng hoặc sai.}
+%\Opensolutionfile{ans}[Ans/DATAM1]
+%\Opensolutionfile{ansbook}[Ans/DATNTF-1]
+%\luulgEXTF
+%\Opensolutionfile{ansex}[LOIGIAITN/LGTNTF-1]
+%
+%
+%\Closesolutionfile{ansex}
+%\Closesolutionfile{ansbook}
+%\Closesolutionfile{ans}	
+
+%%%==========Phần tự luận============%%%
+\tieumuc{Tự Luận (7 điểm)}
+\Opensolutionfile{ansbt}[LOIGIAITL/LGTL-7CKII-De-03]
+%\luuloigiaibt
+\taoNdongke[10]{bt}
+%%%==============BT_1==============%%%
+\begin{bt}[2,0 điểm]
+	Cho hai đa thức: $P(x)=2 x^2+5 x-1$ và $Q(x)=2 x^2-5 x-7$
+	\begin{enumerate}
+		\item Tính $P(x)+Q(x)$
+		\item Tính $P(x)-Q(x)$
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+\taoNdongke[10]{bt}
+%%%==============BT_2==============%%%
+\begin{bt}[1,5 điểm]
+	Tính
+	\begin{enumerate}
+		\item $(x+3)(x-1)$
+		\item $\left(3x^3-2x^2\right):(3x^2)$
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+\taoNdongke[20]{bt}
+%%%==============BT_3==============%%%
+\begin{bt}[2,5 điểm]
+	Cho tam giác $ABC$ cân tại $A$, hai đường cao $BD$ và $CE$ cắt nhau tại $H$.
+	\begin{enumerate}
+		\item Chứng minh $\triangle BCD=\triangle CBE$
+		\item Chứng minh tam giác $BHC$ cân.
+		\item Chứng minh tia $AH$ là tia phân giác của góc $BAC$.
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+\taoNdongke[10]{bt}
+%%%==============BT_4==============%%%
+\begin{bt}[1.0 điểm]Có một mảnh gỗ hình tròn cần đục một lỗ ở tâm, làm thế nào để xác định được tâm của mảnh gồ đó.
+\loigiai{}
+\end{bt}
+\Closesolutionfile{ansbt}
+
+\fileend
+
+
+\begin{center}
+	\rule[4pt]{2cm}{1pt}\large \textbf{HẾT}\rule[4pt]{2cm}{1pt}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+

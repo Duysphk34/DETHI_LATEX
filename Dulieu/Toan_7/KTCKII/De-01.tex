@@ -1,0 +1,287 @@
+%%%Tùy chọn 1: Kì thi
+%%%Tùy chọn 2: Môn
+%%%Tùy chọn 3: lớp
+%%%Tùy chọn 4: Sở/Phòng
+%%%Tùy chọn 5: Ngày thi
+\begin{name}[Kiểm tra giữa kì II][Toán][7][Sở Giáo dục và Đào tạo]{Trường THCS Số 2 Mỹ Lợi }{2023 - 2024}
+\end{name}
+\tieumuc{Trắc nghiệm (3 điểm)}
+\Opensolutionfile{ans}[Ans/DATN-7CKII-De-01]
+%\luuloigiaiex
+%\hienthiloigiaiex
+\taoNdongke[4]{ex}
+%\tatloigiaiex
+\Opensolutionfile{ansex}[LOIGIAITN/LGTN-7CKII-De-01]
+%%%============EX_1==============%%%
+\begin{ex}
+	Gieo một xúc xắc đồng chất ngẫu nhiên một lần. Xác suất của biến cố \lq\lq Mặt xuất hiện ba chấm của xúc xắc\rq\rq là:
+	\choice
+	{\True $\dfrac{1}{6}$}
+	{$\dfrac{1}{4}$}
+	{$1$}
+	{$\dfrac{1}{3}$}
+	\loigiai{}
+\end{ex}
+%%%============EX_2==============%%%
+\begin{ex}
+	Biểu thức nào sau đây là đơn thức?
+	\choice
+	{2x+5y}
+	{x--8y}
+	{\True 2xy}
+	{$\dfrac{x}{y}$}
+	\loigiai{}
+\end{ex}
+%%%============EX_3==============%%%
+\begin{ex}
+	Biểu thức nào sau đây không phải là biểu thức đại số:
+	\choice
+	{$5xy$}
+	{$4x-2y ^3$}
+	{\True $\dfrac{3x}0$}
+	{5 $.\dfrac{1}{2}-7$}
+	\loigiai{}
+\end{ex}
+%%%============EX_4==============%%%
+\begin{ex}
+	Biểu thức nào sau đây là đa thức một biến?
+	\choice
+	{$x+7xy$}
+	{$x^5-5y$}
+	{\True x $^2+9$}
+	{$\dfrac{1}{x}+13x-5$}
+	\loigiai{}
+\end{ex}
+%%%============EX_5==============%%%
+\begin{ex}
+	Đa thức $3x-4$ có nghiệm là:
+	\choice
+	{x=2}
+	{\True x=$\dfrac{4}{3}$}
+	{x=$\dfrac{3}{4}$}
+	{x=$-\dfrac{4}{3}$}
+	\loigiai{}
+\end{ex}
+%%%============EX_6==============%%%
+\begin{ex}
+	Dựa vào bất đẳng thức tam giác, kiểm tra xem bộ ba nào trong các bộ ba đoạn thẳng có độ dài cho sau đây là ba cạnh của một tam giác?
+	\choice
+	{1cm; 3cm; 6cm}
+	{2cm; 5cm; 7cm}
+	{\True 2cm; 4cm; 5cm}
+	{8cm; 5cm; 1cm}
+	\loigiai{}
+\end{ex}
+%%%============EX_7==============%%%
+\begin{ex}
+	Tam giác $ABC$ và tam giác $MNP$ có $AB=NM$, $\widehat{B}=\widehat{M}$, $BC=MP$. Khi đó cách viết nào sau đây để hai tam giác bằng nhau theo trường hợp cạnh-góc-cạnh là đúng:
+	\choice
+	{$\triangle ABC$=$\triangle MNP$}
+	{$\triangle ABC$=$\triangle PMN$}
+	{$\triangle ABC$=$\triangle NPM$}
+	{\True $\triangle ABC$=$\triangle NMP$}
+	\loigiai{}
+\end{ex}
+%%%============EX_8==============%%%
+\begin{ex}
+	Cho đa thức P=x $^3$+5x+2+3x $^2$--x+x $^2$. Hệ số cao nhất của đa thức P(x) là:
+	\choice
+	{\True $1$}
+	{$5$}
+	{$4$}
+	{$3$}
+	\loigiai{}
+\end{ex}
+%%%============EX_9==============%%%
+\begin{ex}
+	Các đường cao của tam giác ABC cắt nhau tại H thì
+	\choice
+	{điểm H là trọng tâm của tam giác ABC}
+	{điểm H cách đều ba cạnh tam giác ABC}
+	{điểm H cách đều ba đỉnh A, B,C}
+	{\True điểm H là trực tâm của tam giác ABC}
+	\loigiai{}
+\end{ex}
+%%%============EX_10==============%%%
+\begin{ex}
+	\immini{%
+		Cho hình \ref{fig:image-de01-01} \label{fig:image-de01-01}, với G là trọng tâm của $\triangle ABC$. Tỉ số giữa GD và AD là
+		\choice
+		{\True$\dfrac{1}{3}$}
+		{$\dfrac{2}{3}$}
+		{$2$}
+		{$\dfrac{1}{2}$}
+		}{%
+		 \begin{tikzpicture}[declare function={r=5;}]
+		 	\path (0,0) coordinate (B)
+		 	(r,0) coordinate (C)
+		 	($(B)!0.5!(C)$) coordinate (D)
+		 	(D)--++(110:{r-1}) coordinate (A)
+		 	($(A)!0.5!(C)$) coordinate (E)
+		 	($(A)!0.5!(B)$) coordinate (F)
+		 	(intersection of B--E and C--F) coordinate (G)
+		 	;
+		 	\draw[cyan!50!black,line width=1.2pt](A)--(B)--(C)--cycle;
+		 	\draw[blue!35!black](A)--(D)(B)--(E)(C)--(F);
+		 	
+		 	\foreach \x/\y in {A/F,F/B}{
+		 		\path[draw=cyan] (\x)--(\y) node[pos=0.5,midway,sloped]{\tikz{
+		 			\draw (0pt,0pt)--(0pt,4pt) (1.5pt,0pt)--(1.5pt,4pt);
+		 		}};
+		 	}
+		 	
+		 	\foreach \x/\y in {B/D,D/C}{
+		 		\path[draw=cyan] (\x)--(\y) node[pos=0.5,midway,sloped]{\tikz{
+		 				\draw (0pt,0pt)--(0pt,4pt) (1.5pt,0pt)--(1.5pt,4pt) (3pt,0pt)--(3pt,4pt);
+		 		}};
+		 	}
+		 	
+		 	\foreach \x/\y in {A/E,E/C}{
+		 		\path[draw=cyan] (\x)--(\y) node[pos=0.5,midway,sloped]{\tikz{
+		 				\draw (0pt,0pt)--(0pt,4pt);
+		 		}};
+		 	}
+		 	\path (D)--++(-90:{r-4}) node {Hình \ref{fig:image-de01-01}};
+		 	\foreach \d/\g in {A/90,B/200,C/-15,D/-90,E/45,F/155,G/-100}{
+		 		\path[draw=black,fill=red] (\d) circle (1.3pt) node [shift={(\g:7pt)}]{\d};}
+		 \end{tikzpicture}
+		}
+	\loigiai{}
+\end{ex}
+%%%============EX_11==============%%%
+\begin{ex}
+	Đa thức 2x $^3$-5x+1 có bậc bằng
+	\choice
+	{$4$}
+	{\True $3$}
+	{$2$}
+	{$1$}
+	\loigiai{}
+\end{ex}
+%%%============EX_12==============%%%
+\begin{ex} \immini{%
+	Trong Hình \ref{fig:image-de01-02} \label{fig:image-de01-02}, điểm D là:
+	\choice
+	{\True Giao điểm ba đường trung tuyến tam giác ABC}
+	{Giao điểm ba đường cao của tam giác ABC}
+	{Giao điểm ba đường phân giác của tam giác ABC}
+	{Giao điểm ba đường trung trực của tam giác AB}
+	}{%
+	 \begin{tikzpicture}[declare function={r=5;}]
+	 	\path (0,0) coordinate (B)
+	 	(r,0) coordinate (C)
+	 	($(B)!0.5!(C)$) coordinate (Dt)
+	 	(1,4) coordinate (A)
+	 	($(A)!0.5!(C)$) coordinate (E)
+	 	($(A)!0.5!(B)$) coordinate (F)
+	 	(intersection of B--E and C--F) coordinate (D)
+	 	;
+	 	\draw[gray!30] (-1,-1) grid (6,5);
+	 	\draw[cyan!50!black,line width=1.2pt](A)--(B)--(C)--cycle;
+	 	\draw[blue!35!black](A)--(Dt)(B)--(E)(C)--(F);
+	 	\path (Dt)--++(-90:{r-3.5}) node {Hình \ref{fig:image-de01-02}};
+	 	\foreach \d/\g in {A/90,B/200,C/-15,D/-100}{
+	 		\path[draw=black,fill=red] (\d) circle (1.3pt) node [shift={(\g:7pt)}]{\d};}
+	 \end{tikzpicture}
+	}
+	\loigiai{}
+\end{ex}
+
+\Closesolutionfile{ansex}
+\Closesolutionfile{ans}
+
+%%%==========Phần trắc nghiệm đúng sai============%%%
+
+%\tieumuc{Bài Tập Trắc Nghiệm Đúng Sai}-- \textit{Trong mỗi câu có 4 ý tương ứng A, B, C, D; Học sinh chọn đúng hoặc sai.}
+%\Opensolutionfile{ans}[Ans/DATAM1]
+%\Opensolutionfile{ansbook}[Ans/DATNTF-1]
+%\luulgEXTF
+%\Opensolutionfile{ansex}[LOIGIAITN/LGTNTF-1]
+%
+%
+%\Closesolutionfile{ansex}
+%\Closesolutionfile{ansbook}
+%\Closesolutionfile{ans}	
+
+%%%==========Phần tự luận============%%%
+\tieumuc{Tự Luận (7 điểm)}
+\Opensolutionfile{ansbt}[LOIGIAITL/LGTL-7CKII-De-01]
+%\luuloigiaibt
+\hienthiloigiaibt
+\taoNdongke[15]{bt}
+%%%==============BT_1==============%%%
+\begin{bt}[1 điểm]
+	Gieo ngẫu nhiên xúc xắc một lần. Tìm số phần tử của tập hợp $A$ gồm các kết quả có thể xảy ra đối với mặt xuất hiện của xúc xắc. Khả năng xuất hiện từng mặt là bao nhiêu?
+	\loigiai{%
+		\par\noindent Tập hợp gồm các kết quả xảy ra đối với mặt xuất hiện của xúc xắc là: \[A=\{\text{ mặt 1 chấm, mặt 2 chấm, mặt 3 chấm, mặt 4 chấm, mặt 5 chấm, mặt 6 chấm}\}\].
+	\noindent Khả năng xuất hiện của từng mặt là như nhau. Vậy khả năng xuất hiện của mỗi mặt là $\dfrac{1}{6}$.
+	}
+\end{bt}
+
+%%%==============BT_2==============%%%
+\begin{bt}[3,0 điểm]
+	\begin{enumerate}
+		\item Tính giá trị của biểu thức $3x^2y-2x y+1$ tại $x=1; y=-2$.
+		\item Sắp xếp đa thức $-6x^2+4x+8x^5-3$ theo số mũ giảm dần của biến.
+		\item Tính tổng của hai đa thức $A(x)=5x^3+3x^2-2x+1$ và $B(x)=-2x^3+5x-4$.
+	\end{enumerate}
+	\loigiai{
+	\begin{itemize}
+		\item Tính giá trị của đa thức $3x^2 y-2xy+1$ tại $x=1;y=-2$
+		Giá trị đa thức là:-1
+		\item Sắp xếp đa thức $-6x^2+4x+8x^5-3$ theo số mũ giảm dần của biến\\
+		$-6x^2+4x+8x^5-3=8x^5-6x^2+4x-3$
+		\item Tính tổng của hai đa thức $A(x)=5x^3+3x^2-2x+1$ và $B(x)=-2x^3+5x-4$.\\
+		$A(x)+B(x)=3x^3+3x^2+3x-3$
+	\end{itemize}
+	}
+\end{bt}
+
+%%%==============BT_3==============%%%
+\begin{bt}[2 điểm]
+	Cho tam giác $ABC$ có $BAC=50^{\circ}, ACB=70^{\circ}$. Điểm I nằm trong tam giác thoả mãn góc $IAB=25^{\circ}$, góc $ICB=35^{\circ}$.
+	\begin{enumerate}
+		\item Chứng minh rằng tia $CI$ là tia phân giác của góc $ACB$.
+		\item Gọi $D, E, F$ lần lượt là hình chiếu vuông góc của $I$ lên các đường thẳng $BC, CA, AB$. Chứng minh rằng $I$ là giao điểm của ba đường trung trực của tam giác $DEF$.
+	\end{enumerate}
+	\loigiai{
+	\begin{enumerate}
+		\item Ta có: gócICB=35 $^0$=góc ICA=½ gócACB, tia CI nằm trong góc ACB.\\
+		Do đó, CI là tia phân giác của góc ACB.
+		\item Vì I thuộc tia phân giác của góc ACB nên ID=IE.\\
+		Vì I thuộc tia phân giác của góc ABC nên ID=IF.\\
+		Do đó, ID=IE=IF.\\
+		Suy ra, I là giao điểm của ba đường trung trực của tam giác DEF.
+	\end{enumerate}
+	}
+\end{bt}
+
+%%%==============BT_4==============%%%
+\begin{bt}[1 điểm]
+	Gia đình Bác Hà muốn mua một căn nhà ở trung tâm thành phố Hà Tĩnh để thuận tiện cho việc mua sắm, đi học của các con, và khám bệnh khi cần thiết sao cho khoảng cách từ căn nhà đó đến siêu thị, bệnh viện, trường học, đều bằng nhau. Em hãy giúp Bác năm xác định vị trí căn nhà cần mua ở đâu?
+	\loigiai{
+	Gọi A, B, C là ba điểm tương ứng với 3 địa điểm đánh dấu trên hình.\\
+	Vì A, B, C là ba điểm không thẳng hàng nên chúng tạo thành một tam giác ($\Delta$ ABC).\\
+	Gọi O là vị trí của căn nhà cách đều ba địa điểm được minh họa trong hình trên.\\
+	Vì điểm O cách đều 3 điểm A, B, C, nên OA=OB=OC\\$\Rightarrow$ O là giao điểm của ba đường trung trực trong $\Delta$ ABC.\\ Vậy vị trí cách đều ba địa điểm đã cho là giao điểm của ba đường trung trực của tam giác mà chúng tạo thành.
+	}
+\end{bt}
+
+\Closesolutionfile{ansbt}
+
+\fileend
+
+\begin{center}
+	\rule[4pt]{2cm}{1pt}\large \textbf{HẾT}\rule[4pt]{2cm}{1pt}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+

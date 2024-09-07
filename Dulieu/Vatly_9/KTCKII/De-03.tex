@@ -1,0 +1,397 @@
+%%%Tùy chọn 1: Kì thi
+%%%Tùy chọn 2: Môn
+%%%Tùy chọn 3: lớp
+%%%Tùy chọn 4: Sở/Phòng
+%%%Tùy chọn 5: Ngày thi
+\begin{name}[Kiểm tra cuối kì II][Vật lý][9][Sở Giáo dục và Đào tạo]{Trường THCS}{2023 - 2024}
+\end{name}
+\tieumuc{Trắc nghiệm (4 điểm)}
+\Opensolutionfile{ans}[Ans/DATN-VL9CKII-De-03]
+%\luuloigiaiex
+\hienthiloigiaiex
+%\taoNdongke[4]{ex}
+%\tatloigiaiex
+\Opensolutionfile{ansex}[LOIGIAITN/LGTN-VL9CKII-De-03]
+%%%=============EX_1=============%%%
+\begin{ex}
+	Trên hình vẽ (xem hình \ref{fig:hinh03}),hình nào vẽ đúng đường đi của tia khúc xạ khi chiếu chùm tia tới SI từ không khí đến mặt nước.
+	\begin{figure}[!thb]
+		\begin{center}
+			\subcaptionbox{\label{subfig:at}}{
+				\begin{tikzpicture}[declare function={r=3.2;h=1.3cm;i=50;}]
+					\path(0,0) coordinate (P)
+					(r,0) coordinate (Q)	
+					($(r,0)+(0,-h)$) coordinate (C)
+					($(P)!0.5!(Q)$) coordinate (I)
+					($(I)+(0,h)$) coordinate (N)
+					($(I)+(0,-h)$) coordinate (M)
+					($(I)!1.3!i:(N)$) coordinate (S)
+					($(I)!1.1!{i-25}:(M)$) coordinate (R)
+					;
+					\draw[red,line width=1pt] (S)--(I);
+					\draw[red,line width=1pt] (I)--(R);
+					\foreach \x/\y in {S/I,I/R}{
+						\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+								\path[fill=red] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+						}};
+					}
+					\draw[gray,line width=0.5pt] ([yshift=-h]I)--([yshift=h]I);
+					\path[fill=cyan!30,opacity=0.3] (P) rectangle (C);
+					\draw[cyan,line width=1pt] (P)--(Q);
+					\foreach \t/\g in {P/200,Q/0,N/90,M/-90,I/45,S/120}{
+						\path (\t)  node[shift={(\g:5pt)},font=\scriptsize]{$ \t $};
+					}
+				\end{tikzpicture}
+			}\hspace{0.25cm}
+			\subcaptionbox{\label{subfig:bt}}{
+				\begin{tikzpicture}[declare function={r=3.2;h=1.3cm;i=50;}]
+					\path(0,0) coordinate (P)
+					(r,0) coordinate (Q)	
+					($(r,0)+(0,-h)$) coordinate (C)
+					($(P)!0.5!(Q)$) coordinate (I)
+					($(I)+(0,h)$) coordinate (N)
+					($(I)+(0,-h)$) coordinate (M)
+					($(I)!1.3!i:(N)$) coordinate (S)
+					($(I)!1.53!{i-0}:(M)$) coordinate (R)
+					;
+					\draw[red,line width=1pt] (S)--(I);
+					\draw[red,line width=1pt] (I)--(R);
+					\foreach \x/\y in {S/I,I/R}{
+						\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+								\path[fill=red] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+						}};
+					}
+					\draw[gray,line width=0.5pt] ([yshift=-h]I)--([yshift=h]I);
+					\path[fill=cyan!30,opacity=0.3] (P) rectangle (C);
+					\draw[cyan,line width=1pt] (P)--(Q);
+					\foreach \t/\g in {P/200,Q/0,N/90,M/-90,I/45,S/120}{
+						\path (\t)  node[shift={(\g:5pt)},font=\scriptsize]{$ \t $};
+					}
+				\end{tikzpicture}
+			}\hspace{0.25cm}
+			\subcaptionbox{\label{subfig:ct}}{
+				\begin{tikzpicture}[declare function={r=3.2;h=1.3cm;i=48;}]
+					\path(0,0) coordinate (P)
+					(r,0) coordinate (Q)	
+					($(r,0)+(0,-h)$) coordinate (C)
+					($(P)!0.5!(Q)$) coordinate (I)
+					($(I)+(0,h)$) coordinate (N)
+					($(I)+(0,-h)$) coordinate (M)
+					($(I)!1.3!i:(N)$) coordinate (S)
+					($(I)!1.36!{i+15}:(M)$) coordinate (R)
+					;
+					\draw[red,line width=1pt] (S)--(I);
+					\draw[red,line width=1pt] (I)--(R);
+					\foreach \x/\y in {S/I,I/R}{
+						\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+								\path[fill=red] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+						}};
+					}
+					\draw[gray,line width=0.5pt] ([yshift=-h]I)--([yshift=h]I);
+					\path[fill=cyan!30,opacity=0.3] (P) rectangle (C);
+					\draw[cyan,line width=1pt] (P)--(Q);
+					\foreach \t/\g in {P/200,Q/0,N/90,M/-90,I/45,S/120}{
+						\path (\t)  node[shift={(\g:5pt)},font=\scriptsize]{$ \t $};
+					}
+				\end{tikzpicture}
+			}\hspace{0.25cm}
+			\subcaptionbox{\label{subfig:dt}}{
+				\begin{tikzpicture}[declare function={r=3.2;h=1.3cm;i=50;}]
+					\path(0,0) coordinate (P)
+					(r,0) coordinate (Q)	
+					($(r,0)+(0,-h)$) coordinate (C)
+					($(P)!0.5!(Q)$) coordinate (I)
+					($(I)+(0,h)$) coordinate (N)
+					($(I)+(0,-h)$) coordinate (M)
+					($(I)!1.3!i:(N)$) coordinate (S)
+					($(I)!1.56!{-i}:(M)$) coordinate (R)
+					;
+					\draw[red,line width=1pt] (S)--(I);
+					\draw[red,line width=1pt] (I)--(R);
+					\foreach \x/\y in {S/I}{
+						\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+								\path[fill=red] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+						}};
+					}
+					\foreach \x/\y in {I/R}{
+						\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+								\path[fill=red] (0,-2pt)--(0,2pt)--(-4pt,0)--cycle;
+						}};
+					}
+					\draw[gray,line width=0.5pt] ([yshift=-h]I)--([yshift=h]I);
+					\path[fill=cyan!30,opacity=0.3] (P) rectangle (C);
+					\draw[cyan,line width=1pt] (P)--(Q);
+					\foreach \t/\g in {P/200,Q/0,N/90,M/-90,I/45,S/120}{
+						\path (\t)  node[shift={(\g:5pt)},font=\scriptsize]{$ \t $};
+					}
+				\end{tikzpicture}
+			}
+		\end{center}
+		\caption{\label{fig:hinh03}}
+	\end{figure}
+	\choice
+	{Hình \ref{subfig:ct} }
+	{\True Hình \ref{subfig:at}}
+	{Hình \ref{subfig:bt}}
+	{Hình \ref{subfig:dt}}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_2=============%%%
+\begin{ex}
+	Để truyền đi cùng một công suất điện, nếu đường dây tải điện dài gấp đôi thì công suất hao phí vì tỏa nhiệt sẽ
+	\choice
+	{\True tăng 2 lần}
+	{tăng 4 lần}
+	{giảm 2 lần}
+	{không tăng, không giảm}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_3=============%%%
+\begin{ex}
+	Có một tia sáng chiếu từ không khí xiên góc vào mặt nước thì
+	\choice
+	{góc khúc xạ sẽ lớn hơn góc tới}
+	{góc khúc xạ sẽ bằng góc tới}
+	{\True góc khúc xạ sẽ nhỏ hơn góc tới}
+	{cả ba trường hợp A, B, C đều có thể xảy ra}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_4=============%%%
+\begin{ex}
+	Đặt vào hai đầu cuộn sơ cấp của máy biến áp một hiệu điện thế 50 V thì hiệu điện thế giữa hai đầu cuộn thứ cấp là 100 V. Biết cuộn thứ cấp có 500 vòng dây. Số vòng dây của cuộn sơ cấp là
+	\choice
+	{100 vòng}
+	{150 vòng}
+	{200 vòng}
+	{\True 250 vòng}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_5=============%%%
+\begin{ex}
+	Trường hợp nào dưới đây sẽ không có hiện tượng khúc xạ ánh sáng?
+	\choice
+	{Tia sáng đi từ không khí vào nước}
+	{Tia sáng đi từ không khí vào rượu}
+	{Tia sáng đi từ không khí vào dầu ăn}
+	{\True Tia sáng truyền trong nước}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_6=============%%%
+\begin{ex}
+	Một vật sáng AB đặt vuông góc với trục chính của một thấu kính hội tụ và nằm ngoài khoảng tiêu cự sẽ cho ảnh
+	\choice
+	{ảo, cùng chiều, lớn hơn vật}
+	{ảo, ngược chiều, lớn hơn vật}
+	{\True thật, ngược chiều, có thể lớn hơn hoặc nhỏ hơn vật}
+	{thật, ngược chiều, lớn hơn vật}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_7=============%%%
+\begin{ex}
+	Cách làm nào dưới đây có thể tạo ra dòng điện cảm ứng trong một cuộn dây dẫn kín?
+	\choice
+	{Mắc xen vào cuộn dây dẫn một chiếc pin}
+	{Dùng một nam châm đặt gần đầu cuộn dây}
+	{Cho một cực của nam châm chạm vào cuộn dây dẫn}
+	{\True Đưa một cực của thanh nam châm từ ngoài vào trong cuộn dây}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_8=============%%%
+\begin{ex}
+	Ảnh của một ngọn nến qua một thấu kính phân kì
+	\choice
+	{có thể là ảnh thật, có thể là ảnh ảo}
+	{\True chỉ có thể là ảnh ảo, nhỏ hơn ngọn nến}
+	{chỉ có thể là ảnh ảo, lớn hơn ngọn nến}
+	{chỉ có thể là ảnh thật, nhỏ hơn ngọn nến}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_9=============%%%
+\begin{ex}
+	Dùng máy ảnh để chụp ảnh một vật đặt cách máy 2 m.Ảnh trên màn hứng ảnh cách vật kính 2 cm có chiều cao là 2 cm. Hãy tính chiều cao của vật?
+	\choice
+	{\True 2 m}
+	{5 m}
+	{4 m}
+	{8 m}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_10=============%%%
+\begin{ex}
+	Trong trường hợp nào dưới đây, mắt không phải điều tiết
+	\choice
+	{\True Nhìn vật ở điểm cực viễn}
+	{Nhìn vật ở điểm cực cận}
+	{Nhìn vật nằm trong khoảng từ cực cận đến cực viễn}
+	{Nhìn vật đặt gần mắt hơn điểm cực cận}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_11=============%%%
+\begin{ex}
+	Trên giá đỡ của một kính lúp có ghi 5x. Đó là
+	\choice
+	{một thấu kính hội tụ có tiêu cự 2,5 cm}
+	{một thấu kính phân kì có tiêu cự 2,5 cm}
+	{\True một thấu kính hội tụ có tiêu cự 5 cm}
+	{một thấu kính phân kì có tiêu cự 5 cm}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_12=============%%%
+\begin{ex}
+	Thấu kính hội tụ có tiêu cự nào dưới đây có thể dùng làm kính lúp được?
+	\choice
+	{40 cm}
+	{30 cm}
+	{\True 20 cm}
+	{25 cm}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_13=============%%%
+\begin{ex}
+	Sự phân tích ánh sáng trắng được quan sát trong thí nghiệm nào sau đây?
+	\choice
+	{Chiếu một chùm sáng trắng vào một gương phẳng}
+	{Chiếu một chùm sáng trắng qua một tấm thủy tinh mỏng}
+	{\True Chiếu một chùm sáng trắng qua một lăng kính}
+	{Chiếu một chùm sáng trắng qua một thấu kính phân kì}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_14=============%%%
+\begin{ex}
+	Trong các công việc nào dưới đây, ta đã sử dụng tác dụng nhiệt của ánh sáng?
+	\choice
+	{Đưa một chậu cây ra ngoài sân phơi cho đỡ cớm}
+	{Kê bàn học cạnh của sổ cho sáng}
+	{\True Phơi thóc ngoài sân khi trời nắng}
+	{Cho ánh sáng chiếu vào bộ pin Mặt Trời của máy tính để nó hoạt động}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_15=============%%%
+\begin{ex}
+	Cách làm nào dưới đây tạo ra sự trộn các ánh sáng màu?
+	\choice
+	{Chiếu một chùm sáng vàng qua một kính lọc màu đỏ}
+	{Chiếu một chùm sáng đỏ qua một kính lọc màu vàng}
+	{Chiếu một chùm sáng trắng qua một kính lọc màu đỏ và sau đó qua kính lọc màu vàng}
+	{\True Chiếu một chùm sáng đỏ và một chùm sáng vàng vào một tờ giấy trắng}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_16=============%%%
+\begin{ex}
+	Phân tích một chùm sáng là
+	\choice
+	{\True tìm cách tách từ chùm sáng đó ra những chùm sáng màu khác nhau}
+	{tìm cách tách ra một chùm sáng màu đỏ từ chùm sáng đó}
+	{tìm cách tạo ra ánh sáng trắng từ chùm sáng đó}
+	{tìm cách tách ra một chùm sáng có màu bất kì từ chùm sáng đó}
+	\loigiai{}
+\end{ex}
+\Closesolutionfile{ansex}
+\Closesolutionfile{ans}
+
+%%%==========Phần trắc nghiệm đúng sai============%%%
+
+\tieumuc{Trắc Nghiệm Đúng Sai (1 điểm)}(\textit{Trong mỗi câu có 4 ý tương ứng A, B, C, D; Học sinh chọn đúng hoặc sai.})
+\Opensolutionfile{ans}[Ans/DATAM-VL9CKII-De-03]
+\Opensolutionfile{ansbook}[Ans/DATNTF-VL9CKII-De-03]
+\LGexTF
+%\taoNdongke{ex}
+\Opensolutionfile{ansex}[LOIGIAITN/LGTNTF-VL9CKII-De-03]
+%%%=============EX_16=============%%%
+\begin{ex}
+Cho sơ đồ tạo ảnh $A'B'$ của vật $AB$ tạo bởi một thấu kính như hình vẽ (xem hình \ref{fig:TKHT03} ).
+	\begin{figure}[thp]
+	\begin{center}
+		\begin{tikzpicture}[declare function={h=2.2;d=4;dp=4;f=2;},font=\scriptsize\sffamily\bfseries]
+			\path[draw=\mycolor,line width =1.5pt] (0,-h) coordinate (M)--(0,h) coordinate (N);
+			\path[draw=\mycolor](-d,0) coordinate (Xp)--(d,0) coordinate (X);
+			\path (0,0) coordinate (O) 
+			(-f,0) coordinate (F) 
+			(f,0) coordinate (F')
+			({-0.75*f},0) coordinate (A)
+			({-0.75*f},{0.4*h}) coordinate (B)
+			({-1.5*f},0) coordinate (A')
+			({-1.5*f},{0.8*h}) coordinate (B');
+			\draw
+			(A)edge[-{Stealth[scale=2,length=2.5,width=1.5]}]node[pos=0.5,above,sloped,font=\scriptsize]{2cm}(B) (A') edge[-{Stealth[scale=2,length=2.5,width=1.5]}]node[pos=0.5,above,sloped,font=\scriptsize]{4cm} (B');
+			
+			\path (O)--(A)--([turn]90:0.35) coordinate (xt)
+			($(O)-(A)+(xt)$) coordinate (yt);
+			\draw[dash pattern=on 2pt off 2pt] (O)--(yt) (A)--(xt);
+			\draw[>=stealth,|<->|] (xt)--(yt) node[fill=white,inner sep=0pt,font=\scriptsize,midway,sloped]{$30\ \mathrm{cm}$};
+			
+			\foreach \t/\g in {O/-135,A'/-90,A/45,B/90,B'/90}{
+				\path[fill=red,draw=black] (\t)  node[shift={(\g:5pt)}]{\t};}
+		\end{tikzpicture}
+	\end{center}
+	\caption{\label{fig:TKHT03}}
+\end{figure}
+	\choiceTF
+	{ Ảnh $A'B'$ hứng được trên màn chắn}
+	{\True Thấu kính này có phần rìa mỏng hơn phần giữa}
+	{Để cho ảnh ngược chiều so với vật ta dịch chuyển vật lại gần thấu kính.}
+	{\True Ảnh $A'B'$ cách thấu kính là $60$ cm}
+	\loigiai{}
+\end{ex}
+
+\Closesolutionfile{ansex}
+\Closesolutionfile{ansbook}
+\Closesolutionfile{ans}	
+
+%%%==========Phần tự luận============%%%
+\tieumuc{Tự Luận (5 điểm)}
+\Opensolutionfile{ansbt}[LOIGIAITL/LGTL-VL9CKII-De-03]
+%\luuloigiaibt
+%\hienthiloigiaibt
+%\taoNdongke[15]{bt}
+%%%=============BT_1=============%%%
+\begin{bt}[$1{,}0$ điểm]Có những cách nào để làm giảm hao phí điện năng do tỏa nhiệt khi truyền tải điện năng đi xa? Cách nào làm có lợi nhất? Vì sao?
+	\loigiai{}
+\end{bt}
+%%%=============BT_2=============%%%
+\begin{bt}[$1{,}0$ điểm]Cuộn dây sơ cấp của một máy biến thế có $4400$ vòng.Khi đặt vào hai đầu cuộn sơ cấp một hiệu điện thế xoay chiều $220$ V thì giữa hai đầu cuộn thứ cấp có hiệu điện thế xoay chiều là $12$ V.
+	\begin{enumerate}[a)]
+		\item Máy này là máy tăng thế hay hạ thế?
+		\item Tính số vòng của cuộn dây thứ cấp tương ứng?
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+%%%=============BT_3=============%%%
+\begin{bt}[$3{,}0$ điểm]Đặt một vật trước một thấu kính hội tụ có tiêu cự $f= 8\mathrm{~cm}$.Vật $AB$ cách thấu kính một khoảng $24\mathrm{~cm}$.$A$ nằm trên trục chính.
+	\begin{enumerate}[a)]
+		\item Giả sử $AB=30\mathrm{~cm}$. Tính khoảng cách $d'$ từ ảnh đến thấu kính và chiều cao $A'B'$ của ảnh?
+		\item Trong trường hợp thấu kính là phân kì, tính khoảng cách từ ảnh đến thấu kính.
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+\Closesolutionfile{ansbt}
+\fileend
+\begin{center}
+	\rule[4pt]{2cm}{1pt}\large \textbf{HẾT}\rule[4pt]{2cm}{1pt}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+

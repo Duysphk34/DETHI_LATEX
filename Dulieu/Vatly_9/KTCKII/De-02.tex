@@ -1,0 +1,301 @@
+%%%Tùy chọn 1: Kì thi
+%%%Tùy chọn 2: Môn
+%%%Tùy chọn 3: lớp
+%%%Tùy chọn 4: Sở/Phòng
+%%%Tùy chọn 5: Ngày thi
+\begin{name}[Kiểm tra cuối kì II][Vật lý][9][Sở Giáo dục và Đào tạo]{Trường THCS}{2023 - 2024}
+\end{name}
+\tieumuc{Trắc nghiệm (4 điểm)}
+\Opensolutionfile{ans}[Ans/DATN-VL9CKII-De-02]
+%\luuloigiaiex
+\hienthiloigiaiex
+%\taoNdongke[4]{ex}
+%\tatloigiaiex
+\Opensolutionfile{ansex}[LOIGIAITN/LGTN-VL9CKII-De-02]
+%%%=============EX_1=============%%%
+\begin{ex}
+	Hình bên (\textbf{hình \ref{fig:hinh02}}) là tiết diện mặt cắt ngang của một số thấu kính. Hình nào không phải là thấu kính hội tụ?
+	\begin{figure}[thb]
+		\begin{center}
+			\subcaptionbox{\label{subfig:a1}}
+			{\begin{tikzpicture}[declare function={r=1;d=0.5;},scale=1.3]
+					\path[draw=\mycolor!50!black,fill=\mycolor!30] (0,0) coordinate (A) to[out=60,in=-60] (0,r) coordinate (B)--(d,r) coordinate (C)
+					to[out=-120,in=120] (d,0) coordinate (D)--cycle;
+			\end{tikzpicture}}\hspace{2cm}
+			\subcaptionbox{\label{subfig:b1}}
+			{\begin{tikzpicture}[declare function={r=1;d=0.35;},scale=1.3]
+					\path[draw=\mycolor!50!black,fill=\mycolor!30] (0,0) coordinate (A) -- (0,r) coordinate (B)
+					to[out=-40,in=40]cycle;
+			\end{tikzpicture}}\hspace{2cm}
+			\subcaptionbox{\label{subfig:c1}}
+			{\begin{tikzpicture}[declare function={r=1;d=0.35;},scale=1.3]
+					\path[draw=\mycolor!50!black,fill=\mycolor!30] (0,0) coordinate (A) to[out=80,in=-80] (0,r) coordinate (B)
+					to[out=-40,in=40]cycle;
+			\end{tikzpicture}}\hspace{2cm}
+			\subcaptionbox{\label{subfig:d1}}
+			{\begin{tikzpicture}[declare function={r=1;d=0.5;},scale=1.3]
+					\path[draw=\mycolor!50!black,fill=\mycolor!30] (0,0) coordinate (A) to[out=120,in=-120] (0,r) coordinate (B)
+					to[out=-60,in=60]cycle ;
+			\end{tikzpicture}}
+		\end{center}
+		\caption{Mặt cắt ngang một số thấu kính\label{fig:hinh02}}
+	\end{figure}
+	\choice
+	{\True Hình \textbf{\ref{subfig:a1}}}
+	{Hình \textbf{\ref{subfig:d1}}}
+	{Hình \textbf{\ref{subfig:c1}}}
+	{Hình \textbf{\ref{subfig:b1}}}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_2=============%%%
+\begin{ex}
+	Trên cùng một đường dây tải đi một công suất điện xác định dưới hiệu điện thế xác định, nếu dùng dây dẫn có đường kính tiết diện giảm đi một nửa thì công suất hao phí vì tỏa nhiệt sẽ thay đổi như thế nào?
+	\choice
+	{Tăng lên hai lần}
+	{\True Tăng lên bốn lần}
+	{Giảm đi hai lần}
+	{Giảm đi bốn lần}
+	\loigiai{}
+\end{ex}
+%%%=============EX_3=============%%%
+\begin{ex}
+	Trong trường hợp nào sau đây tia sáng truyền tới mắt là tia khúc xạ?
+	\choice
+	{Khi ta ngắm một bông hoa trước mắt}
+	{Khi ta soi gương}
+	{\True Khi ta quan sát một con cá vàng trong bể cá cảnh}
+	{Khi ta xem chiếu bóng}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_4=============%%%
+\begin{ex}
+	Chiếu một chùm tia sáng song song vào một thấu kính phân kì theo phương vuông góc với mặt của thấu kính thì chùm tia khúc xạ ra khỏi thấu kính sẽ
+	\choice
+	{\True loe rộng dần ra}
+	{thu nhỏ dần lại}
+	{bị thắt lại}
+	{trở thành chùm tia song song}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_5=============%%%
+\begin{ex}
+	Điểm sáng S nằm trên trục chính của một thấu kính hội tụ như hình vẽ (xem hình \ref{fig:TKHT01}). Trong 4 điểm $S_1$, $S_2$, $S_3$, $S_4$ có một điểm là ảnh của S qua thấu kính. Ảnh của S là:
+	\begin{figure}[thp]
+		\begin{center}
+			\begin{tikzpicture}[declare function={h=2;d=4;dp=4;f=2;},font=\scriptsize\sffamily\bfseries]
+				\path[draw=\mycolor,Stealth-Stealth,line width =1.5pt] (0,-h) coordinate (M)--(0,h) coordinate (N);
+				\path[draw=\mycolor](-d,0) coordinate (Xp)--(d,0) coordinate (X);
+				 \path (0,0) coordinate (O) 
+				 (-f,0) coordinate (F) 
+				 (f,0) coordinate (F')
+				 ({-1.7*f},0) coordinate (S);
+				 
+				 \foreach \x/\y/\n/\p in {-0.45*f/0/1/-90/,0.45*f/0/2/-90,1.3*f/0/3/-90,1.3*f/1/4/90}{
+				 	\path[draw=black,fill=red] ({\x},{\y}) coordinate (S\n) circle (1pt) node[shift={(\p:7pt)}]{$\text{S}_\text{\n}$};
+				 }
+				 ;
+				 \foreach \t/\g in {F'/-90,F/90,O/-135,S/135}{
+				 	\path[fill=red,draw=black] (\t) circle (1pt) node[shift={(\g:7pt)}]{\t};}
+			\end{tikzpicture}
+		\end{center}
+		\caption{\label{fig:TKHT01}}
+	\end{figure}
+	\choice
+	{$S_1$}
+	{$S_2$}
+	{\True $S_3$}
+	{$S_4$}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_6=============%%%
+\begin{ex}
+	Ảnh của một vật trên màn hứng ảnh trong máy ảnh bình thường là
+	\choice
+	{ảnh thật, cùng chiều với vật và nhỏ hơn vật}
+	{ảnh ảo, cùng chiều với vật và nhỏ hơn vật}
+	{\True ảnh thật, ngược chiều với vật và nhỏ hơn vật}
+	{ảnh ảo, ngược chiều với vật và nhỏ hơn vật}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_7=============%%%
+\begin{ex}
+	Dùng máy ảnh để chụp ảnh một vật cao 80 cm, đặt cách máy 2 m. Ảnh trên màn hứng ảnh cao 2 cm. Hãy tính khoảng cách từ ảnh đến vật kính lúc chụp ảnh?
+	\choice
+	{10 cm}
+	{\True 5 cm}
+	{15 cm}
+	{8 cm}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_8=============%%%
+\begin{ex}
+	Một người khi nhìn các vật ở xa thì không cần đeo kính, khi đọc sách thì phải đeo kính hội tụ. Hỏi mắt người ấy mắc tật gì?
+	\choice
+	{Không mắc tật gì}
+	{Mắc tật cận thị}
+	{\True Mắc tật lão thị}
+	{Cả ba câu A, B, C đều sai}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_9=============%%%
+\begin{ex}
+	Câu nào sau đây đúng?
+	\choice
+	{Mắt hoàn toàn không giống với máy ảnh}
+	{Mắt hoàn toàn giống với máy ảnh}
+	{Mắt tương đối giống máy ảnh, nhưng không tinh vi bằng máy ảnh}
+	{\True Mắt tương đối giống máy ảnh, nhưng tinh vi hơn máy ảnh nhiều}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_10=============%%%
+\begin{ex}
+	Mắt là cơ quan của thị giác. Nó có chức năng
+	\choice
+	{\True tạo ra một ảnh thật của vật, nhỏ hơn vật, trên màng lưới}
+	{tạo ra một ảnh thật của vật, nhỏ hơn vật, sau màng lưới}
+	{tạo ra một ảnh thật của vật, lớn hơn vật, trên màng lưới}
+	{tạo ra một ảnh ảo của vật, nhỏ hơn vật, trên màng lưới}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_11=============%%%
+\begin{ex}
+	Đặt vào hai đầu cuộn sơ cấp của máy biến áp một hiệu điện thế 30 V thì hiệu điện thế hai đầu cuộn thứ cấp là 40 V. Biết cuộn thứ cấp có 200 vòng dây. Số vòng dây của cuộn sơ cấp là
+	\choice
+	{100 vòng}
+	{\True 150 vòng}
+	{200 vòng}
+	{250 vòng}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_12=============%%%
+\begin{ex}
+	Khi quan sát một vật nhỏ qua kính lúp, ta sẽ nhìn thấy ảnh như thế nào?
+	\choice
+	{Một ảnh thật, ngược chiều vật}
+	{Một ảnh thật, cùng chiều vật}
+	{Một ảnh ảo, ngược chiều vật}
+	{\True Một ảnh ảo, cùng chiều vật}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_13=============%%%
+\begin{ex}
+	Trong việc chữa bệnh còi xương, người ta cho trẻ em ngồi dưới ánh sáng của đèn thủy ngân. Ánh sáng này sẽ kích thích quá trình hấp thụ canxi của xương. Đó là tác dụng nào của ánh sáng?
+	\choice
+	{Tác dụng nhiệt}
+	{\True Tác dụng sinh học}
+	{Tác dụng quang điện}
+	{Tác dụng sinh học và tác dụng quang điện}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_14=============%%%
+\begin{ex}
+	Chỉ ra câu sai?
+	Có thể thu được ánh sáng đỏ nếu
+	\choice
+	{thắp sáng một đèn LED đỏ}
+	{chiếu một chùm sáng trắng qua một tấm lọc màu đỏ}
+	{chiếu một chùm sáng đỏ qua một tấm lọc màu đỏ}
+	{\True chiếu một chùm sáng đỏ qua một tấm lọc màu tím}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_15=============%%%
+\begin{ex}
+	Với điều kiện nào thì xuất hiện dòng điện cảm ứng trong một cuộn dây dẫn kín?
+	\choice
+	{Khi số đường sức từ xuyên qua tiết diện cuộn dây rất lớn}
+	{Khi số đường sức từ xuyên qua tiết diện cuộn dây không thay đổi}
+	{Khi không có đường sức từ nào xuyên qua tiết diện cuộn dây}
+	{\True Khi số đường sức từ xuyên qua tiết diện cuộn dây biến thiên}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_16=============%%%
+\begin{ex}
+	Ánh sáng Mặt Trời chiếu vào cây cối có thể gây ra những tác dụng gì?
+	\choice
+	{\True Tác dụng nhiệt và tác dụng sinh học}
+	{Tác dụng nhiệt và tác dụng quang điện}
+	{Tác dụng sinh học và tác dụng quang điện}
+	{Chỉ gây ra tác dụng nhiệt}
+	\loigiai{}
+\end{ex}
+\Closesolutionfile{ansex}
+\Closesolutionfile{ans}
+
+%%%==========Phần trắc nghiệm đúng sai============%%%
+
+\tieumuc{Trắc Nghiệm Đúng Sai (1 điểm)}(\textit{Trong mỗi câu có 4 ý tương ứng A, B, C, D; Học sinh chọn đúng hoặc sai.})
+\Opensolutionfile{ans}[Ans/DATAM-VL9CKII-De-02]
+\Opensolutionfile{ansbook}[Ans/DATNTF-VL9CKII-De-02]
+%\luulgEXTF
+\LGexTF
+%\taoNdongke{ex}
+\Opensolutionfile{ansex}[LOIGIAITN/LGTNTF-VL9CKII-De-02]
+\begin{ex}
+	Em hãy cho biết các kết luận sau là đúng hay sai?
+	\choiceTF
+	{Góc khúc xạ bao giờ cũng nhỏ hơn góc tới}
+	{\True Khi tia sáng chiếu xiên góc từ không khí vào nước thì góc tới bao giờ cũng lớn hơn góc khúc xạ}
+	{\True Khi góc tới bằng $0^{\circ}$ thì góc khúc xạ cũng bằng $0^{\circ}$}
+	{\True Khi góc tới tăng thì góc khúc xa cũng tăng}
+	\loigiai{}
+\end{ex}
+%\Closesolutionfile{ansex}
+%\Closesolutionfile{ansbook}
+%\Closesolutionfile{ans}	
+
+%%%==========Phần tự luận============%%%
+\tieumuc{Tự Luận (5 điểm)}
+\Opensolutionfile{ansbt}[LOIGIAITL/LGTL-VL9CKII-De-02]
+%\luuloigiaibt
+%\hienthiloigiaibt
+%\taoNdongke[10]{bt}
+%%%=============BT_1=============%%%
+\begin{bt}[$1{,}0$ điểm] Mắt của một người chỉ có thể nhìn rõ những vật trong phạm vi từ $15$ cm đến $100$ cm.
+	\begin{enumerate}
+		\item Mắt người đó bị tật gì?
+		\item Để sửa tật đó người ấy phải dùng kính gì, có tiêu cự là bao nhiêu?
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+%%%=============BT_2=============%%%
+\begin{bt}[$1{,}0$ điểm]Một máy biến thế có số vòng ở cuộn sơ cấp là $1500$ vòng , cuộn thứ cấp là $3000$ vòng. Cuộn  sơ cấp nối vào nguồn điện xoay chiều có hiệu điện thế $200$ V.Tính hiệu điện thế ở hai đầu cuộn thứ cấp khi mạch hở?
+	\loigiai{}
+\end{bt}
+%%%=============BT_3=============%%%
+\begin{bt}[$3{,}0$ điểm]Dùng một máy ảnh có tiêu cự $f = 8\mathrm{~cm}$ để chụp ảnh của vật $AB$ cao $10\mathrm{~m}$, đặt cách vật kính một khoảng $24\mathrm{~m}$.Biết vật $AB$ vuông góc với trục chính và $A$ nằm trên trục chính.
+	\begin{enumerate}[a)]
+		\item Dựng ảnh của vật $AB$ qua máy ảnh
+		\item Tính khoảng cách từ ảnh đến thấu kính và chiều cao $A'B'$ của ảnh?
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+\Closesolutionfile{ansbt}
+\fileend
+\begin{center}
+	\rule[4pt]{2cm}{1pt}\large \textbf{HẾT}\rule[4pt]{2cm}{1pt}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+

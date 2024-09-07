@@ -1,0 +1,104 @@
+\documentclass[12pt,a4paper,openany,twoside]{report}
+\usepackage{subfiles}
+\usepackage[utf8]{vietnam}
+\usepackage{xcolor}
+\usepackage[shortlabels]{enumitem}
+\definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
+\definecolor{maudoilap}{HTML}{663300}
+\def\mauchinh{darkmidnightblue}
+\usepackage[a4paper,left=2cm,right=1.35cm,top=1.75cm,bottom=1.75cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.1}
+\setlength{\parskip}{6pt}
+\input{Khaibao/MauDeThiDonGian}
+\usepackage{lastpage}
+%=========Header và Footer=========%
+\pagestyle{fancy}
+	\fancyhead[RE]{\small\slshape\faGraduationCap\ Biên soạn năm 2024}
+	\fancyhead[LE]{\rightmark}
+	\fancyhead[LO]{\small\slshape\faGraduationCap\ Biên soạn năm 2024}
+	\fancyhead[RO]{\rightmark}
+	\cfoot{}
+\def\footerinfo{LaTeX Theme and Related Topics cover}
+%=========Header và Footer=========%
+
+\renewcommand{\loigiai}[1]{%
+	\par\noindent%
+	{\reflectbox{\Large\WritingHand}\ {\fmmfamily\LARGE Hướng dẫn giải.}} #1
+}
+\setlist[enumerate,1]{label=\circlenum{\arabic*},itemsep=-1pt,topsep=0pt}
+\setlist[enumerate,2]{itemsep=0pt,topsep=0pt,label=\circlenumH{\alph*},wide=0cm,leftmargin=!}
+\setlist[enumerate,3]{itemsep=0pt,topsep=0pt,label=\protect{\textcolor{\mauchinh}{\roman*)}},wide=1cm,leftmargin=1cm}
+\setlist[itemize,1]{itemsep=0pt,topsep=0pt,label=\protect{\small\color{\mauchinh}\rhombusdot}}
+\setlist[itemize,2]{itemsep=0pt,topsep=0pt,label=\protect{\small\color{\mauchinh}\starletdot},wide=0.35cm,
+leftmargin=0.35cm}
+\setlist[itemize,3]{itemsep=0pt,topsep=0pt,label=\protect{\small\color{\mauchinh}\faAngellist},wide=0.5cm,leftmargin=.5cm}
+
+\titlespacing{\section}{0cm}{0cm}{15pt}
+\renewcommand{\thesection}{Đề \arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+\titleformat{\section}
+{\filcenter\setcounter{bt}{0}\setcounter{ex}{0}}
+{}
+{0pt}
+{\noindent\refstepcounter{demsode}\label{bddethi\thedemsode}%
+	\begin{tcolorbox}[colback=cyan!9,colframe=white,frame empty,code={\renewcommand{\arraystretch}{0.9}},boxsep=3pt,before skip=-20pt]
+			\resizebox{\linewidth}{!}{
+		\begin{tabular}{cc}
+			{\color{\mauchinh}\bfseries\sffamily\resizebox{6cm}{12pt}{\MakeUppercase{\truong}}}
+			&
+			{\color{maudoilap}\bfseries\sffamily\resizebox{8.5cm}{17pt}{\MakeUppercase{#1}}}\\					
+			{\color{maudodl}\bfseries\selectfont \textbf{ĐỀ SỐ \circlenumH[maudodl]{\fontfamily{ugq}\selectfont\Large\thedemsode }}}
+			&
+			{\bfseries\sffamily Môn: \mon\ -- Lớp: \lop}\\
+			{\hypersetup{linkcolor=maudodl} (\textit{đề thi có \pageref{LastPage} trang})}&
+			{Thời gian: \textbf{\thoigian}\ phút (\textit{không kể phát đề})} 
+			\end{tabular}}
+	\end{tcolorbox} %
+	\vspace*{-23pt}
+}
+
+\RenewEnviron{listEX}[1][]{
+	\ifthenelse{\equal{#1}{1}}%
+	{%
+	\begin{enumerate}%
+		\BODY%
+	\end{enumerate}%
+	}%
+	{\begin{multicols}{#1}
+	\begin{enumerate}%
+		\BODY%
+	\end{enumerate}%
+	\end{multicols}}%
+}
+
+\RenewEnviron{enumEX}[2][]{
+	\ifthenelse{\equal{#2}{1}}%
+	{%
+	\begin{enumerate}%
+		\BODY%
+	\end{enumerate}%
+	}%
+	{\begin{multicols}{#2}
+	\begin{enumerate}%
+		\BODY%
+	\end{enumerate}%
+	\end{multicols}}%
+}
+\usepackage{centernot}
+\definecolor{dnxanh}{HTML}{00CC99}
+\definecolor{dndo}{HTML}{CC0033}
+\hypersetup{linkcolor=black}
+\def\thoigian{90}
+\begin{document}
+\hienthiloigiaiex
+\hienthiloigiaibt
+\section[Mã đề 789]{Đề thi học kỳ 2}
+\subsection{Phần trắc nghiệm}
+Học sinh trả lời từ câu 1 đến câu 17.
+ Mỗi câu hỏi học sinh \textit{chỉ chọn một} phương án.
+    \subfile{Deso_1_P02G20N03T05N2024.tex}
+    \subfile{Deso_2_P02G20N03T05N2024.tex}
+\fileend
+\end{document}

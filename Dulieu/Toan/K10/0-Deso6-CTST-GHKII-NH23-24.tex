@@ -1,0 +1,399 @@
+\section{Đề ôn thi giữa kỳ 2 toán 10}
+\subsection{Phần trắc nghiệm}
+Câu trắc nghiệm nhiều phương án lựa chọn. Học sinh trả lời từ
+câu 1 đến câu 12. Mỗi câu hỏi học sinh \textit{chỉ chọn một} phương án.
+
+\Opensolutionfile{ans}[Ans/Dapan]
+\begin{ex}%Câu 1%[0D7N1-1]
+Tìm khẳng định đúng trong các mệnh đề sau?
+\choice
+{\True $f(x)=3x^2-5$ là tam thức bậc hai}
+{$f(x)=2x-4$ là tam thức bậc hai}
+{$f(x)=3x^3+2x-1$ là tam thức bậc hai}
+{$f(x)=x^4-x^2+1$ là tam thức bậc hai}
+\loigiai
+{$f(x)=3x^2-5$ là tam thức bậc hai.}
+\end{ex}
+
+\begin{ex}%Câu 2%[0D7N1-2]
+Dấu của tam thức bậc hai: $f(x)=-x^2+5x-6$ được xác định như sau
+\choice
+{$f(x) < 0$ với $2 < x < 3$ ; $f(x) > 0$ với $x < 2$ hoặc $x > 3$}
+{$f(x) < 0$ với $-3 < x <-2$ ; $f(x) > 0$ với $x <-3$ hoặc $x >-2$}
+{\True $f(x) > 0$ với $2 < x < 3$ ; $f(x) > 0$ với $x < 2$ hoặc $x > 3$}
+{$f(x) > 0$ với $-3 < x <-2$ ; $f(x) > 0$ với $x <-3$ hoặc $x >-2$}
+\loigiai{
+Xét $f(x)=0$ $\Leftrightarrow $ $\left[\begin{array}{l}
+x=2\\
+x=3
+\end{array}\right.$ .\\
+Bảng xét dấu:
+\begin{center}
+\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+\tkzTabInit[nocadre=false,lgt=1.2,espcl=2,deltacl=0.6]
+{$x$ /0.6,$f(x)$ /0.6}
+{$-\infty$,$2$,$3$,$+\infty$}
+\tkzTabLine{,-,0,+,0,-}
+\end{tikzpicture}
+\end{center}
+Vậy $f(x) > 0$ với $2 < x < 3$ ; $f(x) > 0$ với $x < 2$ hoặc $x > 3$ .}
+\end{ex}
+%
+\begin{ex}%Câu 3%[0D7V1-5]
+Một quả bóng được đá lên nó sẽ đạt độ cao nào đó rồi rơi xuống đất. Biết quỹ đạo của quả bóng là một đường cong parabol trong mặt phẳng tọa độ $Oth$ có phương trình $h=a{t^2}+bt+c$ $\left(a < 0\right)$ , trong đó $t$ là thời gian (tính bằng giây) kể từ khi quả bóng được đá lên, $h$ là độ cao (tính bằng mét) của quả bóng. Giả thiết rằng quả bóng được đá lên từ độ cao $1,2m$ và sau $1$ giây thì nó đạt độ cao $8,5m$ , sau $2$ giây thì nó đạt độ cao $6m$ . Hỏi quả bóng bay ở độ cao không thấp hơn $6m$ trong thời gian bao lâu?
+\choice
+{\True $\dfrac{74}{49}$ giây}
+{$3$ giây}
+{$\dfrac{61}{49}$ giây}
+{$2$ giây}
+\loigiai{
+Tại thời điểm $t=0$ thì $h=1,2$ nên $c=1,2$ .\\
+Tại thời điểm $t=1$ thì $h=8,5$ nên $a+b+c=8,5$ .\\
+Tại thời điểm $t=2$ thì $h=6$ nên $4\rm{a}+2b+c=6$ .\\
+Từ đó, ta có $a=-4,9;b=12,2;c=1,2$ . Vậy $h=-4,9t^2+12,2t+1,2$ .\\
+Để quả bóng đạt độ cao không thấp hơn $6m$ tức là $-4,9t^2+12,2t+1,2\ge 6$ .\\
+Suy ra $t\in\left[\dfrac{24}{49};2\right]$ .\\
+Vậy khoảng thời gian quả bóng bay không thấp hơn $6m$ là $2-\dfrac{24}{9}=\dfrac{74}{49}$ .}
+\end{ex}
+
+\begin{ex}%Câu 4%[0D7N1-2]
+Cho tam thức $f(x)=x^2-8x+16$ . Khẳng định nào sau đây là đúng?
+\choice
+{$f(x) < 0$ khi $x\ne 4$}
+{$f(x) > 0$ với mọi $x\in \mathbb{R}$}
+{\True $f(x)\ge 0$ với mọi $x\in \mathbb{R}$}
+{$f(x) < 0$ khi $x < 4$}
+\loigiai{
+$f(x)\ge 0$ với mọi $x\in \mathbb{R}$ .}
+\end{ex}
+
+\begin{ex}%Câu 5%[0D7H3-1]
+Tập nghiệm của phương trình $\sqrt{x^2-2x}=\sqrt{2\rm{x-}{x^2}}$ là:
+\choice
+{$T=\left\{ 0\right\}$}
+{$T=\varnothing $}
+{\True $T=\left\{{0;2}\right\}$}
+{\True $T=\left\{ 2\right\}$}
+\loigiai{
+Bình phương hai vế phương trình, ta được:\\
+$x^2-2\rm{x=}2\rm{x-}{x^2}$ $\Leftrightarrow $ $2x^2-4\rm{x=0}$ $\Leftrightarrow $ $\left[\begin{array}{l}
+x=0\\
+x=2
+\end{array}\right.$ .\\
+Thay $x=0$ và $x=2$ vào phương trình, ta thấy chúng luôn thỏa mãn.\\
+Vậy tập nghiệm của phương trình là $T=\left\{{0;2}\right\}$ .}
+\end{ex}
+
+\begin{ex}%Câu 6%[0D7H3-2]
+Phương trình $\sqrt{-x^2+10\rm{x-25}}=0$ :
+\choice
+{vô nghiệm}
+{vô số nghiệm}
+{có hai nghiệm phân biệt}
+{có nghiệm duy nhất}
+\loigiai{
+Ta có: $\sqrt{-x^2+10\rm{x-25}} =0$ $\Leftrightarrow $ $-x^2+10\rm{x-25}=0$ $\Leftrightarrow $ $x=5$ .}
+\end{ex}
+
+\begin{ex}%Câu 7%[0H9H1-3]
+Trong mặt phẳng tọa độ $Oxy$ , cho $A\left(2;3\right)$ , $B\left(-2;-1\right)$ và $C\left(4;5\right)$ . Khẳng định nào dưới đây là sai?
+\choice
+{\True $\overrightarrow{AB}+2\overrightarrow{AC}=\overrightarrow 0 $}
+{$\overrightarrow{AB}=-2\overrightarrow{AC}$}
+{$\overrightarrow{AB}-2\overrightarrow{AC}=\overrightarrow 0 $}
+{$\overrightarrow{BA}=-2\overrightarrow{CA}$}
+\loigiai{
+Ta có: $\overrightarrow{AB}=\left(-4;-4\right)$ và $\overrightarrow{AC}=\left(2;2\right)$ suy ra $\overrightarrow{AB}+2\overrightarrow{AC}=\overrightarrow 0 $ .}
+\end{ex}
+
+\begin{ex}%Câu 8%[0H9N1-3]
+Trong mặt phẳng tọa độ $Oxy$ , cho tam giác $ABC$ có $A\left(-6;-1\right)$ , $B\left(3;4\right)$ và trọng tâm $G\left(1;1\right)$ . Tọa độ điểm $C$ là:
+\choice
+{$\left(6;3\right)$}
+{$\left(-6;3\right)$}
+{\True $\left(6;0\right)$}
+{$\left(-6;0\right)$}
+\loigiai{
+Áp dụng công thực tọa độ trọng tâm, ta có $C\left(6;0\right)$}
+\end{ex}
+
+\begin{ex}%Câu 9%[0H9N3-2]
+Phương trình tham số của đường thẳng $d$ đi qua điểm $M\left(3;-4\right)$ và song song với đường thẳng $d_1:\dfrac{x-7}{2}=\dfrac{y+5}{-1}$ là:
+\choice
+{\True $\left\{\begin{array}{l}
+x=3+2t\\
+y=-4-t
+\end{array}\right.$}
+{$\left\{\begin{array}{l}
+x=3+t\\
+y=-4+2t
+\end{array}\right.$}
+{$\left\{\begin{array}{l}
+x=3+2t\\
+y=-4+t
+\end{array}\right.$}
+{$\left\{\begin{array}{l}
+x=3-2t\\
+y=-4-t
+\end{array}\right.$}
+\loigiai{
+Đường thẳng $d_1$ có $u_1=\left(2;-1\right)$ là vectơ chỉ phương. Đường thẳng $d$ song song với $d_1$ nên $u_1=\left(2;-1\right)$ cũng là vectơ chỉ phương của $d$ . Mà $M\in d$ .\\
+Vậy phương trình tham số của $d$ là $\left\{\begin{array}{l}
+x=3+2t\\
+y=-4-t
+\end{array}\right.$ .}
+\end{ex}
+
+\begin{ex}%Câu 10%[0H9N3-3]
+Cho hai đường thẳng $\Delta_1:-x+2y+1=0$ và $\Delta_2:3x-6y-1=0$ . Khẳng định nào sau đây là đúng?
+\choice
+{\True Hai đường thẳng $\Delta_1$ và $\Delta_2$ song song với nhau}
+{Hai đường thẳng $\Delta_1$ và $\Delta_2$ trùng nhau}
+{Hai đường thẳng $\Delta_1$ và $\Delta_2$ vuông góc với nhau}
+{Hai đường thẳng $\Delta_1$ và $\Delta_2$ cắt nhau nhưng không vuông góc}
+\loigiai{
+Vì $\dfrac{-1}{3}=\dfrac{2}{-6}\ne\dfrac{1}{-1}$ nên hai đường thẳng $\Delta_1$ và $\Delta_2$ song song với nhau.}
+\end{ex}
+
+\begin{ex}%Câu 11%[0H9H4-2]
+Phương trình đường tròn tâm $A\left(4;-3\right)$ và tiếp xúc với đường thẳng $2x-y-1=0$ là
+\choice
+{$\left(x+4\right)^2+\left(y-3\right)^2=20$}
+{\True $\left(x-4\right)^2+\left(y+3\right)^2=20$}
+{$\left(x+4\right)^2+\left(y-3\right)^2=16$}
+{$\left(x-4\right)^2+\left(y+3\right)^2=16$}
+\loigiai{
+Gọi $\Delta $ là đường thẳng có phương trình $2x-y-1=0$ .\\
+Bán kính đường tròn là $R=d\left(A;\Delta\right)=\dfrac{|2.4+3-1|}{\sqrt{2^2+\left(-1\right)^2}}=2\sqrt 5 $ .\\
+Phương trình đường tròn là $\left(x-4\right)^2+\left(y+3\right)^2=20$ .\\
+Áp dụng công thực tọa độ trọng tâm, ta có $C\left(6;0\right)$}
+\end{ex}
+
+\begin{ex}%Câu 12%[0H9H4-2]
+Trong mặt phẳng tọa độ $Oxy$ , đường tròn đi qua ba điểm $A\left(1;2\right),B\left(5;2\right),C\left(1;-3\right)$ có phương trình là:
+\choice
+{$x^2+y^2+25x+19y-49=0$}
+{$2x^2+y^2\rm{-6x}+y-3=0$}
+{\True $x^2+y^2\rm{-6x}+y-1=0$}
+{$x^2+y^2\rm{-6x}+xy-1=0$}
+\loigiai{
+Phương trình đường tròn có dạng $x^2+y^2\rm{-2ax-2b}y+c=0$ $\left(a^2+b^2-c > 0\right)$ .\\
+Vì đường tròn đi qua ba điểm $A,B,C$ nên ta có:\\
+$\left\{\begin{array}{l}
+1+4-2\rm{a}-8b+c=0\\
+25+4-10\rm{a}-4b+c=0\\
+1+9-2\rm{a}+6b+c=0
+\end{array}\right.$ $\Leftrightarrow $ $\left\{\begin{array}{l}
+a=3\\
+b=\dfrac{-1}{2}\\
+c=-1
+\end{array}\right.$ .\\
+Vậy phương trình đường tròn cần tìm là $x^2+y^2\rm{-6x}+y-1=0$ .}
+\end{ex}
+\hienthiloigiaiex
+
+\Closesolutionfile{ans}
+\bangdapan{Dapan}
+\subsection{Câu trắc nghiệm đúng sai}
+Học sinh trả lời từ câu 1 đến câu 4.
+Trong mỗi ý \circlenum{A}, \circlenum{B}, \circlenum{C} và \circlenum{D} ở mỗi câu, học sinh chọn đúng hoặc sai.
+\setcounter{ex}{0}
+\LGexTF
+\Opensolutionfile{ansbook}[ansbook/DapanDS]
+\Opensolutionfile{ans}[Ans/DapanT]
+\begin{ex}%Câu 1%[0D3N2-1] %[Dự án đề kiểm tra Toán khối 10 GKII NH23-24-Dot-2-NCT]%[6-CTST]
+Cho biểu thức $f(x)=\dfrac{1}{x^2-2 x-12}$. Khi đó
+\choiceTF
+{$f(x)=0 \Leftrightarrow x=1+\sqrt{13}$ hoặc $x=1-\sqrt{13}$}
+{ với $x \in(1-\sqrt{13} ; 1+\sqrt{13})$ thì $f(x)>0$}
+{với $x \in(-\infty ; 1-\sqrt{13}) \cup(1-\sqrt{13} ;+\infty)$ thì $f(x)<0$}
+{\True Bảng xét dấu của biểu thức là:
+\begin{center}
+\begin{tikzpicture}
+\tkzTabInit[nocadre=false,lgt=4,espcl=2,deltacl=0.5]
+{$x$/1 , $x^2-2x-12$/1 , $f(x)$/1}
+{$-\infty$,$1-\sqrt{13}$,$1-\sqrt{13}$,$+\infty$}
+\tkzTabLine{,+,z,-,z,+,}
+\tkzTabLine{,+,d,-,d,+,}
+\end{tikzpicture}
+\end{center}
+
+
+}
+\loigiai{
+Ta có$x^2-2 x-12=0 \Leftrightarrow x=1+\sqrt{13}$ hoặc $x=1-\sqrt{13}$.\\
+Bảng xét dấu:
+\begin{center}
+\begin{tikzpicture}
+\tkzTabInit[nocadre=false,lgt=4,espcl=2,deltacl=0.5]
+{$x$/1 , $x^2-2x-12$/1 , $f(x)$/1}
+{$-\infty$,$1-\sqrt{13}$,$1-\sqrt{13}$,$+\infty$}
+\tkzTabLine{,+,z,-,z,+,}
+\tkzTabLine{,+,d,-,d,+,}
+\end{tikzpicture}
+\end{center}
+Từ bảng xét dấu,
+\begin{itemize}
+\item với $x \in(1-\sqrt{13} ; \sqrt{13})$ thì $f(x)<0$.
+\item với $x \in(-\infty ; 1-\sqrt{13}) \cup(1-\sqrt{13} ;+\infty)$ thì $f(x)>0$.
+\end{itemize}
+}
+\end{ex}
+
+\begin{ex}%Câu 2 %[Dự án đề kiểm tra Toán khối 10 GKII NH23-24-Dot-2-NCT]%[6-CTST]%[0D7H3-1]
+Cho phương trình $\sqrt{x^2+2 x+4}=\sqrt{2-x}$ $$\left(^*\right)$$. Khi đó
+\choiceTF
+{\True Điều kiện $x \leq 2$}
+{Bình phương $2$ vế phương trình $\left(^*\right)$ ta được $x^2+3 x+1=0$}
+{\True Phương trình $\left(^*\right)$ có $2$ nghiệm phân biệt}
+{\True Các nghiệm của phương trình $\left(^*\right)$ thuộc $\mathbb{Z}$}
+\loigiai{
+\begin{itemize}
+\item \textbf{Cách giải 1:}
+Bình phương hai vế phương trình, ta được:
+$$
+x^2+2 x+4=2-x \Leftrightarrow x^2+3 x+2=0 \Leftrightarrow x=-1 \vee x=-2 \text {.}
+$$
+Thay giá trị $x=-1$ vào phương trình: $\sqrt{3}=\sqrt{3}$ (thỏa mãn).\\
+Thay giá trị $x=-2$ vào phương trình: $\sqrt{4}=\sqrt{4}$ (thỏa mãn).\\
+Vậy tập nghiệm phương trình là $S=\{-1 ;-2\}$.
+\item \textbf{Cách giải 2:}
+Ta có:
+$$\sqrt{x^2+2 x+4}=\sqrt{2-x}\Leftrightarrow\heva{&x \leq 2  \\&
+x^2+3x+2=0}\Leftrightarrow \heva{&x \leq 2  \\& x =-1 \vee x = - 2} \Leftrightarrow  \hoac{&
+x=-1  \\&
+x=-2.
+}$$
+Vậy tập nghiệm phương trình là $S=\{-1 ;-2\}$.
+\end{itemize}
+
+}
+\end{ex}
+
+
+\begin{ex}%Câu 3 %[Dự án đề kiểm tra Toán khối 10 GKII NH23-24-Dot-2-NCT]%[6-CTST]%[0H9H3-6]
+Cho tam giác $ABC$, biết $A(1;2)$ và phương trình hai đường trung tuyến là $2x-y+1=0$ và $x+3y-3=0$. Khi đó:
+\choiceTF
+{\True Điểm $C$ có tọa độ là $\left(\dfrac{-3}{7} ; \dfrac{8}{7}\right)$}
+{\True Điểm $B$ có toạ độ là $\left(\dfrac{-4}{7} ; \dfrac{-1}{7}\right)$}
+{\True$BC: 9x-y+5=0$}
+{$AC: 3x-3y+3=0$}
+\loigiai{
+Dễ thấy đỉnh $A$ không thuộc hai trung tuyển đã cho, vì tọa độ của nó không thoả mãn phương trình của hai trung tuyến. Gọi $B'$, $C'$ lần lượt là trung điểm của $AC$, $AB$.\\
+Giả sử phương trình của đường thẳng $BB'$ là $2x-y+1=0$, phương trình của đường thẳng $CC'$ là $x+3y-3=0$.\\
+Đặt $C\left(x_0 ; y_0\right)$. Điểm $C$ thuộc đường thẳng $CC'$ nên $x_0+3 y_0-3=0$. $(1)$\\
+Điểm $B'$ là trung điểm của $AC$ nên $B'\left(\dfrac{1+x_0}{2} ; \dfrac{2+y_0}{2}\right)$.\\ Lại có, điểm $B'$ thuộc
+đường thẳng $BB'$ nên $2 \cdot \dfrac{1+x_0}{2}-\dfrac{2+y_0}{2}+1=0 \Leftrightarrow 2 x_0-y_0+2=0$ $(2)$.\\
+Từ $(1)$ và $(2)$, ta có hệ phương trình: $$\heva{& x_0+3y_0-3=0\\ &  2x_0-y_0+2=0}\Leftrightarrow\heva{& x_0=\dfrac{-3}7\\ &  y_0=\dfrac 87}$$
+Suy ra điểm $C$ có tọa độ là $\left(\dfrac{-3}{7} ; \dfrac{8}{7}\right)$.\\
+Tương tự, ta tìm được điểm $B\left(\dfrac{-4}{7} ; \dfrac{-1}{7}\right)$.\\
+Từ đó lập các phương trình đường thẳng đi qua hai điểm, ta viết được phương trình các cạnh của tam giác $ABC$ như sau:
+$$BC: 9x-y+5=0; AB: 15x-11y+7=0 ; AC: 3x-5y+7=0.$$
+}
+\end{ex}
+
+\begin{ex}%Câu 4 %[Dự án đề kiểm tra Toán khối 10 GKII NH23-24-Dot-2-NCT]%[6-CTST]%[0H9V4-2]
+Đường tròn $(C)$ đi qua $A(2 ;-1)$ và tiếp xúc với hai trục tọa độ $Ox$ và $Oy$. Khi đó:
+\choiceTF
+{\True Đường tròn $(C)$ đi qua điểm $N(1;0)$}
+{ Đường tròn $(C)$ đi qua điểm $M(1;1)$}
+{\True Có $2$ đường tròn thỏa mãn}
+{Tổng bán kính các đường tròn thỏa mãn bằng $6$}
+
+\loigiai{
+Vì điểm $A(2 ;-1)$ nằm ở góc phần tư thứ tư của hệ trục tọa độ và đường tròn tiếp xúc với hai trục tọa độ nên tâm của đường tròn có dạng $I(R;-R)$, trong đó $R$ là bán kính của đường tròn $C$.\\
+Ta có $R^2=IA^2\Leftrightarrow R^2=(2-R)^2+(-1+R)^2\Leftrightarrow R^2-6R+5=0\Leftrightarrow \hoac{&R=1\\&R=5.}$\\
+Vậy có hai đường tròn thoả mãn đề bài là: $(x-1)^2+(y+1)^2=1 ;(x-5)^2+(y+5)^2=25$.
+}
+\end{ex}
+\Closesolutionfile{ans}
+\Closesolutionfile{ansbook}
+
+\begin{center}
+\textbf{\textsf{BẢNG ĐÁP ÁN ĐÚNG SAI}}
+\end{center}
+\input{Ansbook/DapanDS}
+
+\subsection{Phần tự luận}
+
+\hienthiloigiaibt
+\begin{bt}%[0D7H1-2]
+Có bao nhiêu giá trị nguyên của tham số $m$ để $f(x)=mx^2-2mx+4>0$ với mọi $x \in \mathbb{R}$.
+\loigiai{
+Với $m=0$, ta có $f(x)=0x^2-2\cdot 0 \cdot x+4=4>0\,  \forall x \in \mathbb{R}$ (thỏa mãn).\\
+Với $m \ne 0$.
+$$f(x)>0, \forall x \in \mathbb{R} \Leftrightarrow \heva{&a>0\\& \Delta <0} \Leftrightarrow \heva{&m>0\\&(-2m)^2-4\cdot 4m<0}\Leftrightarrow \heva{&m>0\\&4m^2-16m<0}\Leftrightarrow \heva{&m>0\\&0<m<4.}$$
+Vậy $0 \leq m <4$ để $f(x)>0,\forall x \in \mathbb{R}$ mà $m \in \mathbb{Z}$ nên có 4 giá trị nguyên của $m$ thỏa mãn.
+}
+\end{bt}
+\begin{bt}%[0D7V1-5]
+Tổng chi phí $P$ (đơn vị: nghìn đồng) để sản xuất $x$ sản phẩm được cho bởi biểu thức $P=x^2+30x+3300$; giá bán một sản phẩm là $170$ nghìn đồng. Số sản phẩm được sản xuất trong khoảng nào để đảm bảo nhà sản xuất không bị lỗ (giả sử các sản phẩm được bán hết)?
+\loigiai{
+Khi bán $x$ sản phẩm thì số tiền thu được là $170x$ (nghìn đồng).\\
+Để đảm bảo nhà sản xuất không bị lỗ thì $170x \geq x^2+30x+3300\Leftrightarrow x^2-140x+3300\leq 0$.\\
+Đặt $f(x)=x^2-140x+3300$. Xét $f(x)=0\Leftrightarrow \hoac{&x=110\\&x=30.}$\\
+Vì $a=1>0$ nên ta có bảng xét dấu
+\begin{center}
+\begin{tikzpicture}
+\tkzTabInit[nocadre=false,lgt=1.2,espcl=2]
+{$x$ /.7,$f(x)$ /.7}
+{$0$,$30$,$110$,$+\infty$}
+\tkzTabLine{,+,0,-,0,+,}
+\end{tikzpicture}
+\end{center}
+Từ bảng xét dấu, $f(x)\leq 0 \Leftrightarrow x \in [30;110]$.\\
+Vậy để nhà sản xuất không bị lỗ thì sản xuất từ $30$ đến $110$ sản phẩm.
+}
+\end{bt}
+\begin{bt}%[0D7C3-2]
+Tìm nghiệm phương trình sau $\sqrt{x+2\sqrt{x-1}}=x+\dfrac{1}{4}$.
+\loigiai{
+Điều kiện xác định $x \geq 1$.\\
+Ta có
+\begin{eqnarray*}
+\sqrt{x+2\sqrt{x-1}}=x+\dfrac{1}{4} &\Leftrightarrow& \sqrt{x-1+2\sqrt{x-1}+1}=x+\dfrac{1}{4}\\
+&\Leftrightarrow& \sqrt{(\sqrt{x-1}+1)^2}=x+\dfrac{1}{4}\\
+&\Leftrightarrow& \sqrt{x-1}+1=x+\dfrac{1}{4}\\
+&\Leftrightarrow& \sqrt{x-1}=x-\dfrac{3}{4}\\
+&\Rightarrow& x-1=\left(x-\dfrac{3}{4}\right)^2\\
+&\Leftrightarrow& x-1=x^2-\dfrac{3x}{2}+\dfrac{9}{16}\\
+&\Leftrightarrow& -x^2+\dfrac{5x}{2}-\dfrac{25}{16}=0\\
+&\Leftrightarrow& x=\dfrac{5}{4}.
+\end{eqnarray*}
+Thay $x=\dfrac{5}{4}$ vào $\sqrt{x+2\sqrt{x-1}}=x+\dfrac{1}{4}$, ta nhận $x=\dfrac{5}{4}$.\\
+Vậy tập nghiệm của phương trình $S= \left\lbrace \dfrac{5}{4} \right\rbrace$.
+}
+\end{bt}
+\begin{bt}%[0H9C3-8]
+Có hai con tàu $A,B$ xuất phát từ hai bến chuyển động theo đường thẳng ngoài biển. Trên màn hình ra-đa của trạm điều khiển (xem như mặt phẳng tọa độ $Oxy$ với đơn vị trên các trục tính bằng ki-lô-mét), tại thời điểm $t$ (giờ), vị trí của tàu $A$ có tọa độ xác định bởi công thức $\heva{&x=3-33t\\&y=-4+25t}$; vị trí tàu $B$ có tọa độ là $(4-30t;3-40t)$.\\
+\begin{enumerate}
+\item Tính gần đúng côsin góc giữa hai đường đi của hai tàu $A,B$.
+\item Sau bao lâu kể từ thời điểm xuất phát, hai tàu gần nhau nhất?
+\item Nếu tàu $A$ đứng yên ở vị trí ban đầu, tàu $B$ chạy thì khoảng cách ngắn nhất giữa hai tàu bằng bao nhiêu?
+\end{enumerate}
+\loigiai{
+\begin{enumerate}
+\item Đường đi của tàu $A$ là $d_1$ có vectơ chỉ phương là $\overrightarrow{u_1}=(-33;25)$.\\
+Đường đi của tàu $B$ là $d_2$ có vectơ chỉ phương là $\overrightarrow{u_2}=(-30;-40)$.\\
+$$\cos (d_1;d_2)=\dfrac{|-33\cdot (-30)+25\cdot (-40)|}{\sqrt{(-33)^2+25^2}\cdot \sqrt{(-30)^2+(-40)^2}}\approx 0,0048.$$
+\item Vị trí của tàu $A$ sau thời gian t là $M(3-33t;-4+25t)$.\\
+Vị trí của tàu $B$ sau thời gian t là $N(4-30t;3-40t)$.\\
+Ta có
+\begin{eqnarray*}
+MN&=&\sqrt{(3-33t-4+30t)^2+(-4+25t-3+40t)^2}\\
+&=&\sqrt{(-1-3t)^2+(-7+65t)^2}\\
+&=&\sqrt{9t^2+6t+1+4225t^2-910t+49}=\sqrt{4234t^2-904t+50}.
+\end{eqnarray*}
+Hai tàu gần nhau nhất thì $MN$ bé nhất khi $f(t)=4234t^2-904t+50$ đạt giá trị nhỏ nhất.\\
+Vì $a>0$ nên $f(t)$ đạt giá trị nhỏ nhất khi $t=\dfrac{-b}{2a}=\dfrac{904}{2\cdot 4234}\approx 0,107$ giây.
+\item Khi tàu $A$ đứng yên, tàu $A$ ở vị trí có tọa độ là $A(3;-4)$.\\
+Khoảng cách giữa hai tàu là
+\begin{eqnarray*}
+NA&=&\sqrt{(4-30t-3)^2+(3-40t+4)^2}\\
+&=&\sqrt{(1-30t)^2+(7-40t)^2}=\sqrt{2500t^2-620t+50}.
+\end{eqnarray*}
+Để hai tàu có khoảng cách ngắn nhất thì $2500t^2-620t+50$ đạt giá trị nhỏ nhất ứng với $t=\dfrac{-b}{2a}=\dfrac{620}{2\cdot 2500}=0,124$ (giây).\\
+Vậy khoảng cách ngắn nhất giữa hai tàu $$NA=\sqrt{2500\cdot (0,124)^2-620\cdot 0,124+50}=3,4.$$
+\end{enumerate}
+}
+\end{bt}

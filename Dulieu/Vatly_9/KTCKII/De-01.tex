@@ -1,0 +1,370 @@
+%%%Tùy chọn 1: Kì thi
+%%%Tùy chọn 2: Môn
+%%%Tùy chọn 3: lớp
+%%%Tùy chọn 4: Sở/Phòng
+%%%Tùy chọn 5: Ngày thi
+%\renewcommand{\thefigure}{\theex}
+\begin{name}[Kiểm tra cuối kì II][Vật lý][9][Sở Giáo dục và Đào tạo]{Trường THCS}{2023 - 2024}
+\end{name}
+\tieumuc{Trắc nghiệm (4 điểm)}
+\Opensolutionfile{ans}[Ans/DATN-VL9CKII-De-01]
+\Opensolutionfile{ansex}[LOIGIAITN/LGTN-VL9CKII-De-01]
+%\luuloigiaiex
+\hienthiloigiaiex
+%\taoNdongke[4]{ex}
+%\tatloigiaiex
+%%%=============EX_1=============%%%
+\begin{ex}
+	Hình bên (\textbf{hình \ref{fig:hinh01}}) là tiết diện mặt cắt ngang của một số thấu kính. Hình nào không phải là thấu kính phân kì?
+	\begin{figure}[thb]
+		\begin{center}
+			\subcaptionbox{\label{subfig:a}}
+			{\begin{tikzpicture}[declare function={r=1;d=0.5;},scale=1.3]
+					\path[draw=\mycolor!50!black,fill=\mycolor!30] (0,0) coordinate (A) to[out=60,in=-60] (0,r) coordinate (B)--(d,r) coordinate (C)
+					to[out=-120,in=120] (d,0) coordinate (D)--cycle;
+			\end{tikzpicture}}\hspace{2cm}
+			\subcaptionbox{\label{subfig:b}}
+			{\begin{tikzpicture}[declare function={r=1;d=0.35;},scale=1.3]
+					\path[draw=\mycolor!50!black,fill=\mycolor!30] (0,0) coordinate (A) -- (0,r) coordinate (B)--(d,r) coordinate (C)
+					to[out=-120,in=120] (d,0) coordinate (D)--cycle;
+			\end{tikzpicture}}\hspace{2cm}
+			\subcaptionbox{\label{subfig:c}}
+			{\begin{tikzpicture}[declare function={r=1;d=0.35;},scale=1.3]
+					\path[draw=\mycolor!50!black,fill=\mycolor!30] (0,0) coordinate (A) to[out=100,in=-100] (0,r) coordinate (B)--(d,r) coordinate (C)
+					to[out=-120,in=120] (d,0) coordinate (D)--cycle;
+			\end{tikzpicture}}\hspace{2cm}
+			\subcaptionbox{\label{subfig:d}}
+			{\begin{tikzpicture}[declare function={r=1;d=0.5;},scale=1.3]
+					\path[draw=\mycolor!50!black,fill=\mycolor!30] (0,0) coordinate (A) to[out=120,in=-120] (0,r) coordinate (B)
+					to[out=-60,in=60]cycle ;
+			\end{tikzpicture}}
+		\end{center}
+		\caption{Mặt cắt ngang một số thấu kính\label{fig:hinh01}}
+	\end{figure}
+	\choice
+	{Hình \textbf{\ref{subfig:a}}}
+	{\True Hình \textbf{\ref{subfig:d}}}
+	{Hình \textbf{\ref{subfig:c}}}
+	{Hình \textbf{\ref{subfig:b}}}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_2=============%%%
+\begin{ex}
+	Chiếu một tia sáng từ không khí vào một môi trường trong suốt dưới góc tới bằng 40 $\mathrm{^\circ}$ thì góc khúc xạ không thể bằng
+	\choice
+	{30 $^0$}
+	{$35^\circ$}
+	{20 $^0$}
+	{\True 50 $^0$}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_3=============%%%
+\begin{ex}
+	Khi góc tới giảm thì góc khúc xạ
+	\choice
+	{tăng}
+	{\True giảm}
+	{không đổi}
+	{tăng rồi giảm}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_4=============%%%
+\begin{ex}
+	Từ nhà máy thủy điện người ta truyền đi một công suất 10 MW dưới hiệu điện thế 500 kV. Biết điện trở của đường dây truyền tải bằng 500 $\Omega$. Công suất hao phí trên đường dây bằng
+	\choice
+	{200 W}
+	{\True 200 kW}
+	{2 MW}
+	{20 kW}
+	\loigiai{}
+\end{ex}
+%%%=============EX_5=============%%%
+\begin{ex}
+	Chiếu một tia sáng từ không khí đến vuông góc với mặt nước. Khi đó góc khúc xạ có giá trị bằng:
+	\choice
+	{$90^\circ$}
+	{$30^\circ$}
+	{$60^\circ$}
+	{\True $0^\circ$}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_6=============%%%
+\begin{ex}
+	Hình vẽ (xem hình \ref{fig:TKHT02}) nào dưới đây biểu diễn sai đường truyền của tia sáng đi qua thấu kính?
+		\begin{figure}[thp]
+		\begin{center}
+			\subcaptionbox{\label{subfig:TKHT01}}{
+			\begin{tikzpicture}[declare function={h=1.3;d=2.2;f=0.55*d;},font=\scriptsize\sffamily\bfseries,scale=0.8]
+				\path[draw=\mycolor,Stealth-Stealth,line width =1.5pt] (0,-h) coordinate (M)--(0,h) coordinate (N);
+				\path[draw=\mycolor](-d,0) coordinate (Xp)--(d,0) coordinate (X);
+				\path (0,0) coordinate (O) 
+				(-f,0) coordinate (F) 
+				(f,0) coordinate (F')
+				({-1.3*f},{0.5*h}) coordinate (S)
+				(0,{0.5*h}) coordinate (I)
+				;
+				\draw (S)--(I)--(F')--([turn]0:1);
+				\foreach \x/\y in {S/I,I/F'}{
+					\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+							\path[fill=red] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+					}};
+				}
+				\foreach \t/\g in {F'/-90,F/90,O/-135,S/135}{
+					\path[fill=red,draw=black] (\t) circle (1pt) node[shift={(\g:7pt)}]{\t};}
+			\end{tikzpicture}
+			}\hspace{0.2cm}
+			\subcaptionbox{\label{subfig:TKHT02}}{
+					\begin{tikzpicture}[declare function={h=1.3;d=2.2;f=0.55*d;},font=\scriptsize\sffamily\bfseries,scale=0.8]
+						\path[draw=\mycolor,Stealth-Stealth,line width =1.5pt] (0,-h) coordinate (M)--(0,h) coordinate (N);
+						\path[draw=\mycolor](-d,0) coordinate (Xp)--(d,0) coordinate (X);
+						\path (0,0) coordinate (O) 
+						(-f,0) coordinate (F) 
+						(f,0) coordinate (F')
+						({-1.3*f},{0.5*h}) coordinate (S)
+						(0,{0.5*h}) coordinate (I)
+						(F)--(I)--([turn]0:1.2) coordinate (Ft)
+						;
+						\draw (S)--(I)--(Ft);
+						\foreach \x/\y in {S/I,I/Ft}{
+							\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+									\path[fill=red] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+							}};
+						}
+						\draw[dashed] (F)--(I);
+						\foreach \t/\g in {F'/-90,F/90,O/-135,S/135}{
+							\path[fill=red,draw=black] (\t) circle (1pt) node[shift={(\g:7pt)}]{\t};}
+					\end{tikzpicture}
+				}\hspace{0.2cm}
+				\subcaptionbox{\label{subfig:TKHT03}}{
+						\begin{tikzpicture}[declare function={h=1.3;d=2.2;f=0.55*d;},font=\scriptsize\sffamily\bfseries,scale=0.8]
+							\path[draw=\mycolor,Stealth-Stealth,line width =1.5pt] (0,-h) coordinate (M)--(0,h) coordinate (N);
+							\path[draw=\mycolor](-d,0) coordinate (Xp)--(d,0) coordinate (X);
+							\path (0,0) coordinate (O) 
+							(-f,0) coordinate (F) 
+							(f,0) coordinate (F')
+							({-1.3*f},{0.5*h}) coordinate (S);
+							\draw(S)--(O)--([turn]0:1.5) coordinate (St);
+							\foreach \x/\y in {S/O,O/St}{
+								\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+										\path[fill=red] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+								}};
+							}
+							\foreach \t/\g in {F'/90,F/-90,O/-135,S/135}{
+								\path[fill=red,draw=black] (\t) circle (1pt) node[shift={(\g:7pt)}]{\t};}
+						\end{tikzpicture}
+					}\hspace{0.2cm}
+					\subcaptionbox{\label{subfig:TKHT04}}{
+							\begin{tikzpicture}[declare function={h=1.3;d=2.2;f=0.55*d;},font=\scriptsize\sffamily\bfseries,scale=0.8]
+								\path[draw=\mycolor,Stealth-Stealth,line width =1.5pt] (0,-h) coordinate (M)--(0,h) coordinate (N);
+								\path[draw=\mycolor](-d,0) coordinate (Xp)--(d,0) coordinate (X);
+								\path (0,0) coordinate (O) 
+								(-f,0) coordinate (F) 
+								(f,0) coordinate (F')
+								({-1.3*f},{0.5*h}) coordinate (S);
+								\draw(S)--(F')--([turn]0:1.0) coordinate (St);
+								\foreach \x/\y in {S/St}{
+									\path (\x)--(\y) node[pos=0.2,sloped] {\tikz{
+											\path[fill=red] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+									}}
+									node[pos=0.6,sloped] {\tikz{
+										\path[fill=red] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+									}}
+									;
+								}
+								\foreach \t/\g in {F'/-90,F/90,O/-135,S/135}{
+									\path[fill=red,draw=black] (\t) circle (1pt) node[shift={(\g:7pt)}]{\t};}
+							\end{tikzpicture}
+						}
+		\end{center}
+		\caption{\label{fig:TKHT02}}
+	\end{figure}
+	\choice
+	{\True Hình \ref{subfig:TKHT02},\ref{subfig:TKHT04}} 
+	{Hình \ref{subfig:TKHT01},\ref{subfig:TKHT03}}
+	{Hình \ref{subfig:TKHT02},\ref{subfig:TKHT03}}
+	{Hình \ref{subfig:TKHT01},\ref{subfig:TKHT04}}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_7=============%%%
+\begin{ex}
+	Những loại gấm óng ánh hai màu có đặc tính là
+	\choice
+	{\True theo góc độ này thì phản xạ tốt ánh sáng màu này, theo góc độ khác thì phản xạ tốt ánh sáng màu khác}
+	{luôn phản xạ ánh sáng đỏ}
+	{luôn phản xạ ánh sáng tím}
+	{có chỗ luôn phản xạ ánh sáng màu này, có chỗ luôn phản xạ ánh sáng màu khác}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_8=============%%%
+\begin{ex}
+	Trong trường hợp nào dưới đây, mắt phải điều tiết mạnh nhất?
+	\choice
+	{Nhìn vật ở điểm cực viễn}
+	{\True Nhìn vật ở điểm cực cận}
+	{Nhìn vật nằm trong khoảng từ cực cận đến cực viễn}
+	{Nhìn vật đặt gần mắt hơn điểm cực cận}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_9=============%%%
+\begin{ex}
+	Một người chỉ nhìn rõ được các vật nằm trước mắt từ 20 cm đến 50 cm. Để sửa tật của mắt, người đó cần đeo sát mắt thấu kính loại gì và có tiêu cự bằng bao nhiêu?
+	\choice
+	{Thấu kính hội tụ có tiêu cự 20 cm}
+	{Thấu kính hội tụ có tiêu cự 50 cm}
+	{Thấu kính phân kì có tiêu cự 20 cm}
+	{\True Thấu kính phân kì có tiêu cự 50 cm}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_10=============%%%
+\begin{ex}
+	Một máy biến áp cuộn sơ cấp có $N_1$ vòng, cuộn thứ cấp có $N_2$ vòng. Máy này gọi là máy tăng áp khi
+	\choice
+	{$N_1 > N_2$}
+	{$N_1=N_2$}
+	{\True $N_1 < N_2$}
+	{$N_1=2N_2$}
+	\loigiai{}
+\end{ex}
+%%%=============EX_11=============%%%
+\begin{ex}
+	Một người muốn đọc sách thì phải để sách cách mắt một khoảng tối đa là 120 cm. Mắt người này bị tật gì? Để sửa tật phải đeo sát mắt kính có tiêu cự bằng bao nhiêu?
+	\choice
+	{Tật cận thị, thấu kính có tiêu cự 120 cm}
+	{\True Tật lão thị, thấu kính có tiêu cự 120 cm}
+	{Tật cận thị, thấu kính có tiêu cự 60 cm}
+	{Tật lão thị, thấu kính có tiêu cự 60 cm}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_12=============%%%
+\begin{ex}
+	Một kính lúp sử dụng thấu kính hội tụ có tiêu cự bằng 5 cm. Số bội giác của kính lúp này bằng
+	\choice
+	{\True $5$}
+	{2,5}
+	{12,5}
+	{$25$}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_13=============%%%
+\begin{ex}
+	Chọn câu đúng?
+	\choice
+	{Tờ bìa đỏ để dưới ánh sáng nào cũng có màu đỏ}
+	{Tờ giấy trắng để dưới ánh sáng đỏ vẫn thấy màu trắng}
+	{\True Mái tóc đen ở chỗ nào cũng là mái tóc đen}
+	{Chiếc bút màu xanh để ở trong phòng tối cũng vẫn thấy màu xanh}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_14=============%%%
+\begin{ex}
+	Cách làm nào dưới đây có thể tạo ra dòng điện cảm ứng?
+	\choice
+	{Nối hai cực của pin vào hai đầu cuộn dây dẫn}
+	{Nối hai cực của nam châm với hai đầu cuộn dây dẫn}
+	{Đưa một cực của ắc quy từ ngoài vào trong một cuộn dây dẫn kín}
+	{\True Đưa một cực của nam châm từ ngoài vào trong một cuộn dây dẫn kín}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_15=============%%%
+\begin{ex}
+	Trong trường hợp nào dưới đây, ánh sáng trắng sẽ không bị phân tích?
+	\choice
+	{Chiếu tia sáng trắng qua một lăng kính}
+	{\True Chiếu tia sáng trắng nghiêng góc vào một gương phẳng}
+	{Chiếu tia sáng trắng nghiêng góc vào mặt ghi âm của một đĩa C}
+	{D. Chiếu chùm sáng trắng vào một bong bóng xà phòng}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_16=============%%%
+\begin{ex}
+	Nhúng một tấm kính màu lục vào một bình nước màu đỏ rồi nhìn tấm kính qua thành ngoài của bình, ta sẽ thấy nó có màu gì?
+	\choice
+	{Màu trắng}
+	{Màu đỏ}
+	{Màu lục}
+	{\True Màu đen}
+	\loigiai{}
+\end{ex}
+
+
+\Closesolutionfile{ansex}
+\Closesolutionfile{ans}
+
+%%%==========Phần trắc nghiệm đúng sai============%%%
+
+\tieumuc{Trắc Nghiệm Đúng Sai (1 điểm)}(\textit{Trong mỗi câu có 4 ý tương ứng A, B, C, D; Học sinh chọn đúng hoặc sai.})
+\Opensolutionfile{ans}[Ans/DATAM-VL9CKII-De-01]
+\Opensolutionfile{ansbook}[Ans/DATNTF-VL9CKII-De-01]
+%\luulgEXTF
+\LGexTF
+%\taoNdongke[5]{ex}
+%\LGexTF
+\Opensolutionfile{ansex}[LOIGIAITN/LGTNTF-VL9CKII-De-01]
+
+%%%============EX_1==============%%%
+\begin{ex}
+	Em hãy cho biết các kết luận sau là đúng hay sai?
+	\choiceTF
+	{\True Hiện tượng khúc xạ ánh sáng chỉ xảy ra tại mặt phân cách giữa hai môi trường trong suốt}
+	{\True Có thể nói mặt phẳng tạo bởi tia tới và tia khúc xạ cũng là mặt phẳng tới}
+	{Góc tới là góc tạo bởi tia tới và mặt phân cách}
+	{Góc khúc xạ là góc tạo bởi tia khúc xạ và tia tới}
+	\loigiai{}
+\end{ex}
+
+\Closesolutionfile{ansex}
+\Closesolutionfile{ansbook}
+\Closesolutionfile{ans}	
+
+%%%==========Phần tự luận============%%%
+\tieumuc{Tự Luận (5 điểm)}
+\Opensolutionfile{ansbt}[LOIGIAITL/LGTL-VL9CKII-De-01]
+%\luuloigiaibt
+\hienthiloigiaibt
+%\taoNdongke[15]{bt}
+%%%=============BT_1=============%%%
+\begin{bt}[$1{,}5$ điểm]Nêu sự giống nhau và khác nhau về cơ bản cấu tạo của mắt và máy ảnh?
+	\loigiai{}
+\end{bt}
+%%%=============BT_2=============%%%
+\begin{bt}[$1{,}0$ điểm]Một nhà máy phát điện hoạt động ở hiệu điện thế $220$ V.Muốn tải điện đi xa người ta phải tăng hiệu điện thế lên thành $15400$ V. Hỏi phải dùng loại máy biến thế với các cuộn dây có số vòng dây theo tỉ lệ như thế nào?. Cuộn dây nào mắc với hai đầu nhà máy phát điện?
+	\loigiai{}
+\end{bt}
+%%%=============BT_3=============%%%
+\begin{bt}[$2{,}5$ điểm] Một người dùng kính lúp có tiêu cự $5$ cm để quan sát một vật nhỏ. Vật cách thấu kính $4$ cm.
+	\begin{enumerate}[a)]
+		\item Dựng ảnh của vật qua thấu kính và nêu đặc điểm của ảnh?
+		\item Ảnh lớn hơn hay nhỏ hơn vật bao nhiêu lần?
+		\item Tìm số ghi trên kính?
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+\Closesolutionfile{ansbt}
+\fileend
+\begin{center}
+	\rule[4pt]{2cm}{1pt}\large \textbf{HẾT}\rule[4pt]{2cm}{1pt}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+

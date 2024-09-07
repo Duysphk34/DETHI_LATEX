@@ -1,0 +1,373 @@
+\section{Đề ôn thi giữa kỳ 2 toán 10}
+\subsection{Phần trắc nghiệm}
+Câu trắc nghiệm nhiều phương án lựa chọn. Học sinh trả lời từ
+câu 1 đến câu 12. Mỗi câu hỏi học sinh \textit{chỉ chọn một} phương án.
+
+\Opensolutionfile{ans}[Ans/Dapan]
+ 
+\hienthiloigiaiex
+%%%============EX_1==============%%%
+\begin{ex}%[0D8N1-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Trong một lớp học có $20$ học sinh nam và $24$ học sinh nữ. Giáo viên chủ nhiệm cần chọn $2$ học sinh gồm $1$ nam và $1$ nữ tham gia đội cờ đỏ. Hỏi giáo viên chủ nhiệm có bao nhiêu cách chọn?
+	\choice
+	{$44$}
+	{$946$}
+	{\True $480$}
+	{$1892$}
+	\loigiai{
+		Có $20$ cách chọn một học sinh nam và $24$ cách chọn một học sinh nữ. Vậy có $20\cdot 24=480$ cách chọn hai bạn ($1$ nam và $1$ nữ) tham gia đội cờ đỏ.
+	}
+\end{ex}
+%%%==============EX_2============%%%
+\begin{ex}%[0D8H1-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Cho sáu chữ số $0,1,2,3,4,5$. Từ sáu chữ số trên có thể lập được bao nhiêu số tự nhiên, mỗi số có bốn chữ số khác nhau và không chia hết cho $5$.
+	\choice
+	{$15$}
+	{$22$}
+	{\True $192$}
+	{$720$}
+	\loigiai{
+		Đặt $E=\{0,1,2,3,4,5\}$.\\
+		Gọi số có bốn chữ số có dạng $\overline{a b c d}$.\\
+		Do $\overline{a b c d}$ không chia hết cho $5$ nên có $4$ cách chọn $d$ (một trong số: 1,2,3,4).\\
+		Chọn $a \in E\setminus\{0; d\}$ nên có 4 cách chọn $a$.\\
+		Chọn $b \in E\setminus\{a; d\}$ nên có 4 cách chọn $b$.\\
+		Chọn $c \in E\setminus\{a; b; d\}$ nên có 3 cách chọn $c$.\\
+		Theo quy tắc nhân ta có $4 \cdot 4\cdot 4 \cdot 3=192$ số tự nhiên thỏa mãn.}
+\end{ex}
+%%%==============EX_3============%%%
+\begin{ex}%[0D8N2-3]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Có bao nhiêu số tự nhiên có bốn chữ số khác nhau được lập từ các số $1,2,3,5,7$.
+	\choice
+	{$15$}
+	{\True $120$}
+	{$10$}
+	{$24$}
+	\loigiai{Số các số cần lập chính là chỉnh hợp chập $4$ của $5$ phần tử, suy ra ta có $A_5^4=120$ số tự nhiên thỏa mãn đề bài.}
+\end{ex}
+%%%============EX_4==============%%%
+\begin{ex}%[0D8N2-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Có bao nhiêu cách sắp xếp $6$ bạn thành một hàng dọc?
+	\choice
+	{${6^6}$}
+	{$5!$}
+	{$6$}
+	{\True $6!$}
+	\loigiai{Sắp xếp $6$ bạn thành một hàng dọc là hoán vị của $6$ phần tử nên số cách sắp xếp là $6!$}
+\end{ex}
+%%%==============EX_5============%%%
+\begin{ex}%[0D8H2-3]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Cho tập hợp $A=\{1,2,3,4,5,6\}$. Từ $A$ lập được bao nhiêu số có ba chữ số đôi một khác nhau và tổng của ba chữ số này bằng $9$?
+	\choice
+	{$6$}
+	{$12$}
+	{\True $18$}
+	{$15$}
+	\loigiai{
+		Gọi $\overline{a b c}$ là số cần lập.\\
+		Theo bài toán ta có bộ số $\{a, b, c\}$ được chọn từ một trong ba bộ $\{1; 2; 6\},\{1; 3; 5\},\{2; 3; 4\}$. Do đó ta có ba cách chọn bộ ba số trên. Trong mỗi bộ số được chọn ta lại có $3 !=6$ cách sắp xếp cúng tạo ra số cần lập. Vậy ta được tất cả $3\cdot 6=18$ cách lập.
+	}
+\end{ex}
+%%%==============EX_6============%%%
+\begin{ex}%[0D8H3-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Khai triển nhị thức $(2 x+y)^5$. Ta được kết quả là
+	\choice
+	{$32 x^5+16 x^4 y+8 x^3 y^2+4 x^2 y^3+2 x y^4+y^5$}
+	{\True $32 x^5+80 x^4 y+80 x^3 y^2+40 x^2 y^3+10 x y^4+y^5$}
+	{$2 x^5+10 x^4 y+20 x^3 y^2+20 x^2 y^3+10 x y^4+y^5$}
+	{$32 x^5+10000 x^4 y+80000 x^3 y^2+400 x^2 y^3+10 x y^4+y^5$}
+	\loigiai{
+		$$
+		\begin{aligned}
+			(2 x+y)^5&=\mathrm{C}_5^0(2 x)^5+\mathrm{C}_5^1(2 x)^4 y+\mathrm{C}_5^2(2 x)^3 y^2+\mathrm{C}_5^3(2 x)^2 y^3+\mathrm{C}_5^4(2 x) y^4+\mathrm{C}_5^5 y^5 \\
+			&=32 x^5+80 x^4 y+80 x^3 y^2+40 x^2 y^3+10 x y^4+y^5
+		\end{aligned}.
+		$$
+	}
+\end{ex}
+%%%==============EX_7============%%%
+\begin{ex}%[0H5N1-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Cho $\vec{a}=(-5; 0), \vec{b}=(4; x)$. Hai vectơ $\vec{a}$ và $\vec{b}$ cùng phương nếu số $x$ là
+	\choice
+	{$-5$}
+	{$4$}
+	{$-1$}
+	{\True $0$}
+	\loigiai{
+		Ta có $\vec{a}$ và $\vec{b}$ cùng phương $\Leftrightarrow \vec{a}=k \cdot \vec{b}(k \in \mathbb{R})
+		 \Leftrightarrow \heva{&-5=4k\\&0=kx} 
+		\Leftrightarrow \heva{&k=-\dfrac{5}{4} \\&x=0.}$ 
+			}
+\end{ex}
+%%%==============EX_8============%%%
+\begin{ex}%[0H5N3-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Cho $\vec{a}=(0; 1), \vec{b}=(-1; 2), \vec{c}=(-3;-2)$. Tọa độ của $\vec{u}=3 \vec{a}+2 \vec{b}-4 \vec{c}$ là
+	\choice
+	{$(10;-15)$}
+	{$(15; 10)$}
+	{\True $(10; 15)$}
+	{$(-10; 15)$}
+	\loigiai{
+		Ta có $\vec{u}=3 \vec{a}+2 \vec{b}-4 \vec{c}=(3 \cdot 0+2.(-1)-4 \cdot(-3); 3 \cdot 1+2 \cdot 2-4 \cdot(-2))=(10; 15)$.
+	}
+\end{ex}
+%%%==============EX_9============%%%
+\begin{ex}%[0H5N3-3]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Cho $A(0; 3), B(4; 2)$. Điểm $D$ thỏa mãn $\overrightarrow{OD}+2 \overrightarrow{DA}-2 \overrightarrow{DB}=\overrightarrow{0}$, tọa độ $D$ là
+	\choice
+	{$(-3; 3)$}
+	{\True $(8;-2)$}
+	{$(-8; 2)$}
+	{$\left(2; \dfrac{5}{2}\right)$}
+	\loigiai{
+		Ta có $\overrightarrow{OD}+2 \overrightarrow{DA}-2 \overrightarrow{DB}=\overrightarrow{0} 
+		\Leftrightarrow
+			\heva{&x_D-0+2\left(0-x_D\right)-2\left(4-x_D\right)=0\\
+				&y_D-0+2\left(3-y_D\right)-2\left(2-y_D\right)=0}$
+		$\Leftrightarrow \heva{&x_D=8\\&y_D=-2.}
+			 \Rightarrow D(8;-2).$
+	}
+\end{ex}
+%%%==============EX_10============%%%
+\begin{ex}%[0H5N3-3]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Trong mặt phẳng $Ox y$, cho $A(-2; 0), B(5;-4), C(-5; 1)$. Tọa độ điểm $D$ để tứ giác $BCAD$ là hình bình hành là
+	\choice
+	{$D(-8;-5)$}
+	{$D(8; 5)$}
+	{$D(-8; 5)$}
+	{\True $D(8;-5)$}
+	\loigiai{
+		Ta có $BCAD$ hình bình hành khi $\overrightarrow{BC}=\overrightarrow{DA} \Leftrightarrow
+		\heva{&-5-5=-2-x_D\\
+			&1+4=0-y_D}
+			 \Leftrightarrow \heva{&x_D=8\\
+			 	&y_D=-5.} \\$
+			 Vậy $D(8;-5)$.
+	}
+\end{ex}
+%%%==============EX_11============%%%
+\begin{ex}%[0H9N3-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Đường thẳng đi qua $A(-3; 2)$ và nhận $\vec{n}=(1; 5)$ làm vectơ pháp tuyến có phương trình tổng quát là
+	\choice
+	{$x+5 y+7=0$}
+	{$-5 x+y-17=0$}
+	{$-x+5 y-13=0$}
+	{\True $x+5 y-7=0$}
+	\loigiai{Đường thẳng đi qua $A(-3; 2)$ và nhận $\vec{n}=(1; 5)$ làm vectơ pháp tuyến có phương trình tổng quát là
+	\[1\cdot (x+3)+5\cdot(y-2)=0\Leftrightarrow x+5y-7=0.\]
+}
+\end{ex}
+%%%==============EX_12============%%%
+\begin{ex}%[0H9H3-4]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Phung Hoang Cuc]%[De 9-CD]
+	Cosin góc giữa hai đường thẳng $\Delta_1:-x+3 y-1=0$ và $\Delta_2\colon\heva{&x=2+t\\
+		&y=1-2t}$ bằng
+	\choice
+	{$\dfrac{\sqrt{5}}{10}$}
+	{$\dfrac{\sqrt{10}}{10}$}
+	{\True $\dfrac{\sqrt{2}}{10}$}
+	{$\dfrac{\sqrt{5}}{2}$}
+	\loigiai{
+		$\Delta_1, \Delta_2$ lần lượt nhận $\vec{n}_1=(-1; 3), \vec{n}_2=(2; 1)$ là vectơ pháp tuyến. 
+		Vậy $\cos \left(\Delta_1, \Delta_2\right)=\left|\cos \left(\vec{n}_1, \vec{n}_2\right)\right|=\dfrac{\left|\vec{n}_1 \cdot \vec{n}_2\right|}{\left|\vec{n}_1\right|\cdot\left|\vec{n}_2\right|}=\dfrac{|-1 \cdot 2+3 \cdot 1|}{\sqrt{(-1)^2+3^2} \cdot \sqrt{2^2+1^2}}=\dfrac{\sqrt{2}}{10}$.
+	}
+\end{ex}
+
+\Closesolutionfile{ans}
+\bangdapan{Dapan}
+
+\subsection{Câu trắc nghiệm đúng sai}
+Học sinh trả lời từ câu 1 đến câu 4.
+Trong mỗi ý \circlenum{A}, \circlenum{B}, \circlenum{C} và \circlenum{D} ở mỗi câu, học sinh chọn đúng hoặc sai.
+\setcounter{ex}{0}
+\LGexTF
+\Opensolutionfile{ansbook}[ansbook/DapanDS]
+\Opensolutionfile{ans}[Ans/DapanT]
+%%%============EX_1==============%%%
+\begin{ex}%[0D8H2-5]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Trương Quan Kía]%[De 9-CD]
+	Có $5$ bông hồng, $4$ bông trắng (mỗi bông đều khác nhau về hình dáng). Một người cần chọn một bó bông từ số bông này. Khi đó:
+	\choiceTF
+	{\True Số cách chọn $4$ bông tùy ý là $126$ cách}
+	{Số cách chọn $4$ bông mà số bông mỗi màu bằng nhau là $50$ cách}
+	{Số cách chọn $4$ bông, trong đó có $3$ bông hồng và $1$ bông trắng là $30$ cách}
+	{\True Số cách chọn $4$ bông có đủ hai màu là $120$ cách}
+\loigiai{
+	\begin{itemize}
+	\item Số cách chọn 4 bông từ 9 bông: $\mathrm{C}_9^4=126$ (cách).
+	\item Số cách chọn 2 bông hồng từ 5 bông hồng: $\mathrm{C}_5^2$ (cách).\\	
+	Số cách chọn 2 bông trắng từ 4 bông trắng: $\mathrm{C}_4^2$ (cách).\\
+	Số cách chọn một bó bông thỏa mãn đề bài: $\mathrm{C}_5^2\cdot\mathrm{C}_4^2=60$ (cách).
+	\item 3 bông hồng, 1 bông trắng: có $\mathrm{C}_5^3\cdot\mathrm{C}_4^1=40$ (cách).
+	\item \textbf{Cách giải 1:} Làm trực tiếp. \\
+	\textbf{Trường hợp 1:} 3 bông hồng, 1 bông trắng: có $\mathrm{C}_5^3\cdot\mathrm{C}_4^1=40$ (cách).\\
+\textbf{Trường hợp 2:} 2 bông hồng, 2 bông trắng: có 		$\mathrm{C}_5^2\cdot\mathrm{C}_4^2=60$ (cách).\\
+	\textbf{Trường hợp 3:} 1 bông hồng, 3 bông trắng: có $\mathrm{C}_5^1\cdot\mathrm{C}_4^3=20$ (cách).\\
+	Theo quy tắc cộng ta có tất cả $40+60+20=120$ (cách chọn).\\
+	\textbf{Cách giải 2:} Phương pháp loại trừ.\\
+	Số cách chọn 4 bông từ 9 bông (tùy ý): $\mathrm{C}_9^4=126$ (cách).\\
+	Số cách chọn 4 bông chi một màu (hồng hoặc trắng): $\mathrm{C}_5^4+\mathrm{C}_4^4=6$ (cách).\\
+	Vậy số cách chọn 4 bông có đủ hai màu: $126-6=120$ (cách).
+	\end{itemize}
+}
+\end{ex}
+
+%%%============EX_2==============%%%
+\begin{ex}%[0D8H3-5]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Trương Quan Kía]%[De 9-CD]
+	Cho $\left(1-\dfrac{1}{2} x\right)^5=a_0+a_1x+a_2x^2+a_3x^3+a_4x^4+a_5x^5$. Vậy 
+	\choiceTF
+	{$a_3=\dfrac{5}{2}$}
+	{\True $a_5=-\dfrac{1}{32}$}
+	{\True Hệ số lớn nhất trong tất cả hệ số là $\dfrac{5}{2}$}
+	{Tổng $a_0+a_1+a_2+a_3+a_4+a_5=\dfrac{1}{16}$}
+\loigiai{
+\begin{eqnarray*}
+	\left(1-\dfrac{1}{2} x\right)^5&=& \mathrm{C}_5^0+ \mathrm{C}_5^1\left(-\dfrac{1}{2} x\right)+ \mathrm{C}_5^2\left(-\dfrac{1}{2} x\right)^2+ \mathrm{C}_5^3\left(-\dfrac{1}{2} x\right)^3+ \mathrm{C}_5^4\left(-\dfrac{1}{2} x\right)^4+ \mathrm{C}_5^5\left(-\dfrac{1}{2} x\right)^5\\
+	&=&1-\dfrac{5}{2} x+\dfrac{5}{2} x^2-\dfrac{5}{4} x^3+\dfrac{5}{16} x^4-\dfrac{1}{32} x^5=a_0+a_1 x+a_2 x^2+a_3 x^3+a_4 x^4+a_5 x^5\quad(*)
+\end{eqnarray*}
+Suy ra: $a_0=1,a_1=-\dfrac{5}{2},a_2=\dfrac{5}{2},a_3=-\dfrac{5}{4},a_4=\dfrac{5}{16},a_5=-\dfrac{1}{32}$.
+\begin{itemize}
+	\item Ta thấy hệ số lớn nhất tìm được là $a_2=\dfrac{5}{2}$.
+	\item Thay $x=1$ vào $(*)$, ta được $\left(1-\dfrac{1}{2}\right)^5=a_0+a_1+a_2+a_3+a_4+a_5$.\\
+	Vậy $a_0+a_1+a_2+a_3+a_4+a_5=\dfrac{1}{32}$.
+\end{itemize}
+}
+\end{ex}
+
+%%%============EX_3==============%%%
+\begin{ex}%[0H9H1-1]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Trương Quan Kía]%[De 9-CD]
+Trong mặt phẳng tọa độ $Oxy$,cho tam giác $ABC$ có các đỉnh thỏa mãn  $\overrightarrow{OA}=2\overrightarrow{i}-\overrightarrow{j}$, $\overrightarrow{OB}=\overrightarrow{i}+\overrightarrow{j}$, $\overrightarrow{OC}=4\overrightarrow{i}+\overrightarrow{j}$. Vậy 
+\choiceTF
+{\True $A(2;-1)$, $B(1;1)$, $C(4;1)$}
+{\True $E$ là trung điểm $AB$ nên $E\left(\dfrac{3}{2};0\right)$}
+{$G$ là trọng tâm $\triangle ABC$ nên $G\left(\dfrac{2}{3};\dfrac{1}{3}\right)$}
+{Điểm $D$ sao cho $ABCD$ là hình bình hành nên $D(2;-1)$}
+\loigiai{
+	\begin{itemize}
+		\item Ta có: $\overrightarrow{OA}=2\overrightarrow{i}-\overrightarrow{j}\Rightarrow A(2;-1)$, $\overrightarrow{OB}=\overrightarrow{i}+\overrightarrow{j}\Rightarrow B(1;1)$, $\overrightarrow{OC}=4\overrightarrow{i}+\overrightarrow{j}\Rightarrow C(4;1)$.
+		\item $E$ là trung điểm $AB$ nên $\heva{& x_E=\dfrac{x_A+x_B}{2}=\dfrac{2+1}{2}=\dfrac{3}{2} \\ & y_E=\dfrac{y_A+y_B}{2}=\dfrac{-1+1}{2}=0}$. Vậy $E\left(\dfrac{3}{2};0\right)$.
+		\item $G$ là trọng tâm $\triangle ABC$ nên $\heva{& x_G=\dfrac{x_A+x_B+x_C}{3}=\dfrac{2+1+4}{3}=\dfrac{7}{3} \\ &y_G=\dfrac{y_A+y_B+y_C}{3}=\dfrac{-1+1+1}{3}=\dfrac{1}{3}}$. Vậy $G\left(\dfrac{7}{3};\dfrac{1}{3}\right)$.
+		\item Ta có: $ABCD$ là hình bình hành 
+		\[\Leftrightarrow\overrightarrow{AD}=\overrightarrow{B C} \Leftrightarrow\heva{&x_D-x_A=x_C-x_B\\&y_D-y_A=y_C-y_B} \Leftrightarrow\heva{&x_D-2=4-1\\&y_D+1=1-1} \Leftrightarrow\heva{&x_D=5\\&y_D=-1}.\]
+		Vậy $D(5;-1)$.
+	\end{itemize}
+}
+\end{ex}
+
+%%%============EX_4==============%%%
+\begin{ex}%[0H9H3-8]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Trương Quan Kía]%[De 9-CD]
+	Chuyển động của vật thể $M$ được thể hiện trên mặt phẳng tọa độ $Oxy$. Vật thể $M$ khởi hành từ điểm $A(5;3)$ và chuyển động thẳng đều với vectơ vận tốc là $\overrightarrow{v}=(1;2)$. Khi đó:
+	\choiceTF
+	{\True Vectơ chỉ phương của đường thẳng biểu diễn chuyển động của vật thể là $\overrightarrow{v}=(1;2)$}
+	{Vật thể $M$ chuyển động trên đường thẳng $2x-3y-1=0$}
+	{\True Tọa độ của vật thể $M$ tại thời điểm $t\quad(t>0)$ tính từ khi khởi hành là $\heva{&x=5+t\\&y=3+2t}$}
+	{\True Khi $t=5$ thì vật thể $M$ chuyển động được quãng đường dài bằng $5\sqrt{5}$}
+\loigiai{
+	\begin{itemize}
+	\item Vectơ chỉ phương của đường thẳng biểu diễn chuyển động của vật thể là $\overrightarrow{v}=(1;2)$.
+	\item Vectơ chỉ phương của đường thẳng biểu diễn chuyển động của vật thể là $\overrightarrow{v}=(1;2)$, do đó đường thẳng này có vectơ pháp tuyến là $\overrightarrow{n}=(2;-1)$. Mặt khác, đường thẳng này đi qua điểm $A(5;3)$ nên có phương trình là: $2(x-5)-(y-3)=0\Leftrightarrow 2x-y-7=0$.
+	\item Vật thể khởi hành từ điểm $A(5;3)$ và chuyển động thẳng đều với vectơ vận tốc là $\overrightarrow{v}=(1;2)$ nên vị trí của vật thể tại thời điểm $t\,\,(t>0)$ có tọa độ là: $\heva{&x=5+t\\&y=3+2t}$. 
+	\item Gọi $B$ là vị trí của vật thể tại thời điểm $t=5$. Do đó, tọa độ của điểm $B$ là $\heva{&x_B=5+5=10\\&y_B=3+2\cdot 5=13}$. Khi đó quãng đường vật thể đi được là $AB=\sqrt{25+100}=5\sqrt{5}$.
+	\end{itemize}
+}
+\end{ex}
+
+\Closesolutionfile{ans}
+\Closesolutionfile{ansbook}
+
+\begin{center}
+	\textbf{\textsf{BẢNG ĐÁP ÁN ĐÚNG SAI}}
+\end{center}
+\input{Ansbook/DapanDS}
+ 
+ 	\subsection{Phần tự luận}
+	
+	\hienthiloigiaibt
+	%%%============BT_1==============%%%
+	\begin{bt}%[0D8H2-6]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Vuong Lam Huy]%[De 9 - CD]
+		Cho hai đường thẳng $d_1$ và $d_2$ song song với nhau. Trên $d_1$ có $10$ điểm phân biệt, trên $d_2$ có $n$ điểm phân biệt $(n \geq 2)$. Biết rằng có $2800$ tam giác mà đỉnh của chúng là các điểm nói trên. Tìm $n$.
+		\loigiai{~\\
+			Nhận xét: Một tam giác được tạo thành cần 2 điểm thuộc $d_1$; $1$ điểm thuộc $d_2$ và ngược lại.\\
+			Vì vậy số tam giác có được là: $\mathrm{C}_{10}^2 \mathrm{C}_n^1+\mathrm{C}_{10}^1 \mathrm{C}_n^2$.\\
+			Ta có: $\mathrm{C}_{10}^2 \mathrm{C}_n^1+\mathrm{C}_{10}^1 \mathrm{C}_n^2=2800 \Leftrightarrow 45 n+5 n(n-1)-2800=0 \Leftrightarrow n=20$.}
+	\end{bt}
+	
+	%%%============BT_2==============%%%
+	\begin{bt}%[0D8H2-3]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Vuong Lam Huy]%[De 9 - CD]
+		Có bao nhiêu số tự nhiên gồm bảy chữ số được chọn từ $1$, $2$, $3$, $4$, $5$ sao cho chữ số $2$ có mặt đúng hai lần, chữ số $3$ có mặt đúng ba lần và các chữ số còn lại có mặt không quá một lần?
+		
+		\loigiai{
+			Xét bảy ô tương ứng với bảy chữ số của số tự nhiên cần lập.\\
+			Chọn hai từ bảy vị trí để đặt chữ số $2$: có $\mathrm{C}_7^2$ (cách).\\
+			Chọn ba từ năm vị trí còn lại để đặt chữ số 3: có $\mathrm{C}_5^3$ (cách).\\
+			Chọn hai chữ số từ $\{1 ; 4 ; 5\}$ rồi xếp vào hai vị trí cuối: $\mathrm{A}_3^2$ (cách).\\
+			Vậy số các số tự nhiên thỏa mãn là $\mathrm{C}_7^2 \mathrm{C}_5^3 \mathrm{A}_3^2=1260$.}
+	\end{bt}
+	
+	%%%============BT_3==============%%%
+	\begin{bt}%[0D8V3-4]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Vuong Lam Huy]%[De 9 - CD]
+		Tìm hệ số của số hạng chứa $x^4$ trong các khai triển sau $\left(x^3-\dfrac{2}{x}\right)^n$, biết rằng $\mathrm{C}_n^{n-1}+\mathrm{C}_n^{n-2}=78$ với $x\neq 0$.\\ 
+		\loigiai{Ta có $\mathrm{C}_n^{n-1}+\mathrm{C}_n^{n-2}=78\Leftrightarrow \dfrac{n!}{(n-1)!1!} + \dfrac{n!}{(n-2)!2!}=78$
+			
+			$\Leftrightarrow n+\dfrac{n(n-1)}{2}=78\Leftrightarrow n^2+n-156=0\Leftrightarrow \hoac{& n=12 \\& n=-13\text{ (loại)}}$.\\
+			Khi đó $f(x)=\left(x^3-\dfrac{2}{x}\right)^{12}=\displaystyle\sum\limits_{k=0}^{12} \mathrm{C}_{12}^k \left(x^3\right)^{12-k}\left(-\dfrac{2}{x}\right)^k=\displaystyle\sum\limits_{k=0}^{12} \mathrm{C}_{12}^k\left(-2\right)^kx^{36-4k}$.\\
+			Số hạng chứa $x^4$ ứng với $k: 36-4 k=4 \Rightarrow k=8$.\\
+			Hệ số của số hạng chứa $x^4$ là: $(-2)^8 \mathrm{C}_{12}^8=126720$.}
+	\end{bt}
+	
+	%%%============BT_4==============%%%
+	\begin{bt}%[0H9C1-3]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Vuong Lam Huy]%[De 9 - CD]
+		Cho ba điểm $A\left(-1 ; 4\right), B\left(1 ; 1\right), C\left(3 ;-1\right)$. Tìm điểm $M$ thuộc trục hoành sao cho $\left|MA - MB\right|$ bé nhất.\\
+		\loigiai{Ta thấy: $y_A y_B=4\cdot 1>0 \Rightarrow A, B$ nằm cùng phía so với trục $O x$.\\
+			Ta có: $\left|A M-B M\right| \leq AB$ nên $\left|A M-B M\right|_{\max }=A B$.\\
+			Giá trị lớn nhất này đạt được khi $A$, $B$, $M$ thẳng hàng ($M$ nằm ngoài $A B$).\\
+			Gọi $M(x ; 0) \in Ox \Rightarrow \overrightarrow{A M}=(x+1 ;-4), \overrightarrow{A B}=(2 ;-3)$.\\
+			Ta có: $\overrightarrow{A M}$, $\overrightarrow{A B}$ cùng phương $\Leftrightarrow \dfrac{x+1}{2}=\dfrac{-4}{-3} \Leftrightarrow 3(x+1)=8 \Leftrightarrow x=\dfrac{5}{3}$ hay $M\left(\dfrac{8}{3} ; 0\right)$.}
+	\end{bt}
+	
+	%%%============BT_5==============%%%
+	\begin{bt}%[0H9C3-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Vuong Lam Huy]%[De 9 - CD]
+		Cho hai đường thẳng $d_1: \heva{& x=t \\ & y=-2+2 t}$, $d_2: x+y+3=0$. Viết phương trình tham số đường thẳng $d$ qua điểm $M\left( 3 ; 0\right) $, đồng thời cắt hai đường thẳng $d_1$, $d_2$ tại hai điểm $A$, $B$ sao cho $M$ là trung điểm của đoạn $AB$.
+		
+		\loigiai{Xét đường thẳng $d_2: x+y+3=0$; thay $x=t' \Rightarrow y=-3-t'$, ta có phương trình tham số $d_2:\heva{& x=t' \\ &y=-3-t'}$.\\
+			Gọi $A=d \cap d_1 \Rightarrow A(t ;-2+2 t)$; gọi $B=d \cap d_2 \Rightarrow B\left(t' ;-3-t'\right)$.\\
+			Vì $M(3; 0)$ là trung điểm của đoạn $AB$ nên $\heva{& 3=\dfrac{t+t'}{2} \\& 0=\dfrac{-2+2 t-3-t'}{2}} \Rightarrow\heva{ & t+t'=6 \\ &2 t-t'=5} \Rightarrow\heva{ & t=\dfrac{11}{3} \\& t'=\dfrac{7}{3}}$. \\
+			Ta có $A\left(\dfrac{11}{3} ; \dfrac{16}{3}\right) \Rightarrow \overrightarrow{AM}=\left(-\dfrac{2}{3} ;-\dfrac{16}{3}\right)=-\dfrac{2}{3} \overrightarrow{u}$ với $\overrightarrow{u}=(1 ; 8)$ là một vectơ chỉ phương của $d$. Phương trình tham số của $d$ là $\heva{&x=3+t \\& y=8 t}$}
+	\end{bt}
+	
+	%%%============BT_6==============%%%
+	\begin{bt}%[0H9C3-7]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Vuong Lam Huy]%[De 9 - CD]
+		Trong mặt phẳng tọa độ $O x y$, hình chữ nhật $A B C D$ có điểm $H\left( 1 ; 2\right)$ là hình chiếu vuông góc của $A$ lên cạnh $B D$. Điểm $M\left(\dfrac{9}{2} ; 3\right)$ là trung điểm cạnh $B C$. Phương trình đường trung tuyến kẻ từ đỉnh $A$ của tam giác $ADH$ là $4x+y-4=0$. Biết điểm $D\left( a ; b\right) $, tính biểu thức $P=4 a^2+b^2$.
+		
+		\loigiai{
+			\immini{Gọi $K$ và $F$ lần lượt là trung điểm của $AH$ và $DH$.\\
+				Ta có: $KF$ là đường trung bình của tam giác $AHD$\\
+				$\Rightarrow \heva{& KF \parallel AD \\ &KF=\dfrac{1}{2} A D}$.\\
+				Lại có $BM=\dfrac{1}{2} BC=\dfrac{1}{2} AD$ nên tứ giác $K F M B$ là hình bình hành. \\
+				Do $B M \perp A B$ nên $K F \perp A B$ suy ra $K$ là trực tâm tam giác $A B F$.}
+			{\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+					\path
+					(0,3) coordinate (A)
+					(0,0) coordinate (B)
+					(4,0) coordinate (C)
+					(4,3) coordinate (D)
+					($(B)!(A)!(D)$) coordinate (H)
+					($(A)!0.5!(H)$) coordinate (K)
+					($(H)!0.5!(D)$) coordinate (F)
+					($(B)!0.5!(C)$) coordinate (M)	
+					;
+					\draw
+					(A)--(B)--(C)--(D)--cycle
+					(A)--(H)
+					(B)--(K)--(F)--(M)
+					(B)--(D)
+					;
+					\foreach\x/\g in{A/135,B/-135,C/-45,D/45,H/-45,K/60,F/-45,M/-90}
+					\fill(\x)circle (1pt)($(\x)+(\g:3mm)$)node{$\x$};	
+					\tkzMarkRightAngles(F,H,K);
+			\end{tikzpicture}}
+			\noindent $\Rightarrow B K \perp F A \Rightarrow M F \perp F A$. Theo giả thiết, phương trình $A F: 4 x+y-4=0$.\\
+			Đường thẳng $M F$ đi qua điểm $M\left(\dfrac{9}{2} ; 3\right)$ và vuông góc với $A F$.\\
+			Do đó $M F$ có phương trình: $x-4 y+\dfrac{15}{2}=0$.\\
+			Ta có $F=A F \cap M F$. Khi đó, tọa độ điểm $F$ là nghiệm của hệ phương trình:
+			\[\heva{&x - 4 y + \dfrac { 1 5 } { 2 } = 0  \\& 4 x + y - 4 = 0 } \Leftrightarrow \heva{& x=\dfrac{1}{2} \\ & y=2} \Rightarrow F\left(\dfrac{1}{2} ; 2\right).\]
+			Do $F$ là trung điểm $D H$ nên $D\left( 0 ; 2\right)  \Rightarrow a=0 ; b=2 \Rightarrow P=4 a^2+b^2=4$.}
+	\end{bt}

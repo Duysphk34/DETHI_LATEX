@@ -1,0 +1,285 @@
+%%%Tùy chọn 1: Kì thi
+%%%Tùy chọn 2: Môn
+%%%Tùy chọn 3: lớp
+%%%Tùy chọn 4: Sở/Phòng
+%%%Tùy chọn 5: Ngày thi
+\begin{name}[Kiểm tra cuối kì II][Vật lý][9][Sở Giáo dục và Đào tạo]{Trường THCS}{2023 - 2024}
+\end{name}
+\tieumuc{Trắc nghiệm (4 điểm)}
+\Opensolutionfile{ans}[Ans/DATN-VL9CKII-De-05]
+%\luuloigiaiex
+\hienthiloigiaiex
+%\taoNdongke[4]{ex}
+%\tatloigiaiex
+\Opensolutionfile{ansex}[LOIGIAITN/LGTN-VL9CKII-De-05]
+
+
+%%%=============EX_1=============%%%
+\begin{ex}
+	Một tia sáng đèn pin được rọi từ không khí vào một xô nước trong. Tại đâu sẽ xảy ra hiện tượng khúc xạ ánh sáng?
+	\choice
+	{Trên đường truyền trong không khí}
+	{\True Tại mặt phân cách giữa không khí và nước}
+	{Trên đường truyền trong nước}
+	{Tại đáy xô nước}
+	\loigiai{}
+\end{ex}
+%%%=============EX_2=============%%%
+\begin{ex}
+	Một người có khả năng nhìn rõ các vật nằm trước mắt từ 15 cm đến 1 m. Hỏi mắt người ấy có mắc tật gì không?
+	\choice
+	{Không mắc tật gì}
+	{\True Mắc tật cận thị}
+	{Mắc tật lão thị}
+	{Bị mù màu}
+	\loigiai{}
+\end{ex}
+%%%=============EX_3=============%%%
+\begin{ex}
+	Cách làm nào dưới đây tạo ra sự trộn các ánh sáng màu?
+	\choice
+	{Chiếu một chùm sáng vàng qua một kính lọc màu đỏ}
+	{Chiếu một chùm sáng đỏ qua một kính lọc màu vàng}
+	{Chiếu một chùm sáng trắng qua một kính lọc màu đỏ và sau đó qua kính lọc màu vàng}
+	{\True Chiếu một chùm sáng đỏ và một chùm sáng vàng vào một tờ giấy trắng}
+	\loigiai{}
+\end{ex}
+%%%=============EX_4=============%%%
+\begin{ex}
+	Trong hiện tượng khúc xạ ánh sáng, pháp tuyến là:
+	\choice
+	{\True đường thẳng vuông góc với mặt phân cách giữa hai môi trường}
+	{đường thẳng song song với mặt phân cách giữa hai môi trường}
+	{đường thẳng nằm trên mặt phân cách giữa hai môi trường}
+	{đường thẳng tạo với mặt phân cách giữa hai môi trường một góc $45^\circ$}
+	\loigiai{}
+\end{ex}
+%%%=============EX_5=============%%%
+\begin{ex}
+	Thấu kính hội tụ có tiêu cự nào dưới đây không thể dùng làm kính lúp được?
+	\choice
+	{10 cm}
+	{15 cm}
+	{20 cm}
+	{\True 25 cm}
+	\loigiai{}
+\end{ex}
+%%%=============EX_6=============%%%
+\begin{ex}
+	Trong việc sưởi nắng của người già và việc tắm nắng của trẻ em, người ta đã sử dụng những tác dụng gì của ánh nắng Mặt Trời?
+	\choice
+	{Đối với cả người già và trẻ em đều sử dụng tác dụng nhiệt}
+	{Đối với cả người già và trẻ em đều sử dụng tác dụng sinh học}
+	{\True Đối với người già thì sử dụng tác dụng nhiệt, còn đối với trẻ em thì sử dụng tác dụng sinh học}
+	{Đối vớivngười già thì sử dụng tác dụng sinh học, còn đối với trẻ em thì sử dụng tác dụng nhiệt}
+	\loigiai{}
+\end{ex}
+%%%=============EX_7=============%%%
+\begin{ex}Trên hình vẽ(xem hình \ref{fig:hinh04}) biết SI là tia chiếu từ không khí tới mặt nước, tia khúc xạ của tia này trùng với một trong bốn tia 1, 2, 3, 4. Tia khúc xạ là tia số
+	\begin{figure}[thb]
+		\begin{center}
+			\begin{tikzpicture}[declare function={r=3.2;h=1.3cm;i=48;},scale=1.5]
+				\path(0,0) coordinate (P)
+				(r,0) coordinate (Q)	
+				($(r,0)+(0,-h)$) coordinate (C)
+				($(P)!0.5!(Q)$) coordinate (I)
+				($(I)+(0,h)$) coordinate (N)
+				($(I)+(0,-h)$) coordinate (M)
+				($(I)!1.3!i:(N)$) coordinate (S)
+				($(I)!1.36!{i+15}:(M)$) coordinate (R) node[shift={(-30:8pt)},font=\scriptsize] {(4)}
+				($(I)!1.36!{i+0}:(M)$) coordinate (Rm) node[shift={(-60:10pt)},font=\scriptsize] {(3)}
+				($(I)!1.1!{i-20}:(M)$) coordinate (Rh) node[shift={(-70:8pt)},font=\scriptsize] {(2)}
+				($(I)!1.5!{-i}:(M)$) coordinate (Rb)  node[shift={(-140:12pt)},font=\scriptsize] {(1)}
+				;
+				\draw[red,line width=1pt] (S)--(I);
+				\foreach \t/\mau in {R/red,Rm/cyan,Rh/blue,Rb/violet}{
+					\draw[\mau,line width=1pt] (I)--(\t);
+				}
+				\foreach \x/\y/\mau in {S/I/red,I/R/red,I/Rm/cyan,I/Rh/blue}{
+					\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+							\path[fill=\mau] (0,-2pt)--(0,2pt)--(4pt,0)--cycle;
+					}};
+				}
+				\foreach \x/\y/\mau in {I/Rb/violet}{
+					\path (\x)--(\y) node[pos=0.5,sloped,midway] {\tikz{
+							\path[fill=\mau] (0,-2pt)--(0,2pt)--(-4pt,0)--cycle;
+					}};
+				}
+				\draw[gray,line width=0.5pt] ([yshift=-h]I)--([yshift=h]I);
+				\path[fill=cyan!30,opacity=0.3] (P) rectangle (C);
+				\draw[cyan,line width=1pt,opacity=0.6] (P)--(Q);
+				\foreach \t/\g in {P/200,Q/0,N/90,M/-90,I/45,S/120}{
+					\path (\t)  node[shift={(\g:5pt)},font=\scriptsize]{$ \t $};
+				}
+			\end{tikzpicture}
+		\end{center}
+		\caption{\label{fig:hinh04}}
+	\end{figure}
+	\choice
+	{(1)}
+	{(4)}
+	{(3)}
+	{\True (2)}
+	\loigiai{}
+\end{ex}
+%%%=============EX_8=============%%%
+\begin{ex}
+	Khi tia sáng truyền từ không khí sang các môi trường trong suốt rắn, lỏng khác nhau thì góc khúc xạ:
+	\choice
+	{\True luôn nhỏ hơn góc tới}
+	{luôn lớn hơn góc tới}
+	{có thể lớn hơn hoặc nhỏ hơn góc tới}
+	{luôn bằng $90^\circ$}
+	\loigiai{}
+\end{ex}
+%%%=============EX_9=============%%%
+\begin{ex}
+	Chỉ ra câu sai?
+	Chiếu một chùm sáng song song vào một thấu kính hội tụ theo phương vuông góc với mặt của thấu kính thì chùm tia khúc xạ ra khỏi thấu kính sẽ
+	\choice
+	{\True loe rộng dần ra}
+	{thu nhỏ dần lại}
+	{bị thắt lại}
+	{gặp nhau tại một điểm}
+	\loigiai{}
+\end{ex}
+%%%=============EX_10=============%%%
+\begin{ex}
+	Phân tích một chùm sáng là
+	\choice
+	{\True tìm cách tách từ chùm sáng đó ra những chùm sáng màu khác nhau}
+	{tìm cách tách ra một chùm sáng màu đỏ từ chùm sáng đó}
+	{tìm cách tạo ra ánh sáng trắng từ chùm sáng đó}
+	{tìm cách tách ra một chùm sáng có màu bất kì từ chùm sáng đó}
+	\loigiai{}
+\end{ex}
+
+%%%=============EX_11=============%%%
+\begin{ex}
+	Vật kính máy ảnh là loại thấu kính gì và thường được làm bằng vật liệu gì?
+	\choice
+	{\True Là thấu kính hội tụ và thường làm bằng thủy tinh}
+	{Là thấu kính hội tụ và thường làm bằng nhựa trong}
+	{Là thấu kính phân kì và thường làm bằng thủy tinh}
+	{Là thấu kính phân kì và thường làm bằng nhựa trong}
+	\loigiai{}
+\end{ex}
+%%%=============EX_12=============%%%
+\begin{ex}
+	Chiếu một tia sáng vào một thấu kính hội tụ. Tia ló ra khỏi thấu kính sẽ qua tiêu điểm nếu
+	\choice
+	{tia tới đi qua quang tâm mà không trùng với trục chính}
+	{tia tới đi qua tiêu điểm nằm ở trước thấu kính}
+	{\True tia tới song song với trục chính}
+	{tia tới bất kì}
+	\loigiai{}
+\end{ex}
+%%%=============EX_13=============%%%
+\begin{ex}
+	Làm cách nào để tạo ra được dòng điện cảm ứng trong đinamô xe đạp?
+	\choice
+	{Nối hai đầu đinamô với hai cực của một ăc quy}
+	{Cho bánh xe đạp cọ xát mạnh vào núm đinamô}
+	{\True Làm cho nam châm trong đinamô quay trước cuộn dây}
+	{Cho xe đạp chạy nhậnh trên đường}
+	\loigiai{}
+\end{ex}
+%%%=============EX_14=============%%%
+\begin{ex}
+	Một máy biến áp cuộn sơ cấp có 1000 vòng, cuộn thứ cấp có 200 vòng. Nếu đặt vào hai đầu cuộn sơ cấp một hiệu điện thế 50 V thì hiệu điện thế ở hai đầu cuộn thứ cấp bằng
+	\choice
+	{\True 10 V}
+	{100 V}
+	{250 V}
+	{500 V}
+	\loigiai{}
+\end{ex}
+%%%=============EX_15=============%%%
+\begin{ex}
+	Trên cùng một đường dây tải đi một công suất điện xác định dưới hiệu điện thế xác định, nếu dùng dây dẫn có đường kính tiết diện tăng bốn lần thì công suất hao phí vì tỏa nhiệt sẽ thay đổi như thế nào?
+	\choice
+	{Tăng lên 16 lần}
+	{Tăng lên bốn lần}
+	{\True Giảm đi 16 lần}
+	{Giảm đi bốn lần}
+	\loigiai{}
+\end{ex}
+%%%=============EX_16=============%%%
+\begin{ex}
+	Trong máy phát điện xoay chiều, khi quay nam châm của máy phát thì trong cuộn dây của nó xuất hiện dòng điện xoay chiều vì:
+	\choice
+	{từ trường trong lòng cuộn dây luôn tăng}
+	{số đường sức từ qua tiết diện S của cuộn dây luôn tăng}
+	{từ trường trong lòng cuộn dây không biến đổi}
+	{\True số đường sức từ qua tiết diện S của cuộn dây luân phiên tăng giảm}
+	\loigiai{}
+\end{ex}
+
+\Closesolutionfile{ansex}
+\Closesolutionfile{ans}
+
+%%%==========Phần trắc nghiệm đúng sai============%%%
+
+\tieumuc{Trắc Nghiệm Đúng Sai (1 điểm)}(\textit{Trong mỗi câu có 4 ý tương ứng A, B, C, D; Học sinh chọn đúng hoặc sai.})
+\Opensolutionfile{ans}[Ans/DATAM-VL9CKII-De-05]
+\Opensolutionfile{ansbook}[Ans/DATNTF-VL9CKII-De-05]
+%\luulgEXTF
+\LGexTF
+\Opensolutionfile{ansex}[LOIGIAITN/LGTNTF-VL9CKII-De-05]
+%%%=============EX_17=============%%%
+\begin{ex}Trong các phát biểu sau:
+	\choiceTF
+	{\True Khi tia sáng truyền từ nước ra môi trường không khí thì góc khúc xạ lớn hơn góc tới}
+	{Thấu kính hội tụ và thấu kính phân kì đều tạo ảnh hứng được trên màn chắn}
+	{Hiện tượng cầu vòng trên bầu trời sau cơn mưa là hiện tượng khúc xạ ánh sáng}
+	{\True Khi một vật được ném từ dưới mặt đất lên cao, trong quá trình đi lên động năng giảm dần và thế năng tăng dần}
+	\loigiai{}
+\end{ex}
+
+\Closesolutionfile{ansex}
+\Closesolutionfile{ansbook}
+\Closesolutionfile{ans}	
+
+%%%==========Phần tự luận============%%%
+\tieumuc{Tự Luận (5 điểm)}
+\Opensolutionfile{ansbt}[LOIGIAITL/LGTL-VL9CKII-De-05]
+%\luuloigiaibt
+%\hienthiloigiaibt
+%\taoNdongke[15]{bt}
+%%%=============BT_1=============%%%
+\begin{bt}[$1{,}0$ điểm]Nêu những điểm giống nhau và khác nhau của ảnh ảo tạo bởi thấu kính  hội tụ và thấu kính phân kì.
+	\loigiai{}
+\end{bt}
+
+%%%=============BT_2=============%%%
+\begin{bt}[$2{,}0$ điểm]Biết khoảng cách từ thủy tinh thể đến màng lưới là $2\mathrm{~cm}$ không đổi.Khi mắt nhìn một vật thì tiêu cự của thủy tinh thể là $1{,}98\mathrm{~cm}$.
+	\begin{enumerate}[a)]
+		\item Vẽ hình minh họa sự tạo ảnh.
+		\item Tính khoảng cách từ vật đến mắt.
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+%%%=============BT_3=============%%%
+\begin{bt}[$2{,}0$ điểm]
+	\begin{enumerate}[a)]
+		\item Nêu đặc điểm của mắt lão và cách khắc phục
+		\item Một bà lão chỉ nhìn rõ những vật gần nhất cách mắt $50$ cm. Muốn nhìn rõ vật gần nhất cách mắt $25$ cm thì bà lão phải đeo kính loại gì, có tiêu cự bằng bao nhiêu?
+	\end{enumerate}
+	\loigiai{}
+\end{bt}
+\Closesolutionfile{ansbt}
+\fileend
+\begin{center}
+	\rule[4pt]{2cm}{1pt}\large \textbf{HẾT}\rule[4pt]{2cm}{1pt}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+

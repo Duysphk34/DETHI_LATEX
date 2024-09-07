@@ -1,0 +1,25 @@
+\RenewDocumentCommand{\MuiTen}{O{}O{}O{}O{}O{\arrowS}O{black}O{-1}}{
+	\ifblank{#1}{\def\tuychonone{}}{\def\tuychonone{#1}}
+	\ifblank{#2}{\def\tuychontwo{}}{\def\tuychontwo{#2}}
+	\ifblank{#3}{\def\tuychonthree{.65}}{\def\tuychonthree{#3}}
+	\ifblank{#4}{\def\tuychonfour{0.5}}{\def\tuychonfour{#4}}
+	\ignorespaces\hspace*{-14pt}\canhdong{\begin{tikzpicture}[declare function={d=\tuychonthree;h=\tuychonfour pt;r= 0.5*h;}]
+			\path[->,#5,#6](0,0-r)--(d,0-r);
+			\draw[->,#5,#6](0,h+r)--(d,h+r) 
+			node [pos=0.5,above,yshift=-#7pt]{\scriptsize\tuychonone}node [pos=0.5,below,yshift=#7pt]{\scriptsize\tuychontwo};
+	\end{tikzpicture}}
+	\ignorespacesafterend\hspace*{-6pt}
+}
+%%%============Bắt đầu môi trường EX=========%%%
+\begin{ex}[Cân bằng phản ứng oxi hóa - khử] 
+	Cân bằng các phương trình phản ứng sau bằng phương pháp thăng bằng electron
+	\begin{enumerate}[(1)]
+		\item$KMnO_4$ \MuiTen[$t^{\circ}$] $K_2MnO_4$ \explus $MnO_2$ \explus $O_2$
+		\item$2Ca$ \explus $O_2$ \MuiTen $2CaO$
+		\item$A3$ \explus $B3$ \explus $C3$ \MuiTen $X3$ \explus $Y3$ \explus $Z3$
+		\item$Aa1$ \explus $Bb1$ \explus $Cc1$ \MuiTen $Xa1$ \explus $Ya1$
+		\item$Aa2$ \explus $Bb2$ \explus $Cc2$ \MuiTen $Xa2$ \explus $Ya2$ \explus $Za2$
+		\item$Aa3$ \explus $Bb3$ \explus $Cc3$ \MuiTen $Xa3$ \explus $Ya3$ \explus $Za3$
+	\end{enumerate}
+\end{ex}
+%%%============Kết thúc môi trường EX=========%%%

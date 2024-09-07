@@ -1,0 +1,872 @@
+\usepackage{amsmath}
+\allowdisplaybreaks[4]
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fontawesome,pifont,oplotsymbl}
+\usepackage{marvosym}
+\usepackage{savesym}
+\savesymbol{Cross}
+\usepackage{bbding}
+\restoresymbol{bb}{Cross}
+\usepackage{tikz}
+\usetikzlibrary{calc,angles,intersections,shapes.geometric,arrows,decorations.markings,patterns,fadings,
+shadows,backgrounds}
+\tikzfading[name=fade out, inner color=transparent!0,outer color=transparent!100]
+\tikzfading[name=fade left, top color=transparent!0,bottom color=transparent!0,middle color=transparent!100]
+\tikzfading[name=fade right,left color=transparent!0,right color=transparent!100]
+\usepackage{graphicx}%chỉnh hình ảnh
+\usepackage{pgfornament}
+\usepackage{makecell}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let
+\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let
+\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let
+\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\renewcommand{\arraystretch}{1.25}
+\usepackage[most,xparse,many]{tcolorbox}
+\usepackage[explicit]{titlesec} %Gói thiết lập chương mục
+\newcommand\circlenum[2][cyan]{\tikz[baseline=(char.base)]
+{\node[shape=circle,inner sep=1pt,draw=#1,fill=#1!10,
+font=\bfseries\footnotesize,minimum size=14pt,outer sep=0pt] (char) {#2};}}
+\newcommand\circlenumH[2][cyan]{\tikz[baseline=(char.base)]
+{\node[shape=circle,inner sep=0.5pt,draw=#1,%fill=#1!10,
+font=\bfseries\footnotesize,minimum size=13pt,outer sep=0pt] (char) {#2};}}
+\let\oldcenter\center
+\let\oldendcenter\endcenter
+\renewenvironment{center}{\setlength\topsep{-3pt}\oldcenter}{\oldendcenter\vspace*{-3pt}}
+\usepackage{multicol}
+\setlength{\multicolsep}{2pt plus 1pt minus 1pt}
+%%%============================================%%%
+\DeclareSymbolFont{symbolsC}{U}{txsyc}{m}{n}
+\DeclareMathSymbol{\varparallel}{\mathrel}{symbolsC}{9}
+\renewcommand{\parallel}{\mathbin{\!\raisebox{0.25pt}/\mkern-2mu\raisebox{0.25pt}/\!}}
+\renewcommand{\backsim}{\ \mathord{\raisebox{0.025\baselineskip}{\rotatebox{90}{\fontfamily{qag}\selectfont S}}}\ }
+\setlength\arraycolsep{2pt}
+\newcommand{\hoac}[1]{\renewcommand{\arraystretch}{0.85}\left[\begin{aligned}#1\end{aligned}\right.}
+\newcommand{\heva}[1]{\renewcommand{\arraystretch}{0.85}\left\{\begin{aligned}#1\end{aligned}\right.}
+\DeclareSymbolFont{AMSb}{U}{msb}{m}{n}
+\makeatletter
+\DeclareSymbolFontAlphabet{\math@bb}{AMSb}
+\AtBeginDocument{\protected\def\mathbb{\math@bb}}
+\g@addto@macro\normalsize{
+\setlength{\abovedisplayskip}{4pt}%
+\setlength{\belowdisplayskip}{2pt}%
+\setlength{\abovedisplayshortskip}{4pt}%
+\setlength{\belowdisplayshortskip}{1pt}%
+}
+\makeatother
+\def\bmod{\operatorname{mod}\,}
+\makeatletter
+\DeclareRobustCommand
+\vdots{\,\vbox{\baselineskip3\p@ \lineskiplimit\z@
+\hbox{.}\hbox{.}\hbox{.}}\,}
+\makeatother
+\usepackage[explicit]{titlesec} %Gói thiết lập chương mục
+\titlespacing*{\subsection}{0pt}{3pt}{6pt}
+\titleformat{\subsection}{}{}{0pt}{%
+{{\large\bfseries\sffamily\Roman{subsection}. \MakeUppercase{#1}}}
+}
+\titlespacing*{\subsubsection}{0pt}{3pt}{6pt}
+\newfont{\damsc}{uncbc8v at 15pt}
+\newfont{\damss}{t5-lmssbx10 at 15pt}
+\newfont{\damugq}{ugqb8v at 19pt}
+\titleformat{\subsubsection}{}{}{0pt}{%
+	{\bfseries\sffamily\color{darkmidnightblue}\arabic{subsubsection})\, #1}
+}
+\def\muctieu{}
+\newcounter{demsode}
+\definecolor{maudodl}{HTML}{640005}
+%\titleformat{\section}
+%{\filcenter\setcounter{bt}{0}\setcounter{ex}{0}}
+%{}
+%{0pt}
+%{%
+%%	\newpage%
+%	\noindent\refstepcounter{demsode}\label{bddethi\thedemsode}%
+%	\begin{tcolorbox}[colback=cyan!9,colframe=white,frame empty,code={\renewcommand{\arraystretch}{0.9}},boxsep=3pt]
+%			\resizebox{\linewidth}{!}{\begin{tabular}{cc}
+%			{\color{\mauchinh}\bfseries\sffamily\resizebox{6.5cm}{9pt}{\MakeUppercase{LaTeX Theme and Related Topics}}}
+%			&
+%			{\color{maudoilap}\bfseries\sffamily\resizebox{7.9cm}{15.5pt}{\MakeUppercase{#1}}}\\					
+%%			{\ifnum\number\numexpr\getpagerefnumber{bddethi\number\numexpr\thedemsode+1\relax}-\getpagerefnumber{bddethi\thedemsode}>0
+%%				({\itshape Đề kiểm tra có \number\numexpr\getpagerefnumber{bddethi\number\numexpr\thedemsode+1\relax}-\getpagerefnumber{bddethi\thedemsode} \relax\ trang})
+%%			\else
+%%				(\textit{Đề kiểm tra có 1 trang})
+%%			\fi }
+%			{\color{maudodl}\bfseries\selectfont \textbf{ĐỀ SỐ \circlenumH[maudodl]{\fontfamily{ugq}\selectfont\Large\thedemsode }}}
+%			&
+%			{\bfseries\sffamily Môn: Toán học - Lớp: 10}\\
+%			{\hypersetup{linkcolor=maudodl} (\textit{từ trang \pageref{bddethi\thedemsode} đến \pageref{bddethi\number\numexpr\thedemsode+1\relax}})}&
+%			{Thời gian: \textbf{\thoigian}\ phút (\textit{không kể phát đề})} 
+%			\end{tabular}}
+%	\end{tcolorbox}	\vspace*{-\baselineskip}
+%% \begin{tikzpicture}
+%%	 \path (0,0) node[outer sep=5pt] (A){{\damsc Đề} {\damugq\arabic{section}}{\damss.\; \MakeUppercase{#1}}} ;			
+%%	 \path[color=cyan!85!blue] (A.south east) coordinate (NB) 
+%%	 (A.south west) coordinate (NA) to [ornament=88] ($(NA)!0.35!(NB)$)
+%%	 ($(NA)!0.3!(NB)$) to [ornament=88] ($(NA)!0.7!(NB)$)
+%%	 ($(NA)!0.65!(NB)$) to [ornament=88] (NB);
+%%	 \path[color=cyan!65] (A.north east) coordinate (NB) 
+%%	 (A.north west) coordinate (NA) to [ornament=88] ($(NA)!0.35!(NB)$)
+%%	 ($(NA)!0.3!(NB)$) to [ornament=88] ($(NA)!0.7!(NB)$)
+%%	 ($(NA)!0.65!(NB)$) to [ornament=88] (NB); 
+%% \end{tikzpicture}
+%}
+ %%%=============================================%%%
+ %%%=============================================%%%
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\color{darkmidnightblue}\sffamily Chương \arabic{chapter}.\ {#1}}{}%
+}
+\renewcommand{\sectionmark}[1]{\markright{{\small\color{dnxanh}\faApple }\,\color{darkmidnightblue}\sffamily\small \thesection. #1}}
+\usepackage{eso-pic}
+\usepackage{qrcode}
+\usepackage{miama}
+\AddToShipoutPicture{
+\ifodd\thepage
+\begin{tikzpicture}[overlay,remember picture]
+\path ($(current page.south east)+(135:1.5)$) node[path fading=fade out,fill=cyan!65,minimum size=15pt,double,inner sep=0.1pt,
+regular polygon, regular polygon sides=4,shape border rotate=45,font=\normalsize\sffamily](char){\thepage\;}
+node[minimum size=15pt,inner sep=0.1pt,
+regular polygon, regular polygon sides=4,shape border rotate=45,font=\normalsize\sffamily](A){\thepage\;};
+\path ($(current page.south west)+(45:1.5)+(0.75,-3pt)$) node[anchor=west] (B)%
+{\color{darkmidnightblue}{\small\faAngleDoubleRight}{\Large\fmmfamily\, \footerinfo}};
+\draw[thick,darkmidnightblue] ($(A.west)-(0.05,0)$)--($(B.east)+(0,3pt)$);
+\end{tikzpicture}
+\else
+\begin{tikzpicture}[overlay,remember picture]
+\path ($(current page.south west)+(45:1.5)$)
+node[path fading=fade out,fill=cyan!65,minimum size=15pt,inner sep=0.1pt,
+regular polygon, regular polygon sides=4,shape border rotate=45,font=\normalsize\sffamily] (char){\thepage\;}
+node[minimum size=15pt,inner sep=0.1pt,
+regular polygon, regular polygon sides=4,
+shape border rotate=45,font=\normalsize\sffamily](A){\thepage\;};
+\path ($(current page.south east)+(135:1.5)-(0.75,3pt)$) node[anchor=east] (B)%
+{\color{darkmidnightblue}{\small\faAngleDoubleRight}{\Large\fmmfamily\, \footerinfo}};
+\draw[thick,darkmidnightblue] ($(A.east)+(0.05,0)$)--($(B.west)+(0,3pt)$);
+\end{tikzpicture}
+\fi
+}
+\renewcommand{\thesection}{\S \arabic{section}.}
+\tikzset{laphuong/.pic={
+\path[pic actions,line join=round]
+(0,0)--++(27.5:r)--++(152.5:r)--+(-152.5:r)--cycle
+(0,0)--++(0,-r)--++(152.5:r)--+(0,r)--cycle
+(0,0)--++(0,-r)--++(27.5:r)--+(0,r)--cycle;
+}}
+ 
+\usepackage[loigiai]{ex_test}
+\newcounter{bt}
+\makeatletter
+\renewcommand{\TrueEX}{\stepcounter{dapan}
+ {\circEX{{\fontfamily{paq}\selectfont\Alph{dapan}}}} \ignorespaces}
+\renewcommand{\FalseEX}{\stepcounter{dapan}
+ {\circled{{\Alph{dapan}}}} \ignorespaces}
+ 
+\def\tieudehinh{}
+\newcommand{\hinhphai}[2]{%
+\tcbsidebyside[
+sidebyside adapt=right,
+blanker,sidebyside gap=5mm,
+sidebyside align=top seam,
+]{%
+{\color{dndo}\tieudehinh}%
+#1
+}{%
+#2%
+}
+}
+%%%================Lệnh immini================%%%
+\def\loaicau{}
+\renewcommand{\immini}[3][]{
+\savebox{\imbox}{#3}
+\setlength{\widthPB}{0.55\linewidth}
+
+\tcbsidebyside[
+sidebyside adapt=right,
+blanker,sidebyside gap=5mm,
+sidebyside align=top seam,
+]{%
+{\tieudehinh}#2
+}{%
+\usebox{\imbox}
+}
+\loaicau
+}
+
+\usepackage{miama}
+\renewcommand{\theequation}{\arabic{equation}}
+\usepackage{tkz-tab}
+\usepackage{mathrsfs}
+\usepackage{tkz-euclide}
+\usepackage{tikz-3dplot,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{polar,fillbetween}
+\usepackage{esvect}
+\def\vec{\vv} %vector
+\def\overrightarrow{\vv}
+\makeatletter
+\newcommand\xleftrightarrow[2][]{%
+\ext@arrow 9999{\longleftrightarrowfill@}{#1}{#2}}
+\newcommand\longleftrightarrowfill@{%
+\arrowfill@\leftarrow\relbar\rightarrow}
+\makeatother
+\usepackage[american]{circuitikz}
+\tikzset{>=stealth}
+
+\definecolor{redex}{HTML}{A70E10}
+\definecolor{tealex}{HTML}{0EA7A5}
+
+\let\oldboncot\boncot
+\newboolean{TNdungsai}
+
+\makeatletter
+\RenewDocumentEnvironment{ex}{+!O{}}{%
+	\ifblank{#1}{%
+		\@ifnextchar\immini{\gdef\tieudehinh{{\bfseries\sffamily Câu \theex. }}}%
+		{{\par\noindent{\bfseries\sffamily Câu \theex}.
+		}}%
+	 }%blank#2true
+	 {\@ifnextchar\immini{\gdef\tieudehinh{{\bfseries\sffamily Câu \theex } {(\textit{#1}).\,}}}%
+		{{\par\vspace*{-6pt}\noindent\bfseries\sffamily Câu \theex} {(\textit{#1}).\,}}%
+	 }%blank#2false	
+	}{\gdef\tieudehinh{}\ignorespacesafterend}
+\makeatother
+\AtBeginEnvironment{ex}{
+	 \refstepcounter{ex}
+	 \setcounter{numTrue}{0}%
+	 \setcounter{numTrueSol}{0}%
+ \def\dotEX{.}%
+ \setcounter{numChoice}{0}%
+	 \renewcommand{\loigiai}[1]{\gdef\tieudehinh{}\par\noindent%
+	 {\reflectbox{\Large\WritingHand}\ {\fmmfamily\LARGE Lời giải.}} #1
+	 \ifthenelse{\value{numTrueSol}>0}{
+	 \hfill \textcolor{tealex}{\sffamily \faKey~\circlenum{\Alph{numTrueSol}}}
+	 }{}
+ }
+} 
+
+\makeatletter
+\NewDocumentEnvironment{bt}{+!O{}}{%
+	\ifblank{#1}{%
+		\@ifnextchar\immini{\gdef\tieudehinh{\bfseries\sffamily Bài \thebt.\,}}%
+		{{\par\noindent\bfseries\sffamily Bài \thebt.\,}}%
+	 } 
+	 {
+		\@ifnextchar\immini{\gdef\tieudehinh{{\bfseries\sffamily Bài \thebt } {(\textit{#1}).\,}}}%
+		{{\par\noindent\bfseries\sffamily Bài \thebt} {(\textit{#1}).\,}}%
+	 } 
+	}{\gdef\tieudehinh{}}
+\makeatother
+
+\AtBeginEnvironment{bt}{
+	 \refstepcounter{bt}
+	 \renewcommand{\loigiai}[1]{\gdef\tieudehinh{}\par\noindent%
+	 {\reflectbox{\Large\WritingHand}\ {\fmmfamily\LARGE Lời giải.}} #1
+	 }
+} 
+
+\raggedbottom
+\usepackage{intcalc}
+\newcounter{itemcounth}
+\newcommand{\bangdapan}[1]{%
+\setcounter{itemcounth}{0}
+\begin{center}
+	{\large \bfseries\sffamily BẢNG ĐÁP ÁN}
+	\medskip 
+	
+	\begin{minipage}{16cm}
+		\setcounter{itemcounth}{0}
+		\RenewEnviron{Solution}[1]{%
+		\addtocounter{itemcounth}{1}
+		\ifodd\intcalcDiv{\value{itemcounth}-1}{10}
+		\tikz{\path (0,0) node[draw=maudoilap,thick,inner sep=3pt,text width=1.2cm,minimum height=0.65cm,
+		rounded corners=3pt,outer sep=0pt,fill=yellow!5]{%
+		{\textbf{##1}}\hfill
+		{\textbf{\BODY}}%
+		};
+		}\ignorespaces
+		\else
+		\tikz{\path (0,0) node[draw=\mauchinh,thick,inner sep=3pt,text width=1.2cm,minimum height=0.65cm,
+		rounded corners=3pt,outer sep=0pt,fill=yellow!5]{%
+		{\textbf{##1}}\hfill
+		{\textbf{\BODY}}%
+		};
+		}\ignorespaces
+		\fi
+		\ifthenelse{\equal{\intcalcMod{\value{itemcounth}}{10}}{0}}
+		{\par\noindent\ignorespaces}{\hspace*{-6pt}}
+		}
+		\noindent
+		\input{Ans/#1}
+	\end{minipage}
+\end{center}%
+}
+
+\newcommand{\bangdapanTF}[1]{
+	\begin{center}
+		\textbf{\textsf{BẢNG ĐÁP ÁN ĐÚNG SAI Đ/S}}
+	\end{center}
+	\input{Ansbook/#1}
+}
+
+\newcommand{\ovuong}[2][3]{%
+	\linepenalty100
+ \exhyphenpenalty0
+	~\hfill{\tikz[baseline=(char.base)]
+	{\path (-0.1,-5pt)node[text=cyan!75!blue,anchor=east]{\reflectbox{\Large\WritingHand}\ {\fmmfamily\LARGE Đáp số}};
+	\path (0,-0.15) node (char) {};
+	\draw[rounded corners,color=cyan!75!blue] (0,-0.35) rectangle (#1,0.35);
+	 }%
+ }
+
+	 \scantokens{%
+	 \begin{giaibt}
+	 #2
+	 \end{giaibt}}% 
+}
+
+\newcommand{\shortans}[2][3]{
+	\ovuong{#2}
+}
+
+\newcommand{\bangdapanSA}[1]{%
+	\RenewEnviron{loigiaibt}[1]{%
+		\noindent{\small\textsf{\textbf{\color{orange}\faKey BT ##1}}}\hfill
+		\tikz[baseline=(char.base)]
+			{\path (0,0) node[rounded corners,draw=cyan!75!blue,text width=2.25cm,align=center] (char){\BODY}%
+			}
+			
+	}%
+	
+	\begin{center}
+		{\sffamily\bfseries ĐÁP SỐ PHẦN TRẢ LỜI NGẮN}
+	\end{center}
+	
+	\medskip
+	\begin{multicols}{4}%
+		\input{Ans/#1}
+	\end{multicols}%
+}	
+	
+\newcommand{\Pointilles}[2][1.1]{%
+ \par\nobreak
+ \noindent\rule{0pt}{1.1\baselineskip}%
+ \foreach \i in {1,...,#2}{%
+ \ifnum\i=1
+ \noindent\makebox[\linewidth]{\rule{0pt}{#1\baselineskip}\reflectbox{\Large\WritingHand}\dotfill}\endgraf
+ \else
+ \noindent\makebox[\linewidth]{\rule{0pt}{#1\baselineskip}\dotfill}\endgraf
+ \fi
+ }
+}
+
+\newcommand{\DoiThanhOly}[1]{
+\setbox0=\vbox{\hbox{
+\noindent\begin{minipage}{\linewidth}%
+#1 aaaaa
+\end{minipage}
+}}
+\linepar=\ht0
+\pgfmathparse{int((\linepar-\fboxsep)/(\lineheight)+1)}
+\let\mydong\pgfmathresult	\ifnum\pgfmathresult>3
+		\begin{center}
+		\foreach \i in {0,1,...,\mydong}{%
+			\begin{tikzpicture}
+				\draw[cyan!25,ultra thin,step=0.2] (0,0) grid +(17,1);
+				\draw[cyan!65] (0,0) grid +(17,1);
+			\end{tikzpicture}\\[-1.1pt]
+		}
+		\end{center}
+	\else
+	\noindent%
+		\begin{center}
+			\begin{tikzpicture}
+				\draw[cyan!25,ultra thin,step=0.2] (0,0) grid +(17,3);
+				\draw[cyan!65] (0,0) grid +(17,3);
+			\end{tikzpicture}
+		\end{center}
+	\fi
+}
+
+\newcommand{\DoiThanhDongKe}[1]{
+\setbox0=\vbox{\hbox{
+\noindent\begin{minipage}{\linewidth}%
+#1 aaaaa
+\end{minipage}
+}}
+\linepar=\ht0
+\pgfmathparse{int((\linepar-\fboxsep)/(\lineheight)+1)}
+	\ifnum\pgfmathresult>3
+	\noindent%
+		\Pointilles{\pgfmathresult}
+	\else
+	\noindent%
+		\Pointilles{3}
+	\fi
+}
+
+\newcommand{\DoiThanhDongKeH}[1]{
+\setbox0=\vbox{\hbox{
+\noindent\begin{minipage}{\linewidth}%
+#1 aaaaa
+\end{minipage}
+}}
+\linepar=\ht0
+\pgfmathparse{int((\linepar-\fboxsep)/(0.85\lineheight)+1)}
+	\ifnum\pgfmathresult>3
+	\noindent%
+		\Pointilles{\pgfmathresult}
+	\else
+	\noindent%
+		\Pointilles{4}
+	\fi
+}
+%%%=============================================%%%
+\def\dongkeex{
+	\AtBeginEnvironment{ex}{
+		\renewcommand{\loigiai}[1]{%
+	 \DoiThanhDongKe{##1}
+		}
+	}
+}
+
+%%%=============================================%%%
+\def\Olyex{
+	\AtBeginEnvironment{ex}{
+		\renewcommand{\loigiai}[1]{%
+		 \DoiThanhOly{##1}%
+		\Writetofile{ansbook}{\string\def\string\writeANS{\saveans}}
+			\scantokens{
+			\begin{solbook}
+				\writeANS
+			\end{solbook}
+		}		 
+		}
+	}
+}
+
+%%%=============================================%%%
+\def\dongkeHaicotex{
+	\AtBeginEnvironment{ex}{
+		\renewcommand{\loigiai}[1]{
+			\begin{multicols}{2}			
+				\DoiThanhDongKeH{##1}
+			\end{multicols}%
+					\Writetofile{ansbook}{\string\def\string\writeANS{\saveans}}
+						\scantokens{
+						\begin{solbook}
+							\writeANS
+						\end{solbook}
+					}
+		}
+	}
+}
+
+%%%=============================================%%%
+\def\tatloigiaiex{%
+	\AtBeginEnvironment{ex}{
+		\setboolean{TNdungsai}{false}
+		\gdef\loaicau{\setboolean{TNdungsai}{false}}%
+		\renewcommand{\loigiai}[1]{%
+			\ifthenelse{\boolean{TNdungsai}}{
+			\Writetofile{ansbook}{\string\def\string\writeANS{\saveans}}
+				\scantokens{
+				\begin{solbook}
+					\writeANS
+				\end{solbook}
+				}
+			}{}
+		}
+	}
+}
+
+%%%=============================================%%%
+\def\hienthiloigiaiex{%
+	\AtBeginEnvironment{ex}{
+	\setboolean{TNdungsai}{false}
+	\gdef\loaicau{\setboolean{TNdungsai}{false}}%
+	\renewcommand{\loigiai}[1]{%
+	\ifthenelse{\boolean{TNdungsai}}{%Câu hỏi trắc nghiệm đúng sai
+				 \par\noindent%
+				 {\color{dndo}\reflectbox{\Large\WritingHand}\ {\fmmfamily\LARGE Hướng dẫn.}} ##1 \hfill{{\faKey}~ 
+				 \ifbool{Ads}{\TLdung{A}}{\TLsai{A}}~
+				 \ifbool{Bds}{\TLdung{B}}{\TLsai{B}}~
+				 \ifbool{Cds}{\TLdung{C}}{\TLsai{C}}~
+				 \ifbool{Dds}{\TLdung{D}}{\TLsai{D}} 
+				 }%
+				 \Writetofile{ansbook}{\string\def\string\writeANS{\saveans}}
+				 \scantokens{
+					 \begin{solbook}
+					 \writeANS
+					 \end{solbook}
+				 }%
+			}%Câu hỏi trắc nghiệm nhiều lựa chọn
+			{%
+				\par\noindent%
+				{\color{dndo}\reflectbox{\Large\WritingHand}\ {\fmmfamily\LARGE Hướng dẫn}} \faKey\ \circlenum{\Alph{numTrue}} ##1
+			}
+		}%
+	 }%
+}
+
+\Newassociation{giaiex}{loigiaiex}{ansex}
+
+\def\luuloigiaiex{
+ \AtBeginEnvironment{ex}{
+ \renewcommand{\loigiai}[1]{%
+ \ifnum\the\value{numTrue}=1
+ \scantokens{%
+ \begin{giaiex}
+ ##1
+	\phantom{a}\hfill{ \faKey~\circlenum{A}}
+ \end{giaiex}}
+ \fi%
+ \ifnum\the\value{numTrue}=2
+ \scantokens{%
+ \begin{giaiex}
+ ##1
+ \phantom{a}\hfill{ \faKey~\circlenum{B}}
+ \end{giaiex}}
+ \fi%	 
+	 \ifnum\the\value{numTrue}=3
+	 \scantokens{%
+	 \begin{giaiex}
+	 ##1
+		\phantom{a}\hfill{ \faKey~\circlenum{C}}
+	 \end{giaiex}}
+	 \fi %	 
+	 \ifnum\the\value{numTrue}=4
+	 \scantokens{%
+	 \begin{giaiex}
+	 ##1
+		\phantom{a}\hfill{ \faKey~\circlenum{D}}
+	 \end{giaiex}}
+	 \fi\vspace*{-3pt}%
+	 } 
+ }
+}
+
+
+\def\luulgEXTF{
+ \AtBeginEnvironment{ex}{
+ \renewcommand{\loigiai}[1]{%
+ \Writetofile{ansex}{\string\def\string\writeANS{\saveans}}
+ \scantokens{%
+ \begin{giaiex}
+ ##1
+	\phantom{a}\hfill{ \faKey~\writeANS}
+ \end{giaiex}
+	 }% 
+		\Writetofile{ansbook}{\string\def\string\writeANS{\saveans}}
+				\scantokens{
+					\begin{solbook}
+						\writeANS
+					\end{solbook}%
+				} 
+ }
+ }
+}
+
+\NewTColorBox{boxlgex}{m}{
+	 breakable,
+	 enhanced,
+	 outer arc=0pt,
+	 arc=0pt,
+	 colframe=white,
+	 frame hidden,
+	 left=-6pt,right=0pt,top=0pt,
+	 colback=white,
+	 attach boxed title to top left,
+	 boxed title style={
+	 colback=white,
+	 outer arc=0pt,
+	 arc=0pt,
+	 top=1pt,
+	 bottom=1pt,
+	 left=3pt,
+	 right=3pt,
+	 colframe=white
+ },
+ fonttitle=\bfseries\sffamily\selectfont\color{white},
+ title={HD Câu~#1},
+ overlay unbroken and first={
+ \path (title.north west) coordinate (A)
+ ($ (title.south west) +(-4pt,0pt)$) coordinate (B)
+ (title.south east) coordinate (C)
+ ($ (title.north east)+(4pt,0) $) coordinate (D);
+ \path[rounded corners=2pt,fill=\mauchinh,
+ preaction={transform canvas={shift={(-45:2pt)}},left color=\mauchinh!45,right color=\mauchinh!25}] 
+ (A)--(B)--(C)--(D)--cycle;
+ \path (A)--(C) node[midway,font=\color{white}\bfseries\sffamily\selectfont](Bai){\textsl{HD Câu~#1}};
+ \draw[rounded corners=2pt,thick,\mauchinh] ([xshift=-3pt]B) coordinate (Bt)
+ --([shift={(-2pt,2pt)}]A)--+(\linewidth,0) coordinate (Ct);
+ \fill[\mauchinh] (Bt) circle (1pt) (Ct) circle (2pt);
+}
+}
+\renewenvironment{loigiaiex}[1]{\begin{boxlgex}{#1}}{\end{boxlgex}}
+
+%%%=============================================%%%
+\def\dongkebt{
+	\AtBeginEnvironment{bt}{
+		\renewcommand{\loigiai}[1]{
+	 \DoiThanhDongKe{##1}
+		}
+	}
+}
+
+%%%=============================================%%%
+\def\Olybt{
+	\AtBeginEnvironment{bt}{
+		\renewcommand{\loigiai}[1]{
+	 \DoiThanhOly{##1}
+		}
+	}
+}
+%%%=============================================%%%
+\def\dongkeHaicotbt{
+	\AtBeginEnvironment{bt}{
+		\renewcommand{\loigiai}[1]{
+			\begin{multicols}{2}			
+				\DoiThanhDongKeH{##1}
+			\end{multicols}
+		}
+	}
+}
+
+%%%=============================================%%%
+\def\tatloigiaibt{%
+	\AtBeginEnvironment{bt}{\renewcommand{\loigiai}[1]{}}
+}
+
+%%%=============================================%%%
+\def\hienthiloigiaibt{%
+	\AtBeginEnvironment{bt}{
+	\renewcommand{\loigiai}[1]{%
+	\par\noindent%
+	{\color{dndo}\reflectbox{\Large\WritingHand}\ {\fmmfamily\LARGE Hướng dẫn.}} ##1
+	}
+	}
+}
+
+%%%=========================================%%%
+\Newassociation{giaibt}{loigiaibt}{ansbt}
+\def\luuloigiaibt{
+	\AtBeginEnvironment{bt}{
+		\renewcommand{\loigiai}[1]{%
+		 \scantokens{%
+		 \begin{giaibt}
+		 ##1
+		 \end{giaibt}}
+		}
+	}
+}
+%%%=========================================%%%
+
+\NewTColorBox{ansbt}{m}{
+	 breakable,
+	 enhanced,
+	 outer arc=0pt,
+	 arc=0pt,
+	 colframe=white,
+	 frame hidden,
+	 left=-6pt,right=0pt,top=0pt,
+	 colback=white,
+	 attach boxed title to top left,
+	 boxed title style={
+	 colback=white,
+	 outer arc=0pt,
+	 arc=0pt,
+	 top=1pt,
+	 bottom=1pt,
+	 left=3pt,
+	 right=3pt,
+	 colframe=white
+ },
+ fonttitle=\bfseries\sffamily\selectfont\color{white},
+ title={HDBT~#1},
+ overlay unbroken and first={
+ \path (title.north west) coordinate (A)
+ ($ (title.south west) +(-4pt,0pt)$) coordinate (B)
+ (title.south east) coordinate (C)
+ ($ (title.north east)+(4pt,0) $) coordinate (D);
+ \path[rounded corners=2pt,fill=\mauchinh,
+ preaction={transform canvas={shift={(-45:2pt)}},left color=\mauchinh!45,right color=\mauchinh!25}] 
+ (A)--(B)--(C)--(D)--cycle;
+ \path (A)--(C) node[midway,font=\color{white}\bfseries\sffamily\selectfont](Bai){\textsl{HDBT~#1}};
+ \draw[rounded corners=2pt,thick,\mauchinh] ([xshift=-3pt]B) coordinate (Bt)
+ --([shift={(-2pt,2pt)}]A)--+(\linewidth,0) coordinate (Ct);
+ \fill[\mauchinh] (Bt) circle (1pt) (Ct) circle (2pt);
+}
+}
+\renewenvironment{loigiaibt}[1]{\begin{ansbt}{#1}}{\end{ansbt}} %%%=====================Muc luc============================%%%
+ \usepackage{titletoc}
+ \usepackage[colorlinks]{hyperref}
+ \patchcmd{\tableofcontents}{\contentsname}{\sffamily\contentsname}{}{}
+ \makeatletter
+ \renewcommand{\numberline}[1]{#1.~}
+ \titlecontents{section}[1.5cm]{{\textcolor{dnxanh}\faApple}\ 
+	 \hypersetup{linkcolor=black}\vspace*{0.15\baselineskip}\sffamily\bfseries{\thecontentslabel.\;}}{}{}
+	 {\titlerule*[0.65pc]{.}\thecontentspage}
+	 
+ \titlecontents{subsection}[2cm]{ \hypersetup{linkcolor=black}\sffamily{\thecontentslabel.\;}}{}{}
+	 {\titlerule*[0.65pc]{.}\thecontentspage}
+
+\newcounter{Lastsode}
+\newcounter{Lastpage}
+\newcommand{\fileend}{%
+	\setcounter{Lastpage}{\value{page}}
+	\stepcounter{page} 
+	\setcounter{Lastsode}{\value{demsode}}
+	\stepcounter{Lastsode}
+	\label{bddethi\theLastsode}%
+	\setcounter{page}{\value{Lastpage}}
+}
+	 
+ \makeatletter
+ \renewcommand{\tableofcontents}{%
+ \newpage
+ \markboth{Mục lục}{Mục lục}
+ %\renewcommand{\rightmark}{Mục lục}
+ \begin{center}
+ \begin{tcolorbox}[enhanced,hbox,
+ left=8mm,right=8mm,boxrule=0.55pt,
+ bottom=3pt,
+ colback=white,colframe=black,
+ %drop fuzzy midday shadow=black!50!yellow,
+ drop lifted shadow=black!50!yellow,arc is angular,
+ before=\par\vspace*{-1mm},after=\par\bigskip]
+ {\Large\bfseries\sffamily MỤC LỤC} 
+ \end{tcolorbox}
+ \end{center}
+ \vskip-0.35cm
+ \@starttoc{toc}}
+ \makeatother
+ %%%==================================%%%
+ %%%=======================================================%%%
+ \newbool{Ads}
+ \newbool{Bds}
+ \newbool{Cds}
+ \newbool{Dds}
+ \makeatletter
+ \newcommand{\KiemtraA}{\@ifnextchar\True{\global\setbool{Ads}{true}\xdef\saveans{\saveans\string\TLdung{A}}}{\global\setbool{Ads}{false}\xdef\saveans{\saveans\string\TLsai{A}}}}
+ \newcommand{\KiemtraB}{\@ifnextchar\True{\global\setbool{Bds}{true}\xdef\saveans{\saveans\string\TLdung{B}}}{\global\setbool{Bds}{false}\xdef\saveans{\saveans\string\TLsai{B}}}}
+ \newcommand{\KiemtraC}{\@ifnextchar\True{\global\setbool{Cds}{true}\xdef\saveans{\saveans\string\TLdung{C}}}{\global\setbool{Cds}{false}\xdef\saveans{\saveans\string\TLsai{C}}}}
+ \newcommand{\KiemtraD}{\@ifnextchar\True{\global\setbool{Dds}{true}\xdef\saveans{\saveans\string\TLdung{D}}}{\global\setbool{Dds}{false}\xdef\saveans{\saveans\string\TLsai{D}}}}
+ \makeatother
+ 
+ \def\saveans{}
+ \newlength{\widthPB}
+ \newlength{\widthNPB}
+ \setlength{\widthPB}{1.1\linewidth}
+ \setlength{\widthNPB}{0.55\linewidth-1.1cm}
+ % \usepackage{longtable}
+ \setlength\LTpre{3pt}% khoảng cách trước longtable
+ \setlength\LTpost{0pt}
+ 
+ \newcommand{\choiceTF}[5][1]{%
+ \def\saveans{}%
+ \setboolean{TNdungsai}{true}%
+ \gdef\loaicau{\setboolean{TNdungsai}{true}}%
+\ifthenelse{\equal{#1}{1}}{%
+ \begin{enumerate}[wide=0.65cm,label*=\circlenum{\Alph*},itemsep=-3pt,topsep=-4pt]
+ \item\textcolor{gray}{\rule[-3pt]{0.65cm}{0.65pt}} \KiemtraA#2\dotEX	
+ \item\textcolor{gray}{\rule[-3pt]{0.65cm}{0.65pt}} \KiemtraB#3\dotEX
+ \item\textcolor{gray}{\rule[-3pt]{0.65cm}{0.65pt}} \KiemtraC#4\dotEX
+ \item\textcolor{gray}{\rule[-3pt]{0.65cm}{0.65pt}} \KiemtraD#5\dotEX
+ \end{enumerate}
+ }{
+ \ifthenelse{\equal{#1}{t}}{%
+ \begin{longtable}{|p{\widthPB}|C{0.35cm}|C{.35cm}|}
+ \hline
+ \thead{\normalsize\sffamily Phát biểu}& {\sffamily Đ} & {\sffamily S}\\
+ \hline
+ \circlenum{A} \KiemtraA#2\dotEX & & \\
+ \hline
+ \circlenum{B} \KiemtraB#3\dotEX & & \\
+ \hline
+ \circlenum{C} \KiemtraC#4\dotEX & & \\
+ \hline
+ \circlenum{D} \KiemtraD#5\dotEX & & \\
+ \hline
+ \end{longtable}
+ }{%
+ \ifthenelse{\equal{#1}{tt}}{%
+ \begin{center}
+ \vspace*{-\baselineskip}
+ \begin{tabular}{cc}%
+ \begin{tabular}[t]{|p{\widthNPB}|C{0.35cm}|C{.35cm}|}
+		 \hline
+		 \thead{\normalsize\sffamily Phát biểu}& {\sffamily Đ} & {\sffamily S}\\
+		 \hline
+		 \circlenum{A} \KiemtraA#2\dotEX & & \\
+		 \hline
+		 \circlenum{B} \KiemtraB#3\dotEX & & \\
+		 \hline
+		 \end{tabular}~
+		 \begin{tabular}[t]{|p{\widthNPB}|C{0.35cm}|C{.35cm}|}
+		 \hline
+		 \thead{\normalsize\sffamily Phát biểu}&{\sffamily Đ} & {\sffamily S}\\
+		 \hline
+		 \circlenum{C} \KiemtraC#4\dotEX & & \\
+		 \hline
+		 \circlenum{D} \KiemtraD#5\dotEX & & \\
+		 \hline
+		 \end{tabular}
+		 \end{tabular}
+		\end{center}
+ }{%
+	 \begin{multicols}{#1}
+	 \begin{enumerate}[wide=0.65cm,label*=\circlenum{\Alph*},itemsep=-3pt,topsep=-4pt]
+		 \item\textcolor{gray}{\rule[-3pt]{0.65cm}{0.65pt}} \KiemtraA#2\dotEX	
+		 \item\textcolor{gray}{\rule[-3pt]{0.65cm}{0.65pt}} \KiemtraB#3\dotEX
+		 \item\textcolor{gray}{\rule[-3pt]{0.65cm}{0.65pt}} \KiemtraC#4\dotEX
+		 \item\textcolor{gray}{\rule[-3pt]{0.65cm}{0.65pt}} \KiemtraD#5\dotEX
+	 \end{enumerate}
+	 \end{multicols}	
+	 }
+ }
+ }
+ }
+ 
+ 
+ \newcommand{\LGexTF}{
+ \AtBeginEnvironment{ex}{
+ \renewcommand{\loigiai}[1]{%
+ \par\noindent%
+ {\color{dndo}\reflectbox{\Large\WritingHand}\ {\fmmfamily\LARGE Hướng dẫn.}} ##1 \hfill{{\faKey}~ 
+ \ifbool{Ads}{\TLdung{A}}{\TLsai{A}}~
+ \ifbool{Bds}{\TLdung{B}}{\TLsai{B}}~
+ \ifbool{Cds}{\TLdung{C}}{\TLsai{C}}~
+ \ifbool{Dds}{\TLdung{D}}{\TLsai{D}} 
+ }%
+ \Writetofile{ansbook}{\string\def\string\writeANS{\saveans}}
+ \scantokens{
+ \begin{solbook}
+ \writeANS
+ \end{solbook}
+ }
+ }
+ }
+ }
+ 
+ 
+ \newcommand{\TLdung}[1]{%
+ \tikz[baseline=(char.base)]
+ {\node[shape=circle,inner sep=0.5pt,draw=orange,%fill=#1!10,
+ font=\bfseries\footnotesize,text=gray,minimum size=12pt,outer sep=0pt] (char) {#1};
+ \path (char) node[text=orange]{\faCheck};
+ }\ignorespaces}
+ 
+ \newcommand{\TLsai}[1]{%
+ \tikz[baseline=(char.base)]
+ {\node[shape=circle,inner sep=0.5pt,draw=cyan,font=\bfseries\footnotesize,minimum size=12pt,outer sep=0pt] (char) {#1};
+ \path (char) node[text=cyan,opacity=0.65]{\faTimes};
+ }\ignorespaces}
+ 
+ \renewenvironment{Solbook}[1]{\noindent\textbf{\textsf{Câu~#1}}~}{ }
+
+\def\itemch{\item}
+\newenvironment{itemchoice}{\begin{enumerate}[wide=0.65cm,label*=\circlenum{\Alph*},itemsep=-3pt,topsep=-4pt]}{\end{enumerate}}

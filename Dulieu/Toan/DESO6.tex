@@ -1,0 +1,482 @@
+\def\x{220}
+\setcounter{bt}{0}
+\setcounter{ex}{0}
+%%%Tùy chọn 1: Kì thi
+%%%Tùy chọn 2: Môn
+%%%Tùy chọn 3: lớp
+%%%Tùy chọn 4: Sở/Phòng
+%%%Tùy chọn 5: Ngày thi
+
+\begin{tcolorbox}
+	\begin{name}[Kiểm tra giữa kì II][Hóa học][10][Sở Giáo dục và Đào tạo]{Trường THCS }{2023 - 2024}
+	\end{name}
+\end{tcolorbox}
+%%%==========Phần trắc nghiệm 1 phương án============%%%
+\tieumuc{Bài Tập Trắc Nghiệm}-- \textit{Mỗi câu chỉ chọn một phương án.}
+\Opensolutionfile{ans}[Ans/DATN-6]
+\luuloigiaiex
+\Opensolutionfile{ansex}[LOIGIAITN/LGTN-6]
+%%%============EX_1==============%%%
+\begin{ex}%[0D8B1-3]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Trên giá sách có 5 quyển sách Toán khác nhau, 3 quyển sách Vật lí khác nhau và 6 quyển sách Tiếng Anh khác nhau. Hỏi có bao nhiêu cách chọn hai quyển sách khác bộ môn?
+	\choice
+	{28 cách}
+	{\True 63 cách}
+	{91 cách}
+	{90 cách}
+	\loigiai{
+		
+		Việc chọn 2 quyển sách khác bộ môn sẽ xảy ra một trong 3 trường hợp sau:
+		\begin{itemize}
+			\item Chọn sách toán và vật lý có $5 \cdot 3 =15$ (cách chọn)
+			\item Chọn sách toán và Tiếng anh có $5 \cdot 6 =30$ (cách chọn)
+			\item Chọn sách vật lý và tiếng anh có $3 \cdot 6 =18$ (cách chọn)
+		\end{itemize}
+		
+		Vậy có tất cả $15 + 30 + 18 =63 $ (cách chọn)
+	}
+\end{ex}
+
+%%%============EX_2==============%%%
+\begin{ex}%[0D8B2-3]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Trên đường thẳng $d$ cho trước, lấy 6 điểm phân biệt. Lấy điểm $A$ nằm ngoài đường thẳng $d$. Từ $7$ điểm trên lập được bao nhiêu hình tam giác?
+	\choice
+	{\True $\mathrm{C}_6^2$}
+	{$\mathrm{C}_7^3$}
+	{$\mathrm{A}_7^3$}
+	{$\mathrm{A}_6^2$}
+	\loigiai{
+		
+		Với 3 điểm không thẳng hàng sẽ tạo ra một tam giác. Từ đỉnh A và 2 điểm bất kì nằm trên đường thẳng d sẽ cho ta một tam giác.
+		
+		Như vậy số tam giác đuọc tạo ra là $\mathrm{C}_6^2$ (tam giác)
+		
+	}
+\end{ex}
+%%%============EX_3==============%%%
+\begin{ex}%[0D8B2-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Số các số có 6 chữ số khác nhau không bắt đầu bởi 34 được lập từ các chữ số $\left\{1,2,3,4,5,6\right\}$ là
+	\choice
+	{$966$}
+	{$720$}
+	{$669$}
+	{\True $696$}
+	\loigiai{
+		
+		Số các số có 6 chữ số khác nhau được tạo ra từ $\left\{1, 2, 3, 4, 5, 6\right\}$
+		là $6!=720$ (số)
+		
+		Số các số có 6 chữ số khác nhau bắt đầu bởi 34 là  $\mathrm{A}_4^3=24$ (số)
+		
+		Vậy số các số khác nhau không bắt đầu bởi $34$ là $720-24=696$ (số)
+	}
+\end{ex}
+%%%============EX_4==============%%%
+\begin{ex}%[0D8K2-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Từ các chữ số thuộc tập hợp $\mathrm{S}=\left\{1; 2; 3;\ldots; 9\right\}$, có thể lập được bao nhiêu số có 9 chữ số khác nhau sao cho chữ số 1 đứng trước chữ số 2, chữ số 3 đứng trước chữ số 4 và chữ số 5 đứng trước chữ số 6?
+	\choice
+	{$36288$}
+	{$72576$}
+	{\True $45360$}
+	{$22680$}
+	\loigiai{
+		\begin{itemize}
+			\item Chọn số 1 và 2 xếp vào 9 vị trí sẽ có $\mathrm{A}_9^2$. Tuy nhiên số 1 đứng trước số 2 nên không xét đến hoán vị số 1 và 2 do đó số cách chọn là $\dfrac{\mathrm{A}_9^2}{2!}= \mathrm{C}_9^2 $.
+			\item Tương tự chọn số 3 và 4 xếp vào 7 vị trí còn lại sao cho số 3 đứng trước số 4 số cách chọn là $\mathrm{C}_7^2 $.
+			\item Chọn chữ số 5 và 6 xếp vào 5 vị trí còn lại sao cho chữ số 5 đứng trước chữ số 6 số cách chọn là $\mathrm{C}_5^2 $.
+			\item Xếp 3 chữ số 7, 8, 9 vào 3 vị trí còn lại chính là $3!$
+		\end{itemize}	
+		Vậy tổng cộng có $\mathrm{C}_9^2\cdot\mathrm{C}_7^2\cdot\mathrm{C}_5^2\cdot3!=45360 $ (số)
+	}
+\end{ex}
+%%%============EX_5==============%%%
+\begin{ex}%[0D8B2-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Một hội đồng gồm 2 giáo viên và 3 học sinh được chọn từ một nhóm 5 giáo viên và 6 học sinh. Hỏi có bao nhiêu cách chọn hội đồng đó?
+	\choice
+	{\True$200$}
+	{$150$}
+	{$160$}
+	{$180$}
+	\loigiai{
+		Việc chọn hội đồng gồm hai bước:
+		\begin{itemize}
+			\item Bước 1. Chọn 2 giáo viên trong 5 giáo viên có $\mathrm{C}_5^2 =10$ (cách chọn)
+			\item Bước 2. Chọn 3 học sinh trong 6 học sinh có $\mathrm{C}_6^3 =20$ (cách chọn)
+			\item Vậy theo quy tắc nhân ta có $10\cdot 20=200$ (cách chọn)
+		\end{itemize}
+	}
+\end{ex}
+%%%============EX_6==============%%%
+\begin{ex}%[0D8Y3-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Số hạng chính giữa trong khai triển $(5x+2y)^4$ là:
+	\choice
+	{$6x^2y^2$}
+	{$24x^2y^2$}
+	{$60x^2y^2$}
+	{\True $600x^2y^2$}
+	\loigiai{
+		
+		Ta có: \[(5x+2y)^4 =\mathrm{C}_4^0\cdot(5x)^4+\mathrm{C}_4^1\cdot(5x)^3\cdot(2y)+\mathrm{C}_4^2\cdot(5x)^2\cdot(2y)^2+\mathrm{C}_4^3\cdot(5x)\cdot(2y)^3+\mathrm{C}_4^4\cdot(2y)^4\]
+		
+		Vậy số hạng chính giữa trong khai triển ứng với $\mathrm{C}_4^2\cdot(5x)^2\cdot(2y)^2= 600x^2y^2$
+		
+	}
+\end{ex}
+%%%============EX_7==============%%%
+\begin{ex}%[0D7K4-4]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Trong mặt phẳng tọa độ $Ox y$, cho các điểm $A(0; 2), B(-1; 0)$. Điểm $H$ có hoành độ âm thuộc đường thẳng $y=2x+2$ sao cho tam giác $ABH$ vuông tại $H$ có toạ độ là
+	\choice
+	{\True$(-1; 0)$}
+	{$(-3;-4)$}
+	{$(0; 2)$}
+	{$(2; 2)$}
+	\loigiai{}
+\end{ex}
+%%%============EX_8==============%%%
+\begin{ex}%[0D4B2-1]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Trên mặt phẳng tọa độ $Ox y$, cho tam giác $ABC$ với $A(1; 3), B(-2;-2)$ và $C(3; 1)$. Diện tích tam giác $ABC$ là
+	\choice
+	{$4$}
+	{$8$}
+	{\True $16$}
+	{$20$}
+	\loigiai{
+		
+		Ta có:
+		
+		$\overrightarrow{AB}=(-3;-5) $
+		
+		$\overrightarrow{AC}=(2;-2) $
+		
+		$AB=\sqrt{(-3)^2 +(-5)^2}= \sqrt{34}$
+		
+		$AC=\sqrt{(2)^2 +(-2)^2}= \sqrt{8}$
+		
+		Lại có: $\cos A$=$|\cos(\overrightarrow{AB},\overrightarrow{AC})|=\dfrac{|\overrightarrow{AB}\cdot\overrightarrow{AC}|}{|\overrightarrow{AB}|\cdot|\overrightarrow{AC}|}=\dfrac{|(-3)\cdot2+ (-5)\cdot(-2)|}{\sqrt{(-3)^2+(-5)^2}\cdot\sqrt{(2)^2+(-2)^2}}=\dfrac{\sqrt{17}}{17}$
+		
+		
+		
+		Mặt khác: $\sin ^2 \mathrm{~A}+\cos ^2 \mathrm{~A}=1$
+		$
+		\Rightarrow \sin \mathrm{A}=\sqrt{1-\cos ^2 \mathrm{~A}}=\sqrt{1-\left(\dfrac{\sqrt{17}}{17}\right)^2}=\dfrac{4\sqrt{17}}{17}
+		$
+		
+		Diện tích $\triangle ABC$ là $S_{\triangle ABC}=\dfrac{1}{2}AB\cdot AC \cdot \sin A = \sqrt{34}\cdot\sqrt{8}\cdot\dfrac{4\sqrt{17}}{17} =16$
+	}
+\end{ex}
+%%%============EX_9==============%%%
+\begin{ex}%[0D4?4-5]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	\immini{Một chiếc thuyền di chuyển trên một con kênh khi nước lặng với vận tốc là $\vec{v}_1$. Tuy nhiên, khi thuyền tiến vào lòng sông thì nó di chuyển với vận tốc là $\overrightarrow{v_2}$ như hình bên. Biết tốc độ của thuyền tính theo đơn vị $m / s$. Vận tốc của dòng nước trên sông là (kết quả làm tròn đến hàng phần chục)
+		\choice
+		{\True $3{,}2\mathrm{m/s}$}
+		{$7{,}1\mathrm{m/s}$}
+		{$3{,}1\mathrm{m/s}$}
+		{$7{,}0\mathrm{m/s}$}}{
+		\begin{tikzpicture}[declare function ={d=3pt;},font=\bfseries\color{red!50!black}\scriptsize,>=stealth]
+			
+			\path (0,0) node[shift={(-45:6pt)}]{O};
+			
+			\draw[->] (0,-4)--(0,5) node[right]{y};
+			
+			\draw[->] (-1.5,0)--(4,0) node[below right]{x};
+			
+			\draw[->] (0,0)--(3,4) node[pos=0.5,above]{$\overrightarrow{v_1}$};
+			
+			\draw[->,ultra thick] (0,0)--(2,1) node[pos=0.5,above]{$\overrightarrow{v_2}$};
+			
+			\draw[->] (0,0)--(-1,-3) node[pos=0.5,above,xshift=-4pt]{$\overrightarrow{v_0}$};
+			
+			\draw[dashed,\maunhan,ultra thin] (0,-3)-|(-1,0) (0,1)-|(2,0) (0,4)-|(3,0)(-1,-3)--(2,1)(2,1)--(3,4) ;
+			
+			\foreach \x in {-1,1,2,...,3}{
+				\draw [\maunhan](\x,0pt)--+(0,-d) node [below]{\x};
+			}
+			
+			\foreach \y in {-3,-2,1,2,...,4}{
+				\draw [\maunhan](0,\y)--+(-d,0) node [left]{\y};
+			}
+		\end{tikzpicture}
+	}
+	\loigiai{
+		
+		Gọi $\overrightarrow{v_0}$ là vận tốc của dòng nước trên sông.
+		
+		Ta có $\overrightarrow{v_1}+ \overrightarrow{v_0}= \overrightarrow{v_2}$ $\Rightarrow \overrightarrow{v_0} =\overrightarrow{v_2} - \overrightarrow{v_1}= (2-3;1-4)=(-1;-3)$
+		
+		Vậy vận tốc của dòng nước trên sông là $|\overrightarrow{v_0}| =\sqrt{(-1)^2+(-3)^2} \approx 3{,}2$ (m/s)
+		
+	}
+\end{ex}
+%%%============EX_10==============%%%
+\begin{ex}%[0D7B4-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Trong mặt phẳng tọa độ $Oxy$, cho hai vectơ $\overrightarrow{OM}=(-2;-1)$ và $\overrightarrow{ON}=(3;-1)$. Góc giữa hai vectơ $\overrightarrow{OM}$ và $\overrightarrow{ON}$ là
+	\choice
+	{$30^{\circ}$}
+	{\True $45^{\circ}$}
+	{$60^{\circ}$}
+	{$135^{\circ}$}
+	\loigiai{
+		
+		Ta có $\cos(\overrightarrow{OM},\overrightarrow{ON})=\dfrac{\overrightarrow{OM}\cdot\overrightarrow{ON}}{|\overrightarrow{OM}|\cdot|\overrightarrow{ON}|}=\dfrac{(-2)\cdot3 +(-1)\cdot(-1)}{\sqrt{(-2)^2+(-1)^2}\cdot\sqrt{(3)^2+(-1)^2}}=\dfrac{\sqrt{2}}{2}$.
+		
+		Vậy góc giữa hai vec tơ  $\overrightarrow{OM}$ và $\overrightarrow{ON}$ là $45^\circ$
+	}
+\end{ex}
+%%%============EX_11==============%%%
+\begin{ex}%[0D7G2-1]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Trong mặt phẳng tọa độ $Oxy$, cho điểm $A(1; 2)$ và điểm $B(4; 1), M$ là điểm di động trên tia $Ox$. Tọa độ trọng tâm của tam giác $ABM$ khi biểu thức $MA+MB$ nhỏ nhất là
+	\choice
+	{\True$\left(\dfrac{8}{3}; 1\right)$}
+	{$\left(\dfrac{8}{3}; \dfrac{5}{3}\right)$}
+	{$\left(\dfrac{5}{3}; \dfrac{3}{2}\right)$}
+	{$\left(\dfrac{5}{3}; 1\right)$}
+	\loigiai{
+		
+		Gọi $M(x;0)$ là điểm di động trên $Ox$.
+		
+		Ta có: $\overrightarrow{MA} = (1-x;2) \Rightarrow MA =\sqrt{(1-x)^2+2^2} $
+		
+		$\overrightarrow{MB}=(4-x;1)\Rightarrow MB=\sqrt{(4-x)^2+1^2} $
+		
+		$\Rightarrow MA + MB =  \sqrt{(1-x)^2+2^2} + \sqrt{(4-x)^2+1^2}$ (*)
+		
+		Áp dụng bất đẳng thức Minkovsky
+		\begin{eqnarray*}
+			&\text{VP(*)}\;&= \sqrt{(1-x)^2+2^2} + \sqrt{(x-4)^2+1^2} \\
+			& &\ge \sqrt{(1-x+x-4)^2+(2+1)^2} = 3\sqrt{2}
+		\end{eqnarray*} 
+		
+		Dấu \lq\lq =\rq\rq có khi $\dfrac{1-x}{2}=\dfrac{x-4}{1} \Leftrightarrow x = 3 $.
+		
+		Khi đó tọa độ điểm $M(3,0)$
+		
+		Vậy tọa độ trọng tâm tam giác $ABM$ khi $MA + MB$ nhỏ nhất là $\bigg(\dfrac{1+4+3}{3};\dfrac{2+1+3}{3}\bigg)=\bigg(\dfrac{8}{3};1\bigg)$
+	}
+\end{ex}
+%%%============EX_12==============%%%
+\begin{ex}%[0D7K3-2]%[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2-Nguyễn Duy]%[Deso 6 - CD]
+	Đường trung trực của đoạn thẳng $AB$ với $A(2; 1), B(-4; 5)$ có phương trình tổng quát là
+	\choice
+	{\True $3x-2y+9=0$}
+	{$2x+3y-7=0$}
+	{$-6x+4y+9=0$}
+	{$3x+2y-9=0$}
+	\loigiai{
+		
+		Ta có:$\overrightarrow{AB}=(-6;4)$
+		
+		Gọi $I$ là trung điểm của $AB$ $\Rightarrow$ $I\bigg(\dfrac{2+(-4)}{2};\dfrac{-4+5}{2}\bigg)=(-1;3)$ 
+		
+		Đường trung trực của $AB$ đi qua trung điểm $I$ của $AB$ vầ nhận $\overrightarrow{AB}$ làm vectơ pháp tuyến có phương trình là: 
+		\begin{eqnarray*}
+			&& -6(x+1)+4(y-3)=0\\
+			\Leftrightarrow  && 3x-2y+9=0
+		\end{eqnarray*}
+	}
+\end{ex}
+\Closesolutionfile{ansex}
+\Closesolutionfile{ans}
+
+%%%==========Phần trắc nghiệm đúng sai============%%%
+\tieumuc{Bài Tập Trắc Nghiệm Đúng Sai}-- \textit{Trong mỗi câu có 4 ý tương ứng A, B, C, D; Học sinh chọn đúng hoặc sai.}
+\Opensolutionfile{ans}[Ans/DATAM6]
+\Opensolutionfile{ansbook}[Ans/DATNTF-6]
+\luulgEXTF
+\Opensolutionfile{ansex}[LOIGIAITN/LGTNTF-6]
+%%%============EX_1==============%%%
+\begin{ex}%[0D8V2-7] %[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Thanh Hằng]%[Deso6- CD]
+	Có $5$ nam sinh và $3$ nữ sinh cần được xếp vào một hàng dọc, khi đó
+	\choiceTF
+	{\True Số cách xếp $8$ học sinh theo một hàng dọc là $40320$ (cách)}
+	{\True Số cách xếp học sinh cùng giới đứng cạnh nhau là $1440$ (cách)}
+	{\True Số cách xếp học sinh nữ luôn đứng cạnh nhau là $4320$ (cách)}
+	{\True Số cách xếp không có em nữ nào đứng cạnh nhau là $2400$ (cách)} 
+	\loigiai{
+		\begin{itemize}
+			\item Số cách xếp $8$ học sinh theo một hàng dọc là $8!=40320$ (cách)
+			\item Số cách xếp học sinh nam đứng cạnh nhau là $5!=120$ (cách).\\
+			Số cách xếp học sinh nữ đứng cạnh nhau là $3!=6$ (cách).\\
+			Số cách xếp chỗ hai nhóm học sinh nam và học sinh nữ là $2!=2$ (cách).\\
+			Như vậy, số cách xếp học sinh cùng giới đứng cạnh nhau là $120\cdot 6\cdot 2=1440$ (cách).
+			\item Số cách xếp học sinh nữ đứng cạnh nhau là $3!=6$ (cách).\\
+			Giả sử nhóm học sinh nữ là một đối tượng, ta cần xếp chỗ nhóm nữ và $5$ học sinh nam (nghĩa là $6$ đối tượng).\\
+			Số cách sắp xếp nhóm học sinh nữ và $5$ học sinh nam là $6!=720$ (cách).\\
+			Như vậy, số cách xếp học sinh nữ luôn đứng cạnh nhau là $6\cdot 720=4320$ (cách).
+			\item Số cách xếp $5$ học sinh nam là $5!=120$ (cách).\\
+			Khi xếp $5$ học sinh nam, ta có $6$ khoảng trống được tạo ra (tính cả hai đầu hàng). Để sắp xếp $3$ bạn nữ không đứng cạnh nhau, ta cần chọn ra $3$ khoảng trống từ $6$ khoảng trống trên. Số cách xếp các bạn nữ khi đó là $C^3_6=20$ (cách).\\
+			Như vậy, số cách xếp không có em nữ nào đứng cạnh nhau là $120\cdot 20=2400$ (cách).
+		\end{itemize}
+	}
+\end{ex}
+
+%%%============EX_2==============%%%
+\begin{ex}%[0D8H3-4] %[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Thanh Hằng]%[Deso6- CD]
+	Khai triển $(1-x)^6$. Khi đó
+	\choiceTF
+	{\True Hệ số của $x^2$ trong khai triển là $C_6^2$}
+	{Hệ số của $x^3$ trong khai triển là $C_6^3$}
+	{\True Hệ số của $x^5$ trong khai triển là $-C_6^5$}
+	{$C_6^0-C_6^1+C_6^2-C_6^3+C_6^4-C_6^5+C_6^6=1$} 
+	\loigiai{ 
+		Ta có khai triển
+		$$(1-x)^6=C^0_6 x^6 -C^1_6 x^5+ C^2_6 x^4 - C^3_6 x^3 +C^4_6 x^2- C^5_6 x +C^6_6.$$
+		\begin{itemize}
+			\item Hệ số của $x^2$ trong khai triển là $C_6^2=C^4_6$.
+			\item Hệ số của $x^3$ trong khai triển là $-C_6^3$.
+			\item Hệ số của $x^5$ trong khai triển là $-C_6^1=-C^5_6$.
+			\item Thay $x=1$ vào hai vế của khai triển ta có
+			$$0=C_6^0-C_6^1+C_6^2-C_6^3+C_6^4-C_6^5+C_6^6.$$
+		\end{itemize}
+	}
+\end{ex}
+
+%%%============EX_3==============%%%
+\begin{ex}%[0H9H1-2] %[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Thanh Hằng]%[Deso6- CD]
+	Trong mặt phẳng tọa độ $Oxy$, cho các véctơ $\overrightarrow{a}=(2;-2)$, $\overrightarrow{b}=(4;1)$ và $\overrightarrow{c}=(0;-1)$. Khi đó 
+	\choiceTF
+	{\True $2\overrightarrow{a}-\overrightarrow{b}-3\overrightarrow{c}=(0;-2)$}
+	{\True véctơ $\overrightarrow{e}=(1;-1)$ cùng phương, cùng hướng với véctơ $\overrightarrow{a}$}
+	{véctơ $\overrightarrow{f}=\left(-1 ;-\dfrac{1}{4}\right)$ cùng phương, cùng hướng với véctơ $\overrightarrow{b}$}
+	{\True $\overrightarrow{a}=\dfrac{1}{2} \overrightarrow{b}+\dfrac{5}{2} \overrightarrow{c}$} 
+	\loigiai{
+		\begin{itemize}
+			\item Ta có $2\overrightarrow{a}=(4;-4)$, $3\overrightarrow{c}=(0;-3)$.\\
+			Suy ra $2\overrightarrow{a}-\overrightarrow{b}-3\overrightarrow{c}=(4-4-0;-4-1+3)=(0;-2)$.
+			\item Ta có $\overrightarrow{e}=(1;-1)$ và $\overrightarrow{a}=(2;-2)$.
+			Suy ra $\overrightarrow{e}=\dfrac{1}{2}\overrightarrow{a}$.\\
+			Do đó, véctơ $\overrightarrow{e}$ cùng phương, cùng hướng với $\overrightarrow{a}$.
+			\item Ta có $\overrightarrow{f}=\left(-1 ;-\dfrac{1}{4}\right)$ và $\overrightarrow{b}=(4;1)$. Suy ra $\overrightarrow{f}=-\dfrac{1}{4}\overrightarrow{b}$.\\
+			Do đó, véctơ $\overrightarrow{f}$ cùng phương, ngược hướng với $\overrightarrow{a}$.
+			\item Ta có $\dfrac{1}{2} \overrightarrow{b}+\dfrac{5}{2} \overrightarrow{c}=\left(\dfrac{1}{2}\cdot 4+\dfrac{5}{2}\cdot 0; \dfrac{1}{2}\cdot 1+\dfrac{5}{2}\cdot (-1) \right)=(2;-2)$.\\
+			Suy ra $\dfrac{1}{2} \overrightarrow{b}+\dfrac{5}{2} \overrightarrow{c}=\overrightarrow{a}$.
+		\end{itemize}
+	}
+\end{ex}
+
+%%%============EX_4==============%%%
+\begin{ex}%[0H9C3-7] %[Dự án đề kiểm tra Toán khối 10 GHKII NH23-24-Dot 2- Thanh Hằng]%[Deso6- CD]
+	Cho tam giác $ABC$, biết $A(1;2)$ và phương trình hai đường trung tuyến là $2x-y+1=0$ và $x+3y-3=0$. Khi đó
+	\choiceTF
+	{Điểm $C$ có tọa độ là $\left(\dfrac{-3}{7};\dfrac{8}{7}\right)$}
+	{Điểm $B$ có tọa độ là $\left(\dfrac{-4}{7};\dfrac{-1}{7}\right)$}
+	{\True $BC\colon 9x-y+5=0$}
+	{$AC\colon 3x-3y+3=0$} 
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}[scale=1,>=stealth, font=\footnotesize, line join=round, line cap=round]
+				\draw[fill=black] (2,4) coordinate (A) node[above]{$A$} circle (1pt);
+				\draw[fill=black] (0,0) coordinate (B) node[left]{$B$} circle (1pt);
+				\draw[fill=black] (6,0) coordinate (C) node[right]{$C$} circle (1pt);
+				\draw[fill=black] (3,0) coordinate (M) node[below]{$M$} circle (1pt);
+				\draw[fill=black] ($(A)!0.667!(M)$) coordinate (G) node[above right]{$G$} circle (1pt);
+				\coordinate (N) at ($(B)!1.5!(G)$);
+				\coordinate (P) at ($(C)!1.5!(G)$);
+				\node at (1,1) []{$d_1$};
+				\node at (4,1) []{$d_2$};
+				\draw (B)--(A)--(C)--(B) (A)--(M) (C)--(P) (B)--(N);
+			\end{tikzpicture}
+		\end{center}
+		Gọi $d_1\colon 2x-y+1=0$ và $d_2\colon x+3y-3=0$. Do điểm $A(1;2)$ không thuộc đường thẳng $d_1$ và $d_2$, nên ta giả sử $d_1$ và $d_2$ lần lượt là đường trung tuyến từ đỉnh $B$ và đỉnh $C$.\\
+		Gọi $G$ là trọng tâm của tam giác $ABC$ và $M$ là trung điểm của $BC$.\\
+		Tọa độ của $G$ thỏa mãn hệ phương trình 
+		$$\heva{&2x-y+1=0\\ &x+3y-3=0}\Leftrightarrow\heva{&x=0\\&y=1}.$$
+		Như vậy $G(0;1)$. Khi đó $\overrightarrow{AG}=(-1;-1)$.
+		Suy ra $\overrightarrow{AM}=\dfrac{3}{2}\overrightarrow{AG}=\left(-\dfrac{3}{2};-\dfrac{3}{2}\right)$. \\
+		Mà $A(1;2)$ nên $M\left(-\dfrac{1}{2};\dfrac{1}{2}\right)$.\\
+		Gọi $B(a;2a+1)$ và $C(-3b+3;b)$ (do $B\in d_1$ và $C\in d_2$).\\
+		Do $M$ là trung điểm của $BC$ nên ta có hệ phương trình
+		$$\heva{&x_B+x_C=2x_M\\&y_B+y_C=2y_M}\Leftrightarrow \heva{&a-3b+3=-1\\&2a+1+b=1}\Leftrightarrow \heva{&a-3b=-4\\&2a+b=0} \Leftrightarrow \heva{&a=-\dfrac{4}{7}\\&b=\dfrac{8}{7}}.$$
+		Khi đó điểm $B\left(-\dfrac{4}{7};-\dfrac{1}{7}\right)$ và điểm $C\left(-\dfrac{3}{7};\dfrac{8}{7}\right)$. \\
+		Do vai trò của $B$, $C$ như nhau nên ngoài kết quả trên ta còn có kết quả điểm $C\left(-\dfrac{4}{7};-\dfrac{1}{7}\right)$ và điểm $B\left(-\dfrac{3}{7};\dfrac{8}{7}\right)$.  
+		\begin{itemize}
+			\item Phương án A còn thiếu một trường hợp $C\left(-\dfrac{4}{7};-\dfrac{1}{7}\right)$.
+			\item Phương án B còn thiếu một trường hợp $B\left(-\dfrac{3}{7};\dfrac{8}{7}\right)$.
+			\item Ta có $\overrightarrow{BC}=\left(\dfrac{1}{7};\dfrac{9}{7}\right)$ là véctơ chỉ phương của đường thẳng $BC$.\\
+			Đường thẳng $BC$ đi qua điểm $B\left(-\dfrac{4}{7};-\dfrac{1}{7}\right)$ và nhận $\overrightarrow{n}=(9;-1)$ làm véctơ pháp tuyến có phương trình là
+			$$9\left(x+\dfrac{4}{7}\right)-1\left(y+\dfrac{1}{7}\right)=0 \text{ hay } 9x-y+5=0.$$
+			\item Phương án C còn thiếu một trường hợp vì có hai điểm $C$ thỏa mãn nên cũng có tương ứng hai phương trình đường thẳng $AC$ thỏa mãn đề.
+		\end{itemize}
+	}
+\end{ex}
+\Closesolutionfile{ansex}
+\Closesolutionfile{ansbook}
+\Closesolutionfile{ans}	
+
+%%%==========Phần tự luận============%%%
+\tieumuc{Bài tập tự luận}
+\Opensolutionfile{ansbt}[LOIGIAITL/LGTL-6]
+\luuloigiaibt
+%%%=============BT_1=============%%%
+\begin{bt}%[0D8V3-4]%[Dự án đề Kiểm tra Toán khối 10 GHKII NH23-24-Dot2-Đặng Thế Vĩnh Hiển]%[Đề 6-CD]
+	Tìm số hạng không chứa $x$ trong khai triển nhị thức Newton của $\left(x-\dfrac{1}{x}\right)^4$.
+	\loigiai{
+		Ta có $$\left(x-\dfrac{1}{x}\right)^4=\mathrm{C}_4^0 x^4+\mathrm{C}_4^1 x^3\left(-\dfrac{1}{x}\right)+\mathrm{C}_4^2 x^2\left(-\dfrac{1}{x}\right)^2+\mathrm{C}_4^3 x\left(-\dfrac{1}{x}\right)^3+\mathrm{C}_4^4\left(-\dfrac{1}{x}\right)^4.$$
+		Số hạng không chứa $x$ là $\mathrm{C}_4^2 x^2\left(-\dfrac{1}{x}\right)^2=\mathrm{C}_4^2=6$.
+	}
+\end{bt}
+%%%=============BT_2=============%%%
+\begin{bt}%[0D8V1-2]%[Dự án đề Kiểm tra Toán khối 10 GHKII NH23-24-Dot2-Đặng Thế Vĩnh Hiển]%[Đề 6-CD]
+	Có bao nhiêu cách xếp $4$ người $A, B, C, D$ lên $3$ toa tàu, biết mỗi toa có thể chứa tối đa $4$ người?\loigiai{Xếp $A$ lên một trong $3$ toa tàu: có $3$ cách.\\
+		Xếp $B$ lên một trong $3$ toa tàu: có $3$ cách.\\
+		Tương tự, số cách xếp $C$ và $D$ cũng là $3$ cách.\\
+		Với mỗi cách xếp $\mathrm{A}$ ta có $3$ cách xếp $B$ lên toa tàu.\\
+		Vậy số cách xếp thỏa mãn là $3 \times 3 \times 3 \times 3=81$ (cách). }
+\end{bt}
+%%%=============BT_3=============%%%
+\begin{bt}%[0D8C1-3]%[Dự án đề Kiểm tra Toán khối 10 GHKII NH23-24-Dot2-Đặng Thế Vĩnh Hiển]%[Đề 6-CD]
+	Có bao nhiêu số tự nhiên có $6$ chữ số khác nhau lập từ tập $\{0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7\}$ sao cho cả hai chữ số $1$ và $5$ đồng thời có mặt?\loigiai{Xét các số thoả mãn điều kiện có mặt chữ số $1$ và $5$, có $3$ trường hợp sau:\begin{itemize}
+			\item Chọn $4$ số trong $6$ số còn lại cho vào $4$ vị trí còn lại có $\mathrm{A}_6^4$ cách.
+			Vậy có $5 \cdot \mathrm{A}_6^4=1800$ số.
+			\item Số có dạng $\overline{5 a b c d e}$. Tương tự cũng có $5 \cdot \mathrm{A}_6^4=1800$ số.
+			\item Số $1$ và số $5$ không ở vị trí đầu tiên.\\
+			Có $\mathrm{A}_5^2$ cách chọn vị trí cho số $1$ và số $5$.\\
+			Chữ số đầu tiên khác $0$ và chọn trong $\{2 ; 3 ; 4 ; 6 ; 7\}$ nên có $5$ cách chọn.\\
+			Chọn $3$ số trong $5$ số cho $3$ vị trí còn lại có $\mathrm{A}_5^3$ cách.\\
+			Do đó tạo được $\mathrm{A}_5^2 \cdot 5 \cdot \mathrm{A}_5^3=6000$ số.
+		\end{itemize}
+		Vậy có $1800+1800+6000=9600$ số.}
+\end{bt}
+%%%=============BT_4=============%%%
+\begin{bt}%[0D3C2-6]%[Dự án đề Kiểm tra Toán khối 10 GHKII NH23-24-Dot2-Đặng Thế Vĩnh Hiển]%[Đề 6-CD]
+	Có hai con tàu $A, B$ xuất phát từ hai bến, chuyển động theo đường thắng ngoài biển. Trên màn hình ra-đa của trạm điều khiền (xem như mặt phẳng tọa độ $Oxy$ với đơn vị trên các trục tính bắng ki-lô-mét), tại thời điểm $t$ (giờ), vị trí của tàu $A$ có tọa độ được xác định bởi công thức $\heva{&x=3-33 t \\ &y=-4+25 t}$; vị trí tàu $B$ có tọa độ là $\left(4-30t;3-40t\right)$.\begin{enumerate}[a)]
+		\item Tính gần đúng côsin góc giữa hai đường đi của hai tàu $A, B$.
+		\item Sau bao lâu kể từ thời điểm xuất phát, hai tàu gần nhau nhất?
+		\item Nếu tàu $A$ đứng yên ở vị trí ban đầu, tàu $B$ chạy thì khoảng cách ngắn nhất giữa hai tàu bằng bao nhiêu?
+	\end{enumerate}
+	\loigiai{a) Hai đường đi (giả sử là hai đường thẳng $d_1, d_2$) của hai tàu có cặp vectơ chỉ phương $\vec{u}_1=(-33 ; 25), \vec{u}_2=(-30 ;-40) ;$ côsin góc tạo bởi hai đường thẳng là $$\cos \left(d_1, d_2\right)=\dfrac{\left|\vec{u}_1 \cdot \vec{u}_2\right|}{\left|\vec{u}_1\right| \cdot\left|\vec{u}_2\right|}=\dfrac{|-33 \cdot(-30)+25(-40)|}{\sqrt{(-33)^2+25^2} \cdot \sqrt{(-30)^2+(-40)^2}} \approx 0,00483.$$
+		b) Tại thời điểm $t$, vị trí tàu $A$ là $M(3-33 t ;-4+25 t)$, vị trí của tàu $B$ là $N(4-30 t ; 3-40 t)$.\\
+		Ta có $M N=\sqrt{(1+3 t)^2+(7-65 t)^2}=\sqrt{4234 t^2-904 t+50}$.\\ Khi đó 
+		$M N$ nhỏ nhất khi hàm bậc hai $f(t)=4234 t^2-904 t+50$ đạt giá trị nhỏ nhất, lúc đó $$x=-\dfrac{b}{2 a}=-\dfrac{-904}{2\cdot4234}=\dfrac{226}{2117} \approx 0,107 \text{ (giây).}$$ 
+		c) Khi tàu $A$ đứng yên, vị trí ban đầu của nó có tọa độ $P(3 ;-4)$; vị trí tàu $B$ ứng với thời gian $t$ là $Q(4-30 t ; 3-40 t)$, suy ra
+		$$
+		P Q=\sqrt{(1-30 t)^2+(7-40 t)^2}=\sqrt{2500 t^2-620 t+50} .
+		$$
+		Đoạn $P Q$ ngắn nhất ứng với $t=-\dfrac{b}{2 a}=\dfrac{620}{2 \cdot 2500}=\dfrac{31}{250}=0,124$ (giây).\\
+		Khi đó: $P Q_{\min }=\sqrt{2500 \cdot(0,124)^2-620 \cdot(0,124)+50}=\dfrac{17}{5}=3,4(\mathrm{~km})$.}
+\end{bt}
+\Closesolutionfile{ansbt}
+
+%%%===================Phần đáp số và lời giải chi tiết=======================%%%
+\newpage
+\begin{center}
+	\noibat[\mauphu]{ĐÁP ÁN VÀ LỜI GIẢI CHI TIẾT}
+\end{center}
+\setcounter{tieumuc}{0}
+\tieumuc{Bài tập trắc nghiệm}
+\bangdapan{DATN-6}
+
+\input{LOIGIAITN/LGTN-6}
+
+\tieumuc{Bài tập trắc nghiệm đúng sai}
+
+\bangdapanExTF{DATNTF-6}
+
+\input{LOIGIAITN/LGTNTF-6}
+
+
+\tieumuc{Bài tập Tự luận}
+
+\input{LOIGIAITL/LGTL-6}
+
+%%%=======================%%%
+\label{\x}

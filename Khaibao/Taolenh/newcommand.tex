@@ -1,0 +1,52 @@
+%%%==========================Lệnh mũi tên cập nhật này 02-02-2024========================%%%
+
+
+%%%============Lệnh căn dòng khi dùng tikZ==============================%%%
+\newcommand{\canhdong}[1]{\tikz[baseline=(char.base)]{
+		\node[inner sep =0pt,outer sep=0pt,anchor =base, baseline] (char){
+			#1
+		};
+	}
+}
+\newcommand{\canhdongH}[1]{\tikz[baseline=(current bounding box.base)]{
+		\node [inner sep=0pt,outer sep=0pt]{
+			#1
+		};
+	}
+}
+%%%==========Các lệnh Kiểu mũi tên của thư viện Arrow.meta==============%%%
+\newcommand{\arrowS}{-{Stealth[width=3.65pt,length=4pt]}}
+\newcommand{\arrowL}{-{Latex[width=3.65pt,length=4pt]}}
+\gdef\arrowTN{-{Stealth[left]}} %%% tùy chọn khi dùng phản ứng thuận nghịch
+\newcommand{\explus}{\;+\;}
+%%%============Mũi tên chất khí=============%%%
+\NewDocumentCommand{\MuiTenU}{O{}O{}O{}O{}}{%
+	\ifblank{#1}{\def\tuychonone{3}}{\def\tuychonone{#1}}
+	\ifblank{#2}{\def\tuychontwo{-3}}{\def\tuychontwo{#2}}
+	\ifblank{#3}{\def\tuychonthree{\arrowS}}{\def\tuychonthree{#3}}
+	\ifblank{#4}{\def\tuychonfour{black}}{\def\tuychonfour{#4}}
+	\ignorespaces\hspace*{-14pt}\canhdong{\begin{tikzpicture}[declare function={dodai=\tuychonone mm;goc=90;}]
+	\draw[->,\tuychonthree,\tuychonfour,line width =.8pt,shorten <=\tuychontwo pt] (0,0)--(goc:dodai);
+	\end{tikzpicture}}%
+}
+%%%============Mũi tên kết tủa=============%%%
+\NewDocumentCommand{\MuiTenD}{O{}O{}O{}O{}}{
+	\ifblank{#1}{\def\tuychonone{2}}{\def\tuychonone{#1}}
+	\ifblank{#2}{\def\tuychontwo{-5.65}}{\def\tuychontwo{#2}}
+	\ifblank{#3}{\def\tuychonthree{\arrowS}}{\def\tuychonthree{#3}}
+	\ifblank{#4}{\def\tuychonfour{black}}{\def\tuychonfour{#4}}
+	\ignorespaces\hspace*{-16pt}\canhdong{\begin{tikzpicture}[declare function={dodai=\tuychonone mm;goc=-90;}]
+			\draw[->,\tuychonthree,\tuychonfour,line width =.8pt,shorten <=\tuychontwo pt] (0,0)--(goc:dodai);
+	\end{tikzpicture}}%
+}%
+
+
+\newcommand{\Tieudegiua}[2][\maunhan]{
+\begin{center}
+	\tikz[baseline=(char.base)]{
+		\node[inner sep =6pt,outer sep=6pt,anchor =base, baseline,shape=rectangle,rounded corners=6pt,fill=#1!10,font=\color{#1!80!black}\Huge\bfseries] (char){
+			#2
+		}; 
+	}
+\end{center}
+}
